@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Our project just needs Font Awesome solid + brand -->
+    <script
+      defer
+      src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"
+    ></script>
+    <script
+      defer
+      src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"
+    ></script>
+    <script
+      defer
+      src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+    ></script>
     <link rel="stylesheet" href="/css/style.css" />
-
     <link rel="stylesheet" href="/css/my-slider.css" />
     <script src="js/ism-2.2.min.js"></script>
     <title>Clinigen clone</title>
   </head>
+
   <body>
     <header>
       <div id="header">
         <div id="header_top">
-          <div class="header_top_country">Select country</div>
+          <div class="header_top_country">
+            <i class="fas fa-globe"></i><span>Select country</span>
+          </div>
           <div class="header_top_menuLeft">
             <nav>
               <ul>
@@ -46,8 +61,8 @@
           </div>
           <div class="header_bot_menuleft">
             <div id="header_bot_findAMedicine">
-             <span>Find a medicine</span>
-          </div>
+              <span>Find a medicine</span>
+            </div>
             <input
               type="button"
               value="Get in touch"
@@ -66,34 +81,72 @@
             <li>
               <img src="/images/slides/banner2.jpg" />
               <div class="ism-caption ism-caption-0">CLINIGEN DIRECT</div>
+              <p class="textAcc0">
+                Clinigen Direct is a globally available service which helps
+                clinicians, pharmacists and pharmacy technicians source hard to
+                find medicines by connecting them with our specialist customer
+                services team, either online or by phone (and even fax).
+              </p>
+              <input type="button" value="Find ou more" />
             </li>
             <li>
               <img src="/images/slides/boy-web_crop-min-1.jpg" />
               <div class="ism-caption ism-caption-0">
-                Pharmaceutical & Biotech companies
+                PHARMATCEUTICAL & BIOTECH COMPANIES
               </div>
+              <p class="textAcc1">
+                Clinigen is the global leader in the specialist management of
+                ethical, regulatory compliant and efficient solutions to help
+                pharmaceutical and biotech companies provide access to
+                medicines.
+              </p>
+              <input type="button" value="How we can help" />
             </li>
             <li>
               <img src="/images/slides/mission-still.jpg" />
               <div class="ism-caption ism-caption-0">OUR MISSION</div>
+              <p class="textAcc2">
+                Between two and five billion people have low or non-existent
+                access to the medicine they need. We don’t just help make
+                medicines available, we get them to the people who need them.
+                All over the world and however challenging the circumstances.
+              </p>
+              <input type="button" value="Watch video" />
             </li>
             <li>
               <img src="/images/slides/woman-web_crop-min.jpg" />
               <div class="ism-caption ism-caption-0">
-                Healthcare Professionals
+                HEALTHCARE PROFESSIONALS
               </div>
+              <p class="textAcc3">
+                Clinigen provides healthcare professionals around the globe with
+                ethical, compliant and timely access to treatments that are
+                unlicensed or unavailable at the point of care.
+              </p>
+              <input type="button" value="How can we help" />
             </li>
           </ol>
         </div>
         <p class="ism-badge" id="my-slider-ism-badge"></p>
       </div>
       <div class="sousSlider">
-        <div class="sousSlider_L">Pharmaceutical and Biotech companis</div>
-        <div class="sousSlider_M">Healthcare profesionnals</div>
-        <div class="sousSlider_R">Patient groups</div>
+        <div class="sousSlider_L">
+          <img src="/images/valise.JPG" alt="" />
+          <a href="">Pharmaceutical and Biotech companies</a>
+        </div>
+        <div class="sousSlider_M">
+          <img src="/images/stetoscope.JPG" alt="" /><a href=""
+            >Healthcare profesionnals</a
+          >
+        </div>
+        <div class="sousSlider_R">
+          <img src="/images/patient.JPG" alt="" /><a href="">Patient groups</a>
+        </div>
+      </div>
+      <div class="bgGris">
+        <div class="lastNews_Titre"><h3>LATEST FROM CLINIGEN</h3></div>
       </div>
     </main>
-
     <footer></footer>
   </body>
 </html>
