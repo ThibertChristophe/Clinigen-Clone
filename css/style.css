@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 * {
   margin: 0;
@@ -85,17 +86,35 @@ body {
   align-items: center;
 }
 #header #header_bot .header_bot_menuleft #header_bot_findAMedicine {
+  position: relative;
   background-color: #403b77;
+  color: white;
   width: 200px;
   height: 40px;
   border-radius: 20px;
   margin-right: 10px;
+  cursor: pointer;
+}
+#header #header_bot .header_bot_menuleft #header_bot_findAMedicine span {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+#header #header_bot .header_bot_menuleft #header_bot_findAMedicine span:after {
+  content: "↓";
+  position: absolute;
+  display: inline-block;
+  left: 130px;
+  bottom: 2px;
 }
 #header #header_bot .header_bot_menuleft #header_bot_getInTouch {
   background-color: #8cdb1f;
   border-radius: 30px;
   width: 155px;
   height: 50px;
+  cursor: pointer;
 }
 #header #header_bot .header_bot_menuleft #header_bot_search {
   position: relative;
@@ -103,12 +122,41 @@ body {
   width: 30px;
   height: 30px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .container {
   position: absolute;
   top: 145px;
   width: 100%;
+}
+
+.sousSlider {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+  width: 600px;
+  height: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 675px;
+  z-index: 9;
+}
+.sousSlider .sousSlider_L {
+  height: 100%;
+  width: 200px;
+}
+.sousSlider .sousSlider_M {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  height: 100%;
+  width: 200px;
+}
+.sousSlider .sousSlider_R {
+  height: 100%;
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

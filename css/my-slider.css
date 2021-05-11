@@ -445,17 +445,18 @@ p.ism-badge a.ism-link:hover {
 
 #my-slider .ism-radios {
   display: block;
-  height: 20px;
+  height: 15px;
   text-align: center;
   margin-bottom: 80px;
 }
 
 #my-slider .ism-radios label {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 10px;
   color: #000;
   background-color: white;
+  margin: 0px 3px 0px 3px;
 }
 
 #my-slider .ism-radios li.active label {
