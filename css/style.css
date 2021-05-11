@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +6,12 @@
   box-sizing: border-box;
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
+  font-size: 14px;
 }
 
 li {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a {
@@ -31,27 +33,29 @@ body {
 #header {
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d6d8d8;
 }
 #header #header_top {
   background-color: #064242;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 #header #header_top .header_top_country {
-  position: relative;
-  margin: 10px 0 0 10px;
+  margin: 13px 0 0 10px;
   color: white;
   background-color: #064242;
   height: 30px;
-  width: 100%;
 }
 #header #header_top .header_top_menuLeft {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin-right: 10px;
 }
 #header #header_top .header_top_menuLeft li {
+  padding-right: 10px;
+  font-size: 12px;
   display: inline;
   color: white;
 }
@@ -70,17 +74,22 @@ body {
   justify-content: center;
 }
 #header #header_bot #header_bot_menuMiddle li {
+  color: #75787a;
   display: inline;
   text-align: center;
+  padding-right: 40px;
 }
 #header #header_bot .header_bot_menuleft {
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 #header #header_bot .header_bot_menuleft #header_bot_findAMedicine {
   background-color: #403b77;
   width: 200px;
   height: 40px;
   border-radius: 20px;
+  margin-right: 10px;
 }
 #header #header_bot .header_bot_menuleft #header_bot_getInTouch {
   background-color: #8cdb1f;
@@ -93,6 +102,13 @@ body {
   background: url(/images/loupe.png) no-repeat center/cover;
   width: 30px;
   height: 30px;
+  margin-left: 10px;
+}
+
+.container {
+  position: absolute;
+  top: 145px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

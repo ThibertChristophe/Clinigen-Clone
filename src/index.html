@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/css/my-slider.css" />
+    <script src="js/ism-2.2.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -58,7 +61,35 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container">
+        <div class="ism-slider" id="my-slider">
+          <ol>
+            <li>
+              <img src="/images/slides/banner2.jpg" />
+              <div class="ism-caption ism-caption-0">CLINIGEN DIRECT</div>
+            </li>
+            <li>
+              <img src="/images/slides/boy-web_crop-min-1.jpg" />
+              <div class="ism-caption ism-caption-0">
+                Pharmaceutical & Biotech companies
+              </div>
+            </li>
+            <li>
+              <img src="/images/slides/mission-still.jpg" />
+              <div class="ism-caption ism-caption-0">OUR MISSION</div>
+            </li>
+            <li>
+              <img src="/images/slides/woman-web_crop-min.jpg" />
+              <div class="ism-caption ism-caption-0">
+                Healthcare Professionals
+              </div>
+            </li>
+          </ol>
+        </div>
+        <p class="ism-badge" id="my-slider-ism-badge"></p>
+      </div>
+    </main>
 
     <footer></footer>
   </body>
