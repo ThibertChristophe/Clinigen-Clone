@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
-
+@import url("https://use.typekit.net/mwf7moh.css");
 //***///
 * {
   margin: 0;
@@ -35,11 +35,17 @@ input {
     align-items: center;
     justify-content: space-between;
     .header_top_country {
-      margin: 13px 0 0 10px;
+      margin: 13px 0 0 20px;
       color: white;
       background-color: #064242;
       height: 30px;
       span {
+        margin-left: 5px;
+        a {
+          color: white;
+        }
+      }
+      .fa-angle-down {
         margin-left: 5px;
       }
     }
@@ -53,6 +59,11 @@ input {
         font-size: 12px;
         display: inline;
         color: white;
+      }
+      .fa-angle-down {
+        position: relative;
+        display: inline;
+        margin-left: 5px;
       }
     }
   }
@@ -73,6 +84,12 @@ input {
         display: inline;
         text-align: center;
         padding-right: 40px;
+        a {
+          padding-bottom: 41px;
+          &:hover {
+            border-bottom: 3px solid #8cdb1f;
+          }
+        }
       }
     }
     .header_bot_menuleft {
@@ -88,19 +105,19 @@ input {
         border-radius: 20px;
         margin-right: 10px;
         cursor: pointer;
+        transition: all 0.5s ease;
         span {
           position: absolute;
           left: 15%;
           top: 50%;
           display: inline-block;
           transform: translateY(-50%);
-          &:after {
-            content: "\002193";
-            position: absolute;
-            display: inline-block;
-            left: 130px;
-            bottom: 2px;
-          }
+        }
+        &:hover {
+          filter: brightness(180%);
+        }
+        .fa-angle-down {
+          margin-left: 30px;
         }
       }
 
@@ -110,6 +127,10 @@ input {
         width: 155px;
         height: 50px;
         cursor: pointer;
+        transition: all 0.8s ease;
+        &:hover {
+          background-color: #73b31a;
+        }
       }
 
       #header_bot_search {
@@ -128,24 +149,27 @@ input {
   position: relative;
   top: 145px;
   width: 100%;
+  img {
+    filter: brightness(75%);
+  }
 }
 
 .sousSlider {
   position: relative;
   display: flex;
   align-items: baseline;
-  width: 80%;
+  width: 68%;
   height: 150px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
   top: 80px;
   z-index: 2;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 11px 0px #000000;
-  box-shadow: 0px 0px 11px 0px #000000;
+  -webkit-box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
+  box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
   .sousSlider_L {
     height: 100%;
-    width: 33%;
+    flex: 1;
     padding: 30px 50px 30px 50px;
     text-align: center;
     img {
@@ -164,7 +188,7 @@ input {
     border-left: 1px solid #75787a;
     border-right: 1px solid #75787a;
     height: 100%;
-    width: 33%;
+    flex: 1;
     padding: 30px 50px 30px 50px;
     text-align: center;
     img {
@@ -181,7 +205,7 @@ input {
   }
   .sousSlider_R {
     height: 100%;
-    width: 33%;
+    flex: 1;
     padding: 30px 50px 30px 50px;
     text-align: center;
     img {
@@ -200,7 +224,7 @@ input {
 
 .bgGris {
   padding-top: 80px;
-  background-color: #fafafa;
+  background-color: #f3f3f3d8;
 }
 
 .lastNews_Titre {
@@ -221,6 +245,54 @@ input {
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       width: 60px;
+    }
+  }
+}
+
+.bgGris_listCards {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 50px;
+  .card {
+    width: 300px;
+    height: 540px;
+    -webkit-box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
+    box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
+    .titre {
+      padding-top: 30px;
+      padding-left: 30px;
+      display: block;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    img {
+      width: 240px;
+      height: 180px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+    .card_content {
+      margin-left: 30px;
+    }
+    .card_bot {
+      position: absolute;
+      bottom: 30px;
+      border-top: 1px solid #999c9e;
+      padding-top: 30px;
+      width: inherit;
+      a {
+        display: block;
+        margin-left: 30px;
+        font-size: 16px;
+        &::after {
+          content: "\002192";
+          color: #8cdb1f;
+          margin-left: 5px;
+        }
+      }
     }
   }
 }

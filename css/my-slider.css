@@ -598,17 +598,22 @@ p.ism-badge a.ism-link:hover {
 #my-slider input {
   background-color: #8bda1f;
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 18%;
   border-radius: 20px;
   padding: 15px 25px 15px 25px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+#my-slider input:hover {
+  background-color: #73b31a;
 }
 
 #my-slider .ism-slide-0 .ism-caption-0 {
   font-size: 4em;
   width: 600px;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 14%;
   margin-left: 6px;
   border: none;
@@ -621,7 +626,7 @@ p.ism-badge a.ism-link:hover {
   width: 600px;
   position: absolute;
   text-align: left;
-  top: 21%;
+  top: 28%;
   left: 18%;
   border: none;
   color: #fff;
@@ -633,7 +638,7 @@ p.ism-badge a.ism-link:hover {
   width: 700px;
   position: absolute;
   text-align: left;
-  top: 5%;
+  top: 10%;
   left: 16%;
   border: none;
   color: #fff;
@@ -645,7 +650,7 @@ p.ism-badge a.ism-link:hover {
   width: 600px;
   position: absolute;
   text-align: left;
-  top: 30%;
+  top: 35%;
   left: 18%;
   border: none;
   color: #fff;
@@ -656,7 +661,7 @@ p.ism-badge a.ism-link:hover {
   font-size: 4em;
   width: 600px;
   position: absolute;
-  top: 9%;
+  top: 10%;
   left: 11%;
   margin-left: 12px;
   border: none;
@@ -669,7 +674,7 @@ p.ism-badge a.ism-link:hover {
   width: 600px;
   position: absolute;
   text-align: left;
-  top: 23%;
+  top: 28%;
   left: 18%;
   border: none;
   color: #fff;
@@ -681,7 +686,7 @@ p.ism-badge a.ism-link:hover {
   width: 700px;
   text-align: left;
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 16%;
   margin-left: 5px;
   border: none;
@@ -693,7 +698,7 @@ p.ism-badge a.ism-link:hover {
   width: 600px;
   position: absolute;
   text-align: left;
-  top: 30%;
+  top: 35%;
   left: 18%;
   border: none;
   color: #fff;
