@@ -83,12 +83,12 @@ input {
   justify-content: center;
 }
 #header #header_bot #header_bot_menuMiddle li {
-  color: #75787a;
   display: inline;
   text-align: center;
   padding-right: 40px;
 }
 #header #header_bot #header_bot_menuMiddle li a {
+  color: #75787a;
   padding-bottom: 41px;
 }
 #header #header_bot #header_bot_menuMiddle li a:hover {
@@ -251,15 +251,18 @@ input {
   display: flex;
   position: relative;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-left: 15%;
   margin-right: 15%;
   margin-top: 50px;
 }
 .bgGris_listCards .card {
+  position: relative;
   width: 300px;
   height: 540px;
   -webkit-box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
   box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
+  margin-bottom: 20px;
 }
 .bgGris_listCards .card .titre {
   padding-top: 30px;
@@ -335,7 +338,53 @@ input {
   width: 325px;
   height: 480px;
   padding: 25px;
-  border: 1px solid black;
+  color: #005052;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_titre {
+  position: relative;
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f6f6f6;
+  color: #6c9a9b;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_containt {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f6f6f6;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_containt p {
+  font-size: 16px;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_containt .investor_card_date {
+  color: #bec5c9;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_containt a {
+  text-decoration: underline;
+  font-size: 16px;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_containt .investor_card_containt_titleInvest {
+  position: relative;
+  display: block;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_containt .investor_card_containt_investText {
+  color: #4c5f6a;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_containt_update {
+  color: #bec5c9;
+  border-bottom: 1px solid #f6f6f6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_bot a {
+  font-size: 16px;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card .investor_card_bot::after {
+  content: "→";
+  color: #8cdb1f;
+  margin-left: 5px;
 }
 .containt_investor .investor_btn {
   text-align: center;
@@ -345,14 +394,21 @@ input {
 .containt_investor .investor_btn input {
   background-color: #8cdb1f;
   border-radius: 30px;
-  width: 500px;
-  height: 50px;
+  width: 325px;
+  height: 45px;
   cursor: pointer;
   transition: all 0.8s ease;
   text-align: center;
 }
 .containt_investor .investor_btn input:hover {
   background-color: #73b31a;
+}
+
+.video {
+  display: block;
+  position: relative;
+  height: 600px;
+  background: url(/images/bg-video.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
