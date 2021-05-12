@@ -163,8 +163,8 @@ input {
   top: 80px;
   z-index: 2;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
-  box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
+  -webkit-box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
+  box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
 }
 .sousSlider .sousSlider_L {
   height: 100%;
@@ -258,8 +258,8 @@ input {
 .bgGris_listCards .card {
   width: 300px;
   height: 540px;
-  -webkit-box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
-  box-shadow: 0px 0px 39px 0px rgba(77, 77, 77, 0.37);
+  -webkit-box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
+  box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
 }
 .bgGris_listCards .card .titre {
   padding-top: 30px;
@@ -276,6 +276,7 @@ input {
 }
 .bgGris_listCards .card .card_content {
   margin-left: 30px;
+  margin-right: 30px;
 }
 .bgGris_listCards .card .card_bot {
   position: absolute;
@@ -287,12 +288,71 @@ input {
 .bgGris_listCards .card .card_bot a {
   display: block;
   margin-left: 30px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .bgGris_listCards .card .card_bot a::after {
   content: "→";
   color: #8cdb1f;
   margin-left: 5px;
+}
+
+.containt_investor {
+  background-color: white;
+  position: relative;
+  margin-top: 50px;
+}
+.containt_investor .containt_investor_titre {
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+.containt_investor .containt_investor_titre h3 {
+  color: #005052;
+  font-size: 25px;
+}
+.containt_investor .containt_investor_titre h3:after {
+  content: "";
+  background-color: #8cdb1f;
+  bottom: 20px;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 60px;
+}
+.containt_investor .containt_investor_listCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.containt_investor .containt_investor_listCard .containt_investor_card {
+  position: relative;
+  width: 325px;
+  height: 480px;
+  padding: 25px;
+  border: 1px solid black;
+}
+.containt_investor .investor_btn {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.containt_investor .investor_btn input {
+  background-color: #8cdb1f;
+  border-radius: 30px;
+  width: 500px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  text-align: center;
+}
+.containt_investor .investor_btn input:hover {
+  background-color: #73b31a;
 }
 
 /*# sourceMappingURL=style.css.map */
