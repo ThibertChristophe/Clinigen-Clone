@@ -155,7 +155,7 @@ input {
 .sousSlider {
   position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   width: 68%;
   height: 150px;
   margin-left: auto;
@@ -169,8 +169,8 @@ input {
 .sousSlider .sousSlider_L {
   height: 100%;
   flex: 1;
-  padding: 30px 50px 30px 50px;
   text-align: center;
+  padding-top: 40px;
 }
 .sousSlider .sousSlider_L img {
   display: block;
@@ -183,12 +183,15 @@ input {
   color: #8cdb1f;
   margin-left: 2px;
 }
+.sousSlider .sousSlider_L:hover {
+  background-color: #8cdb1f;
+}
 .sousSlider .sousSlider_M {
   border-left: 1px solid #75787a;
   border-right: 1px solid #75787a;
   height: 100%;
   flex: 1;
-  padding: 30px 50px 30px 50px;
+  padding-top: 30px;
   text-align: center;
 }
 .sousSlider .sousSlider_M img {
@@ -202,10 +205,13 @@ input {
   color: #8cdb1f;
   margin-left: 2px;
 }
+.sousSlider .sousSlider_M:hover {
+  background-color: #8cdb1f;
+}
 .sousSlider .sousSlider_R {
   height: 100%;
   flex: 1;
-  padding: 30px 50px 30px 50px;
+  padding-top: 40px;
   text-align: center;
 }
 .sousSlider .sousSlider_R img {
@@ -218,6 +224,9 @@ input {
   content: "→";
   color: #8cdb1f;
   margin-left: 2px;
+}
+.sousSlider .sousSlider_R:hover {
+  background-color: #8cdb1f;
 }
 
 .bgGris {

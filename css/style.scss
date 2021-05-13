@@ -157,7 +157,7 @@ input {
 .sousSlider {
   position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   width: 68%;
   height: 150px;
   margin-left: auto;
@@ -170,8 +170,8 @@ input {
   .sousSlider_L {
     height: 100%;
     flex: 1;
-    padding: 30px 50px 30px 50px;
     text-align: center;
+    padding-top: 40px;
     img {
       display: block;
       margin-left: auto;
@@ -182,6 +182,9 @@ input {
       content: "\002192";
       color: #8cdb1f;
       margin-left: 2px;
+    }
+    &:hover {
+      background-color: #8cdb1f;
     }
   }
   .sousSlider_M {
@@ -189,7 +192,7 @@ input {
     border-right: 1px solid #75787a;
     height: 100%;
     flex: 1;
-    padding: 30px 50px 30px 50px;
+    padding-top: 30px;
     text-align: center;
     img {
       display: block;
@@ -201,12 +204,15 @@ input {
       content: "\002192";
       color: #8cdb1f;
       margin-left: 2px;
+    }
+    &:hover {
+      background-color: #8cdb1f;
     }
   }
   .sousSlider_R {
     height: 100%;
     flex: 1;
-    padding: 30px 50px 30px 50px;
+    padding-top: 40px;
     text-align: center;
     img {
       display: block;
@@ -218,6 +224,9 @@ input {
       content: "\002192";
       color: #8cdb1f;
       margin-left: 2px;
+    }
+    &:hover {
+      background-color: #8cdb1f;
     }
   }
 }
