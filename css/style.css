@@ -145,8 +145,10 @@ a {
 input {
   border: none;
   color: white;
+  font-size: 17px;
 }
 
+/****************************************/
 .container {
   position: relative;
   top: 145px;
@@ -156,6 +158,7 @@ input {
   filter: brightness(75%);
 }
 
+/****************************************/
 .sousSlider {
   position: relative;
   display: flex;
@@ -254,9 +257,12 @@ input {
   background-color: #8cdb1f;
 }
 
+/****************************************/
 .bgGris {
   padding-top: 80px;
-  background-color: #f3f3f3d8;
+  background-color: #f9fbf9;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .lastNews_Titre {
@@ -333,10 +339,10 @@ input {
   margin-left: 5px;
 }
 
+/****************************************/
 .containt_investor {
   background-color: white;
   position: relative;
-  margin-top: 50px;
 }
 .containt_investor .containt_investor_titre {
   position: relative;
@@ -438,6 +444,7 @@ input {
   background-color: #6ba717;
 }
 
+/****************************************/
 .video {
   display: block;
   position: relative;
@@ -446,9 +453,9 @@ input {
 }
 .video .containerVideo {
   position: relative;
-  left: 20%;
+  left: 24%;
   top: 25%;
-  width: 28%;
+  width: 600px;
   color: white;
 }
 .video .containerVideo span {
@@ -472,6 +479,137 @@ input {
   width: 180px;
   text-align: center;
   background-color: #8cdb1f;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.video .containerVideo input:hover {
+  background-color: #6ba717;
+}
+
+/****************************************/
+.ourMission {
+  position: relative;
+  height: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ourMission .ourMission_L {
+  width: 22%;
+  color: #005052;
+}
+.ourMission .ourMission_L span {
+  display: block;
+  color: #4c5f6a;
+  margin-bottom: 5px;
+}
+.ourMission .ourMission_L p {
+  font-size: 40px;
+  letter-spacing: -3px;
+}
+.ourMission .ourMission_L input {
+  margin-top: 20px;
+  border-radius: 30px;
+  height: 55px;
+  width: 180px;
+  text-align: center;
+  background-color: #8cdb1f;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.ourMission .ourMission_L input:hover {
+  background-color: #6ba717;
+}
+.ourMission .ourMission_R {
+  width: 30%;
+  color: #4c5f6a;
+}
+.ourMission .ourMission_R p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/****************************************/
+.numberBot {
+  background-color: #f9fbf9;
+  height: 320px;
+  color: #005052;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+}
+.numberBot .numberBot_Card {
+  position: relative;
+  width: 12%;
+  margin: 0 20px 0 20px;
+  top: 30%;
+}
+.numberBot .numberBot_Card p {
+  width: 210px;
+}
+.numberBot .numberBot_Card span {
+  display: block;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.numberBot .ppl:before {
+  position: relative;
+  content: url("../images/human.JPG");
+}
+.numberBot .target:before {
+  content: url("../images/target.JPG");
+}
+.numberBot .pizza:before {
+  content: url("../images/pizza.JPG");
+}
+.numberBot .earth:before {
+  content: url("../images/earth.JPG");
+}
+
+/****************************************/
+.footer {
+  background-color: #005052;
+  height: 450px;
+  color: white;
+}
+.footer a {
+  color: white;
+}
+.footer .footerContaint {
+  display: flex;
+  justify-content: space-between;
+  top: 50px;
+  width: 60%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 85%;
+}
+.footer .footerContaint .footerContaint_Card_Title {
+  width: 125px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.footer .footerContaint .footerContaint_Card_Office {
+  width: 30%;
+  height: 200px;
+}
+.footer .footerContaint .footerContaint_Card_Office .footerContaint_Card_linkOffices {
+  line-height: 30px;
+  height: 150px;
+  justify-content: center;
+  column-count: 2;
+}
+.footer .footerContaint .footerContaint_Card_Tools {
+  width: 25%;
+}
+.footer .footerContaint .footerContaint_Card_Medicine {
+  width: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */

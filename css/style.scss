@@ -25,8 +25,9 @@ a {
 input {
   border: none;
   color: white;
+  font-size: 17px;
 }
-
+/****************************************/
 .container {
   position: relative;
   top: 145px;
@@ -35,7 +36,7 @@ input {
     filter: brightness(75%);
   }
 }
-
+/****************************************/
 .sousSlider {
   position: relative;
   display: flex;
@@ -133,10 +134,12 @@ input {
     }
   }
 }
-
+/****************************************/
 .bgGris {
   padding-top: 80px;
-  background-color: #f3f3f3d8;
+  background-color: $grisClair;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 .lastNews_Titre {
@@ -213,11 +216,10 @@ input {
     }
   }
 }
-
+/****************************************/
 .containt_investor {
   background-color: white;
   position: relative;
-  margin-top: 50px;
   .containt_investor_titre {
     position: relative;
     text-align: center;
@@ -323,7 +325,7 @@ input {
     }
   }
 }
-
+/****************************************/
 .video {
   display: block;
   position: relative;
@@ -331,9 +333,9 @@ input {
   background: url(/images/bg-video.jpg);
   .containerVideo {
     position: relative;
-    left: 20%;
+    left: 24%;
     top: 25%;
-    width: 28%;
+    width: 600px;
     color: white;
     span {
       color: #6ba717;
@@ -356,9 +358,138 @@ input {
       width: 180px;
       text-align: center;
       background-color: $vertClair;
+      cursor: pointer;
+      transition: all 1s ease;
       &:before {
         // todo : petite fleche "play"
       }
+      &:hover {
+        background-color: #6ba717;
+      }
+    }
+  }
+}
+/****************************************/
+.ourMission {
+  position: relative;
+  height: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  .ourMission_L {
+    width: 22%;
+    color: $vertFonce;
+    span {
+      display: block;
+      color: #4c5f6a;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 40px;
+      letter-spacing: -3px;
+    }
+    input {
+      margin-top: 20px;
+      border-radius: 30px;
+      height: 55px;
+      width: 180px;
+      text-align: center;
+      background-color: $vertClair;
+      cursor: pointer;
+      transition: all 1s ease;
+      &:hover {
+        background-color: #6ba717;
+      }
+    }
+  }
+  .ourMission_R {
+    width: 30%;
+    color: #4c5f6a;
+    p {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+}
+/****************************************/
+.numberBot {
+  background-color: $grisClair;
+  height: 320px;
+  color: $vertFonce;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  .numberBot_Card {
+    position: relative;
+    width: 12%;
+    margin: 0 20px 0 20px;
+    top: 30%;
+    p {
+      width: 210px;
+    }
+    span {
+      display: block;
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+  }
+  .ppl:before {
+    position: relative;
+    content: url("../images/human.JPG");
+  }
+  .target:before {
+    content: url("../images/target.JPG");
+  }
+  .pizza:before {
+    content: url("../images/pizza.JPG");
+  }
+  .earth:before {
+    content: url("../images/earth.JPG");
+  }
+}
+
+/****************************************/
+.footer {
+  background-color: $vertFonce;
+  height: 450px;
+  color: white;
+  a {
+    color: white;
+  }
+  .footerContaint {
+    display: flex;
+    justify-content: space-between;
+    top: 50px;
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85%;
+    .footerContaint_Card_Title {
+      width: 125px;
+      letter-spacing: 3px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .footerContaint_Card_Office {
+      width: 30%;
+      height: 200px;
+      .footerContaint_Card_linkOffices {
+        line-height: 30px;
+        height: 150px;
+        justify-content: center;
+        column-count: 2;
+      }
+    }
+    .footerContaint_Card_Tools {
+      width: 25%;
+    }
+    .footerContaint_Card_Medicine {
+      width: 25%;
     }
   }
 }
