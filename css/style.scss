@@ -318,7 +318,7 @@ input {
       transition: all 0.8s ease;
       text-align: center;
       &:hover {
-        background-color: $vertClair;
+        background-color: #6ba717;
       }
     }
   }
@@ -329,4 +329,36 @@ input {
   position: relative;
   height: 600px;
   background: url(/images/bg-video.jpg);
+  .containerVideo {
+    position: relative;
+    left: 20%;
+    top: 25%;
+    width: 28%;
+    color: white;
+    span {
+      color: #6ba717;
+    }
+    h2 {
+      font-size: 50px;
+      margin-bottom: 15px;
+      margin-top: 5px;
+      letter-spacing: -2px;
+    }
+    .containerVideo_Text {
+      color: #bec5c9;
+      width: 60%;
+      line-height: 25px;
+    }
+    input {
+      margin-top: 20px;
+      border-radius: 30px;
+      height: 55px;
+      width: 180px;
+      text-align: center;
+      background-color: $vertClair;
+      &:before {
+        // todo : petite fleche "play"
+      }
+    }
+  }
 }

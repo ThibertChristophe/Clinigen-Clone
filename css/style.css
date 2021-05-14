@@ -435,7 +435,7 @@ input {
   text-align: center;
 }
 .containt_investor .investor_btn input:hover {
-  background-color: #8cdb1f;
+  background-color: #6ba717;
 }
 
 .video {
@@ -443,6 +443,35 @@ input {
   position: relative;
   height: 600px;
   background: url(/images/bg-video.jpg);
+}
+.video .containerVideo {
+  position: relative;
+  left: 20%;
+  top: 25%;
+  width: 28%;
+  color: white;
+}
+.video .containerVideo span {
+  color: #6ba717;
+}
+.video .containerVideo h2 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  letter-spacing: -2px;
+}
+.video .containerVideo .containerVideo_Text {
+  color: #bec5c9;
+  width: 60%;
+  line-height: 25px;
+}
+.video .containerVideo input {
+  margin-top: 20px;
+  border-radius: 30px;
+  height: 55px;
+  width: 180px;
+  text-align: center;
+  background-color: #8cdb1f;
 }
 
 /*# sourceMappingURL=style.css.map */
