@@ -1,29 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 @import url("https://use.typekit.net/mwf7moh.css");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-li {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  color: #005052;
-}
-
-input {
-  border: none;
-  color: white;
-}
-
 #header {
   position: fixed;
   width: 100%;
@@ -82,13 +59,17 @@ input {
   align-items: center;
   justify-content: center;
 }
+#header #header_bot #header_bot_menuMiddle .fa-angle-down {
+  margin-left: 5px;
+  color: #8cdb1f;
+}
 #header #header_bot #header_bot_menuMiddle li {
   display: inline;
   text-align: center;
   padding-right: 40px;
 }
 #header #header_bot #header_bot_menuMiddle li a {
-  color: #75787a;
+  color: #646668;
   padding-bottom: 41px;
 }
 #header #header_bot #header_bot_menuMiddle li a:hover {
@@ -143,6 +124,29 @@ input {
   cursor: pointer;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+li {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #005052;
+}
+
+input {
+  border: none;
+  color: white;
+}
+
 .container {
   position: relative;
   top: 145px;
@@ -166,11 +170,28 @@ input {
   -webkit-box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
   box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
 }
+.sousSlider .div_sv {
+  position: relative;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+.sousSlider .div_sv .svg1,
+.sousSlider .div_sv .svg2,
+.sousSlider .div_sv .svg3 {
+  transition: all 1s ease;
+  fill: #8cdb1f;
+}
 .sousSlider .sousSlider_L {
   height: 100%;
   flex: 1;
   text-align: center;
   padding-top: 40px;
+  transition: all 1s ease;
+  cursor: pointer;
 }
 .sousSlider .sousSlider_L img {
   display: block;
@@ -191,8 +212,10 @@ input {
   border-right: 1px solid #75787a;
   height: 100%;
   flex: 1;
-  padding-top: 30px;
+  padding-top: 40px;
   text-align: center;
+  transition: all 1s ease;
+  cursor: pointer;
 }
 .sousSlider .sousSlider_M img {
   display: block;
@@ -213,6 +236,8 @@ input {
   flex: 1;
   padding-top: 40px;
   text-align: center;
+  transition: all 1s ease;
+  cursor: pointer;
 }
 .sousSlider .sousSlider_R img {
   display: block;
@@ -410,7 +435,7 @@ input {
   text-align: center;
 }
 .containt_investor .investor_btn input:hover {
-  background-color: #73b31a;
+  background-color: #8cdb1f;
 }
 
 .video {

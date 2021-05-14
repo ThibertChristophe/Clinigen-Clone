@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
 @import url("https://use.typekit.net/mwf7moh.css");
+@import "./variables";
+@import "./header";
+
 //***///
 * {
   margin: 0;
@@ -24,127 +27,6 @@ input {
   color: white;
 }
 
-#header {
-  position: fixed;
-  width: 100%;
-  border-bottom: 1px solid #d6d8d8;
-  z-index: 3;
-  #header_top {
-    background-color: #064242;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .header_top_country {
-      margin: 13px 0 0 20px;
-      color: white;
-      background-color: #064242;
-      height: 30px;
-      span {
-        margin-left: 5px;
-        a {
-          color: white;
-        }
-      }
-      .fa-angle-down {
-        margin-left: 5px;
-      }
-    }
-    .header_top_menuLeft {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-right: 10px;
-      li {
-        padding-right: 10px;
-        font-size: 12px;
-        display: inline;
-        color: white;
-      }
-      .fa-angle-down {
-        position: relative;
-        display: inline;
-        margin-left: 5px;
-      }
-    }
-  }
-  #header_bot {
-    background-color: white;
-    padding: 25px 20px 25px 20px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-    #header_bot_menuMiddle {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      li {
-        display: inline;
-        text-align: center;
-        padding-right: 40px;
-        a {
-          color: #75787a;
-          padding-bottom: 41px;
-          &:hover {
-            border-bottom: 3px solid #8cdb1f;
-          }
-        }
-      }
-    }
-    .header_bot_menuleft {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      #header_bot_findAMedicine {
-        position: relative;
-        background-color: #403b77;
-        color: white;
-        width: 200px;
-        height: 40px;
-        border-radius: 20px;
-        margin-right: 10px;
-        cursor: pointer;
-        transition: all 0.5s ease;
-        span {
-          position: absolute;
-          left: 15%;
-          top: 50%;
-          display: inline-block;
-          transform: translateY(-50%);
-        }
-        &:hover {
-          filter: brightness(180%);
-        }
-        .fa-angle-down {
-          margin-left: 30px;
-        }
-      }
-
-      #header_bot_getInTouch {
-        background-color: #8cdb1f;
-        border-radius: 30px;
-        width: 155px;
-        height: 50px;
-        cursor: pointer;
-        transition: all 0.8s ease;
-        &:hover {
-          background-color: #73b31a;
-        }
-      }
-
-      #header_bot_search {
-        position: relative;
-        background: url(/images/loupe.png) no-repeat center/cover;
-        width: 30px;
-        height: 30px;
-        margin-left: 10px;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
 .container {
   position: relative;
   top: 145px;
@@ -167,11 +49,28 @@ input {
   background-color: white;
   -webkit-box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
   box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
+  .div_sv {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    .svg1,
+    .svg2,
+    .svg3 {
+      transition: all 1s ease;
+      fill: $vertClair;
+    }
+  }
   .sousSlider_L {
     height: 100%;
     flex: 1;
     text-align: center;
     padding-top: 40px;
+    transition: all 1s ease;
+    cursor: pointer;
     img {
       display: block;
       margin-left: auto;
@@ -180,11 +79,11 @@ input {
     }
     a::after {
       content: "\002192";
-      color: #8cdb1f;
+      color: $vertClair;
       margin-left: 2px;
     }
     &:hover {
-      background-color: #8cdb1f;
+      background-color: $vertClair;
     }
   }
   .sousSlider_M {
@@ -192,8 +91,10 @@ input {
     border-right: 1px solid #75787a;
     height: 100%;
     flex: 1;
-    padding-top: 30px;
+    padding-top: 40px;
     text-align: center;
+    transition: all 1s ease;
+    cursor: pointer;
     img {
       display: block;
       margin-left: auto;
@@ -202,11 +103,11 @@ input {
     }
     a::after {
       content: "\002192";
-      color: #8cdb1f;
+      color: $vertClair;
       margin-left: 2px;
     }
     &:hover {
-      background-color: #8cdb1f;
+      background-color: $vertClair;
     }
   }
   .sousSlider_R {
@@ -214,6 +115,8 @@ input {
     flex: 1;
     padding-top: 40px;
     text-align: center;
+    transition: all 1s ease;
+    cursor: pointer;
     img {
       display: block;
       margin-left: auto;
@@ -222,11 +125,11 @@ input {
     }
     a::after {
       content: "\002192";
-      color: #8cdb1f;
+      color: $vertClair;
       margin-left: 2px;
     }
     &:hover {
-      background-color: #8cdb1f;
+      background-color: $vertClair;
     }
   }
 }
@@ -245,7 +148,7 @@ input {
     font-size: 25px;
     &:after {
       content: "";
-      background-color: #8cdb1f;
+      background-color: $vertClair;
       bottom: 20px;
       height: 3px;
       position: absolute;
@@ -303,7 +206,7 @@ input {
 
         &::after {
           content: "\002192";
-          color: #8cdb1f;
+          color: $vertClair;
           margin-left: 5px;
         }
       }
@@ -320,11 +223,11 @@ input {
     text-align: center;
     padding: 40px;
     h3 {
-      color: #005052;
+      color: $vertFonce;
       font-size: 25px;
       &:after {
         content: "";
-        background-color: #8cdb1f;
+        background-color: $vertClair;
         bottom: 20px;
         height: 3px;
         position: absolute;
@@ -349,7 +252,7 @@ input {
       width: 325px;
       height: 480px;
       padding: 25px;
-      color: #005052;
+      color: $vertFonce;
       .investor_card_titre {
         position: relative;
         display: flex;
@@ -395,7 +298,7 @@ input {
         }
         &::after {
           content: "\002192";
-          color: #8cdb1f;
+          color: $vertClair;
           margin-left: 5px;
         }
       }
@@ -407,7 +310,7 @@ input {
     margin-top: 50px;
     margin-bottom: 50px;
     input {
-      background-color: #8cdb1f;
+      background-color: $vertClair;
       border-radius: 30px;
       width: 325px;
       height: 45px;
@@ -415,7 +318,7 @@ input {
       transition: all 0.8s ease;
       text-align: center;
       &:hover {
-        background-color: #73b31a;
+        background-color: $vertClair;
       }
     }
   }

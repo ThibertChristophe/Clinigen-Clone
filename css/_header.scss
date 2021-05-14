@@ -1,0 +1,124 @@
+#header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #d6d8d8;
+  z-index: 3;
+  #header_top {
+    background-color: #064242;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header_top_country {
+      margin: 13px 0 0 20px;
+      color: white;
+      background-color: #064242;
+      height: 30px;
+      span {
+        margin-left: 5px;
+        a {
+          color: white;
+        }
+      }
+      .fa-angle-down {
+        margin-left: 5px;
+      }
+    }
+    .header_top_menuLeft {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 10px;
+      li {
+        padding-right: 10px;
+        font-size: 12px;
+        display: inline;
+        color: white;
+      }
+      .fa-angle-down {
+        position: relative;
+        display: inline;
+        margin-left: 5px;
+      }
+    }
+  }
+  #header_bot {
+    background-color: white;
+    padding: 25px 20px 25px 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    #header_bot_menuMiddle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fa-angle-down {
+        margin-left: 5px;
+        color: $vertClair;
+      }
+      li {
+        display: inline;
+        text-align: center;
+        padding-right: 40px;
+        a {
+          color: #646668;
+          padding-bottom: 41px;
+          &:hover {
+            border-bottom: 3px solid $vertClair;
+          }
+        }
+      }
+    }
+    .header_bot_menuleft {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      #header_bot_findAMedicine {
+        position: relative;
+        background-color: #403b77;
+        color: white;
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        span {
+          position: absolute;
+          left: 15%;
+          top: 50%;
+          display: inline-block;
+          transform: translateY(-50%);
+        }
+        &:hover {
+          filter: brightness(180%);
+        }
+        .fa-angle-down {
+          margin-left: 30px;
+        }
+      }
+
+      #header_bot_getInTouch {
+        background-color: $vertClair;
+        border-radius: 30px;
+        width: 155px;
+        height: 50px;
+        cursor: pointer;
+        transition: all 0.8s ease;
+        &:hover {
+          background-color: #73b31a;
+        }
+      }
+
+      #header_bot_search {
+        position: relative;
+        background: url(/images/loupe.png) no-repeat center/cover;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
