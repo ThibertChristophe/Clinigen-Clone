@@ -13,6 +13,7 @@
       color: white;
       background-color: #064242;
       height: 30px;
+      font-weight: 600;
       span {
         margin-left: 5px;
         a {
@@ -33,6 +34,7 @@
         font-size: 12px;
         display: inline;
         color: white;
+        font-weight: 600;
       }
       .fa-angle-down {
         position: relative;
@@ -53,6 +55,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: 600;
       .fa-angle-down {
         margin-left: 5px;
         color: $vertClair;
@@ -84,6 +87,7 @@
         margin-right: 10px;
         cursor: pointer;
         transition: all 0.5s ease;
+        font-weight: 600;
         span {
           position: absolute;
           left: 15%;

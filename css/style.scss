@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap");
 @import url("https://use.typekit.net/mwf7moh.css");
 @import "./variables";
 @import "./header";
@@ -15,6 +15,7 @@
 li {
   text-decoration: none;
   cursor: pointer;
+  list-style-type: none;
 }
 
 a {
@@ -26,6 +27,7 @@ input {
   border: none;
   color: white;
   font-size: 17px;
+  font-weight: 600;
 }
 /****************************************/
 .container {
@@ -72,6 +74,7 @@ input {
     padding-top: 40px;
     transition: all 1s ease;
     cursor: pointer;
+    font-weight: 600;
     img {
       display: block;
       margin-left: auto;
@@ -96,6 +99,7 @@ input {
     text-align: center;
     transition: all 1s ease;
     cursor: pointer;
+    font-weight: 600;
     img {
       display: block;
       margin-left: auto;
@@ -118,6 +122,7 @@ input {
     text-align: center;
     transition: all 1s ease;
     cursor: pointer;
+    font-weight: 600;
     img {
       display: block;
       margin-left: auto;
@@ -185,6 +190,7 @@ input {
       display: block;
       margin-bottom: 30px;
       font-size: 14px;
+      font-weight: 600;
     }
     img {
       width: 240px;
@@ -206,7 +212,7 @@ input {
         display: block;
         margin-left: 30px;
         font-size: 18px;
-
+        font-weight: 600;
         &::after {
           content: "\002192";
           color: $vertClair;
@@ -262,6 +268,7 @@ input {
         margin-bottom: 20px;
         border-bottom: 1px solid #f6f6f6;
         color: #6c9a9b;
+        font-weight: 600;
       }
 
       .investor_card_containt {
@@ -283,9 +290,11 @@ input {
           display: block;
           font-size: 35px;
           margin-bottom: 20px;
+          font-weight: 600;
         }
         .investor_card_containt_investText {
           color: #4c5f6a;
+          line-height: 25px;
         }
       }
       .investor_card_containt_update {
@@ -297,6 +306,7 @@ input {
       .investor_card_bot {
         a {
           font-size: 16px;
+          font-weight: 600;
         }
         &::after {
           content: "\002192";
@@ -380,6 +390,7 @@ input {
   .ourMission_L {
     width: 22%;
     color: $vertFonce;
+    font-weight: 600;
     span {
       display: block;
       color: #4c5f6a;
@@ -409,6 +420,7 @@ input {
     p {
       font-size: 16px;
       line-height: 30px;
+      font-weight: 300;
     }
   }
 }
@@ -435,6 +447,7 @@ input {
       display: block;
       font-size: 50px;
       margin-bottom: 10px;
+      font-weight: 600;
     }
   }
   .ppl:before {
@@ -468,28 +481,36 @@ input {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    height: 85%;
-    .footerContaint_Card_Title {
-      width: 125px;
-      letter-spacing: 3px;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-    .footerContaint_Card_Office {
+    height: 75%;
+    .footerContaint_Card {
       width: 30%;
-      height: 200px;
-      .footerContaint_Card_linkOffices {
-        line-height: 30px;
-        height: 150px;
+      height: 100%;
+      .footerContaint_Card_Title {
+        width: 125px;
+        letter-spacing: 3px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+      .footerContaint_Card_link {
+        display: inline-block;
         justify-content: center;
         column-count: 2;
+        text-decoration: none;
+        a {
+          &:hover {
+            text-decoration: underline;
+            font-weight: 300;
+          }
+        }
+        li {
+          margin-bottom: 15px;
+        }
       }
     }
-    .footerContaint_Card_Tools {
-      width: 25%;
-    }
+
     .footerContaint_Card_Medicine {
-      width: 25%;
+      width: 30%;
     }
   }
 }
