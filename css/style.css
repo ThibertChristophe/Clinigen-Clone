@@ -128,6 +128,36 @@
   cursor: pointer;
 }
 
+.menuCache {
+  display: none;
+  position: absolute;
+  top: 30%;
+  height: 65px;
+  width: 100%;
+  background-color: #f9fbf9;
+  z-index: 5;
+  border-bottom: 1px solid #d8d9da;
+  transition: all 1s ease;
+}
+.menuCache li {
+  display: inline-block;
+  margin: 20px 20px 20px 75px;
+  font-weight: 600;
+  color: #005052;
+}
+.menuCache li a:hover {
+  text-decoration: underline;
+}
+
+.show {
+  display: block;
+}
+
+.active {
+  padding-bottom: 11px;
+  border-bottom: 3px solid #73b31a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -575,7 +605,6 @@ input {
   font-weight: 600;
 }
 .numberBot .ppl:before {
-  position: relative;
   content: url("../images/human.JPG");
 }
 .numberBot .target:before {
@@ -633,6 +662,37 @@ input {
 }
 .footer .footerContaint .footerContaint_Card_Medicine {
   width: 30%;
+}
+.footer .footerContaint .footerContaint_Card_Medicine p {
+  margin: 20px 0 35px 0;
+  font-size: 17px;
+}
+.footer .footerContaint .footerContaint_Card_Medicine li {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.footer .footerContaint .footerContaint_Card_Medicine li a:hover {
+  text-decoration: underline;
+}
+
+.copyright_Logo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+.copyright_Logo .by {
+  font-weight: 600;
+}
+.copyright_Logo input {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #096668;
+  background-color: transparent;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

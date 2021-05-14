@@ -126,3 +126,31 @@
     }
   }
 }
+
+.menuCache {
+  display: none;
+  position: absolute;
+  top: 30%;
+  height: 65px;
+  width: 100%;
+  background-color: $grisClair;
+  z-index: 5;
+  border-bottom: 1px solid #d8d9da;
+  transition: all 1s ease;
+  li {
+    display: inline-block;
+    margin: 20px 20px 20px 75px;
+    font-weight: 600;
+    color: $vertFonce;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.show {
+  display: block;
+}
+.active {
+  padding-bottom: 11px;
+  border-bottom: 3px solid #73b31a;
+}
