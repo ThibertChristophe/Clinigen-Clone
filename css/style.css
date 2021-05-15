@@ -169,11 +169,20 @@
   border-bottom: 1px solid #dad8d9;
   transition: opacity 0.5s ease;
 }
+.menuCache_about ul {
+  display: flex;
+  justify-content: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  flex-wrap: wrap;
+}
 .menuCache_about li {
   display: none;
   margin: 20px 20px 20px 75px;
   font-weight: 600;
   color: #005052;
+  width: 250px;
 }
 .menuCache_about li a:hover {
   text-decoration: underline;

@@ -1,4 +1,3 @@
-
 const country  = document.getElementById('country');
 const sousMenu  = document.getElementById('menuCache');
 
