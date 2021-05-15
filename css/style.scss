@@ -2,6 +2,7 @@
 @import url("https://use.typekit.net/mwf7moh.css");
 @import "./variables";
 @import "./header";
+@import "./footer";
 
 //***///
 * {
@@ -465,84 +466,3 @@ input {
 }
 
 /****************************************/
-.footer {
-  background-color: $vertFonce;
-  height: 450px;
-  color: white;
-  a {
-    color: white;
-  }
-  .footerContaint {
-    display: flex;
-    justify-content: space-between;
-    top: 50px;
-    width: 60%;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 75%;
-    .footerContaint_Card {
-      width: 30%;
-      height: 100%;
-      .footerContaint_Card_Title {
-        width: 125px;
-        letter-spacing: 3px;
-        font-size: 14px;
-        margin-bottom: 15px;
-        font-weight: 600;
-      }
-      .footerContaint_Card_link {
-        display: inline-block;
-        justify-content: center;
-        column-count: 2;
-        text-decoration: none;
-        a {
-          &:hover {
-            text-decoration: underline;
-            font-weight: 300;
-          }
-        }
-        li {
-          margin-bottom: 15px;
-        }
-      }
-    }
-
-    .footerContaint_Card_Medicine {
-      width: 30%;
-      p {
-        margin: 20px 0 35px 0;
-        font-size: 17px;
-      }
-
-      li {
-        margin-bottom: 15px;
-        font-weight: 600;
-        a:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
-.copyright_Logo {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  width: 65%;
-  .by {
-    font-weight: 600;
-  }
-
-  input {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #096668;
-    background-color: transparent;
-    border-radius: 50px;
-  }
-}
