@@ -134,7 +134,7 @@
 }
 
 /****************************************** SOUS MENU ************************/
-.menuCache {
+.menuCacheCountry {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -146,17 +146,24 @@
   border-bottom: 1px solid #d8d9da;
   transition: opacity 0.5s ease;
 }
-.menuCache li {
+.menuCacheCountry li {
   display: none;
-  margin: 20px 20px 20px 75px;
+  margin: 20px 250px 20px 30px;
   font-weight: 600;
   color: #005052;
 }
-.menuCache li a:hover {
+.menuCacheCountry li a:hover {
   text-decoration: underline;
 }
 
-.menuCache_about {
+.flag {
+  width: 24px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.menuCache_about,
+.menuCache_globalOffice {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -169,22 +176,26 @@
   border-bottom: 1px solid #dad8d9;
   transition: opacity 0.5s ease;
 }
-.menuCache_about ul {
+.menuCache_about ul,
+.menuCache_globalOffice ul {
   display: flex;
   justify-content: left;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
   flex-wrap: wrap;
+  height: 100%;
 }
-.menuCache_about li {
+.menuCache_about li,
+.menuCache_globalOffice li {
   display: none;
   margin: 20px 20px 20px 75px;
   font-weight: 600;
   color: #005052;
   width: 250px;
 }
-.menuCache_about li a:hover {
+.menuCache_about li a:hover,
+.menuCache_globalOffice li a:hover {
   text-decoration: underline;
 }
 
@@ -257,6 +268,12 @@
 .footer .footerContaint .footerContaint_Card_Medicine li a:hover {
   text-decoration: underline;
 }
+.footer .footerContaint .footerContaint_Card_Medicine span::before {
+  content: "";
+  color: #8cdb1f;
+  display: inline-block;
+  margin-left: 1px;
+}
 
 .copyright_Logo {
   display: flex;
@@ -270,12 +287,17 @@
 .copyright_Logo .by {
   font-weight: 600;
 }
-.copyright_Logo input {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #096668;
-  background-color: transparent;
+.copyright_Logo .line {
+  border-top: 1px solid #0b7779;
+  width: 55%;
+}
+.copyright_Logo .twitter,
+.copyright_Logo .vimeo,
+.copyright_Logo .linkedin {
+  display: inline;
+  border: 1px solid #0b7779;
   border-radius: 50px;
+  padding: 13px;
 }
 
 * {

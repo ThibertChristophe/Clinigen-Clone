@@ -134,7 +134,7 @@
 
 /****************************************** SOUS MENU ************************/
 
-.menuCache {
+.menuCacheCountry {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -147,7 +147,7 @@
   transition: opacity 0.5s ease;
   li {
     display: none;
-    margin: 20px 20px 20px 75px;
+    margin: 20px 250px 20px 30px;
     font-weight: 600;
     color: $vertFonce;
     a:hover {
@@ -155,8 +155,14 @@
     }
   }
 }
+.flag {
+  width: 24px;
+  height: 16px;
+  margin-right: 5px;
+}
 
-.menuCache_about {
+.menuCache_about,
+.menuCache_globalOffice {
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -168,7 +174,6 @@
   z-index: 1;
   border-bottom: 1px solid #dad8d9;
   transition: opacity 0.5s ease;
-
   ul {
     display: flex;
     justify-content: left;
@@ -176,6 +181,7 @@
     margin-right: auto;
     width: 75%;
     flex-wrap: wrap;
+    height: 100%;
   }
   li {
     display: none;

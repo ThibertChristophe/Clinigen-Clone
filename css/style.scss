@@ -248,6 +248,7 @@ input {
       }
     }
   }
+
   .containt_investor_listCard {
     display: flex;
     justify-content: space-between;
@@ -262,6 +263,7 @@ input {
       height: 480px;
       padding: 25px;
       color: $vertFonce;
+
       .investor_card_titre {
         position: relative;
         display: flex;
