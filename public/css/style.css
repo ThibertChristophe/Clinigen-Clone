@@ -124,6 +124,12 @@
 #header #header_bot .header_bot_menuleft #header_bot_getInTouch:hover {
   background-color: #73b31a;
 }
+#header #header_bot .header_bot_menuleft .separateur {
+  border-left: 1px solid #cacaca;
+  height: 20px;
+  width: 1px;
+  margin-left: 20px;
+}
 #header #header_bot .header_bot_menuleft #header_bot_search {
   position: relative;
   background: url(../images/loupe.png) no-repeat center/cover;
@@ -222,9 +228,10 @@
 }
 .footer .footerContaint {
   display: flex;
+  position: relative;
   justify-content: space-between;
   top: 50px;
-  width: 60%;
+  width: 68%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -234,18 +241,13 @@
   width: 30%;
   height: 100%;
 }
-.footer .footerContaint .footerContaint_Card .footerContaint_Card_Title {
-  width: 125px;
-  letter-spacing: 3px;
-  font-size: 14px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
 .footer .footerContaint .footerContaint_Card .footerContaint_Card_link {
   display: inline-block;
   justify-content: center;
   column-count: 2;
   text-decoration: none;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 .footer .footerContaint .footerContaint_Card .footerContaint_Card_link a:hover {
   text-decoration: underline;
@@ -254,25 +256,39 @@
 .footer .footerContaint .footerContaint_Card .footerContaint_Card_link li {
   margin-bottom: 15px;
 }
+.footer .footerContaint .footerContaint_Card_Title {
+  position: relative;
+  display: inline;
+  width: 125px;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.footer .footerContaint .footerContaint_Card_Title img {
+  float: left;
+  margin-right: 10px;
+}
+.footer .footerContaint .footerContaint_Card_Title span {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  padding-top: 8px;
+}
 .footer .footerContaint .footerContaint_Card_Medicine {
-  width: 30%;
+  width: 35%;
 }
 .footer .footerContaint .footerContaint_Card_Medicine p {
-  margin: 20px 0 35px 0;
+  margin: 20px 0 35px 58px;
   font-size: 17px;
 }
 .footer .footerContaint .footerContaint_Card_Medicine li {
+  margin-left: 58px;
   margin-bottom: 15px;
   font-weight: 600;
 }
 .footer .footerContaint .footerContaint_Card_Medicine li a:hover {
   text-decoration: underline;
-}
-.footer .footerContaint .footerContaint_Card_Medicine span::before {
-  content: "";
-  color: #8cdb1f;
-  display: inline-block;
-  margin-left: 1px;
 }
 
 .copyright_Logo {
@@ -282,7 +298,8 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
+  width: 68%;
+  margin-top: 40px;
 }
 .copyright_Logo .by {
   font-weight: 600;
@@ -298,6 +315,12 @@
   border: 1px solid #0b7779;
   border-radius: 50px;
   padding: 13px;
+  transition: all 0.5s ease;
+}
+.copyright_Logo .twitter:hover,
+.copyright_Logo .vimeo:hover,
+.copyright_Logo .linkedin:hover {
+  background-color: #084344;
 }
 
 * {

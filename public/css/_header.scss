@@ -120,6 +120,13 @@
         }
       }
 
+      .separateur {
+        border-left: 1px solid #cacaca;
+        height: 20px;
+        width: 1px;
+        margin-left: 20px;
+      }
+
       #header_bot_search {
         position: relative;
         background: url(../images/loupe.png) no-repeat center/cover;
