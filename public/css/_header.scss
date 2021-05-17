@@ -202,6 +202,121 @@
   }
 }
 
+.menuCache_careers,
+.menuCache_newsroom {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 30%;
+  height: 80px;
+  width: 100%;
+  background-color: $grisClair;
+  z-index: 1;
+  border-bottom: 1px solid #d8d9da;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  ul {
+    margin-top: 25px;
+  }
+  li {
+    display: none;
+    margin: 0px 100px 0px 100px;
+    font-weight: 600;
+    color: $vertFonce;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.menuCache_investors {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 30%;
+  height: 570px;
+  width: 100%;
+  background-color: $grisClair;
+  z-index: 1;
+  border-bottom: 1px solid #d8d9da;
+  transition: opacity 0.5s ease;
+  padding-left: 17%;
+  padding-right: 17%;
+
+  .menuInvestor_Card {
+    width: 25%;
+    height: min-content;
+  }
+
+  ul {
+    margin-top: 25px;
+  }
+
+  li {
+    display: none;
+    font-weight: 600;
+    color: $vertFonce;
+    width: 250px;
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .secondLi a {
+    color: #848688;
+    margin: 10px 0 3px 0;
+  }
+}
+
+.menuCache_sustain {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 30%;
+  height: 250px;
+  width: 100%;
+  background-color: $grisClair;
+  z-index: 1;
+  border-bottom: 1px solid #d8d9da;
+  transition: opacity 0.5s ease;
+  padding-left: 17%;
+  padding-right: 17%;
+
+  .menuSustain_Card {
+    width: 25%;
+    height: min-content;
+  }
+
+  ul {
+    margin-top: 25px;
+  }
+
+  li {
+    display: none;
+    font-weight: 600;
+    color: $vertFonce;
+    width: 250px;
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .secondLi a {
+    color: #848688;
+    margin: 10px 0 3px 0;
+  }
+}
+
 .show {
   opacity: 100;
   visibility: visible;

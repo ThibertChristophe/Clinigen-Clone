@@ -205,6 +205,118 @@
   text-decoration: underline;
 }
 
+.menuCache_careers,
+.menuCache_newsroom {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 30%;
+  height: 80px;
+  width: 100%;
+  background-color: #f9fbf9;
+  z-index: 1;
+  border-bottom: 1px solid #d8d9da;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+.menuCache_careers ul,
+.menuCache_newsroom ul {
+  margin-top: 25px;
+}
+.menuCache_careers li,
+.menuCache_newsroom li {
+  display: none;
+  margin: 0px 100px 0px 100px;
+  font-weight: 600;
+  color: #005052;
+}
+.menuCache_careers li a:hover,
+.menuCache_newsroom li a:hover {
+  text-decoration: underline;
+}
+
+.menuCache_investors {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 30%;
+  height: 570px;
+  width: 100%;
+  background-color: #f9fbf9;
+  z-index: 1;
+  border-bottom: 1px solid #d8d9da;
+  transition: opacity 0.5s ease;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+.menuCache_investors .menuInvestor_Card {
+  width: 25%;
+  height: min-content;
+}
+.menuCache_investors ul {
+  margin-top: 25px;
+}
+.menuCache_investors li {
+  display: none;
+  font-weight: 600;
+  color: #005052;
+  width: 250px;
+}
+.menuCache_investors li a {
+  display: inline-block;
+  width: 100%;
+}
+.menuCache_investors li a:hover {
+  text-decoration: underline;
+}
+.menuCache_investors .secondLi a {
+  color: #848688;
+  margin: 10px 0 3px 0;
+}
+
+.menuCache_sustain {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 30%;
+  height: 250px;
+  width: 100%;
+  background-color: #f9fbf9;
+  z-index: 1;
+  border-bottom: 1px solid #d8d9da;
+  transition: opacity 0.5s ease;
+  padding-left: 17%;
+  padding-right: 17%;
+}
+.menuCache_sustain .menuSustain_Card {
+  width: 25%;
+  height: min-content;
+}
+.menuCache_sustain ul {
+  margin-top: 25px;
+}
+.menuCache_sustain li {
+  display: none;
+  font-weight: 600;
+  color: #005052;
+  width: 250px;
+}
+.menuCache_sustain li a {
+  display: inline-block;
+  width: 100%;
+}
+.menuCache_sustain li a:hover {
+  text-decoration: underline;
+}
+.menuCache_sustain .secondLi a {
+  color: #848688;
+  margin: 10px 0 3px 0;
+}
+
 .show {
   opacity: 100;
   visibility: visible;
