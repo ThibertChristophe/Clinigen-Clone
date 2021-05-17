@@ -4,6 +4,6 @@
     "sass": "^1.32.12"
   },
   "scripts": {
-    "scss": "sass --watch ./css/style.scss:./css/style.css"
+    "scss": "sass --watch ./public/css/style.scss:./public/css/style.css"
   }
 }

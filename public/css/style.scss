@@ -64,7 +64,7 @@ input {
     .svg1,
     .svg2,
     .svg3 {
-      transition: all 1s ease;
+      transition: all 0.5s ease;
       fill: $vertClair;
     }
   }
@@ -73,7 +73,7 @@ input {
     flex: 1;
     text-align: center;
     padding-top: 40px;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
     font-weight: 600;
     img {
@@ -98,7 +98,7 @@ input {
     flex: 1;
     padding-top: 40px;
     text-align: center;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
     font-weight: 600;
     img {
@@ -121,7 +121,7 @@ input {
     flex: 1;
     padding-top: 40px;
     text-align: center;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
     font-weight: 600;
     img {
@@ -343,7 +343,7 @@ input {
   display: block;
   position: relative;
   height: 600px;
-  background: url(/images/bg-video.jpg);
+  background: url(../images/bg-video.jpg);
   .containerVideo {
     position: relative;
     left: 24%;

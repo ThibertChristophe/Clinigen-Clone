@@ -11,27 +11,27 @@ const arrayOfLeftMenu = document.querySelectorAll('.header_top_menuLeft > nav > 
 
 menuCountry.addEventListener('click', (e) => {
     removeAll(menuCountry.classList[0], false);
-    if (!e.target.classList.contains('active')){
+    if (!e.target.classList.contains('actif')){
         menuCacheCountry.classList.add('show');
     }
-    menuCountry.classList.toggle('active');
+    menuCountry.classList.toggle('actif');
 });
 
 menuAbout.addEventListener('click', (e) => {
     removeAll(menuAbout.classList[0], true);
-    if (!e.target.classList.contains('active')){
+    if (!e.target.classList.contains('actif')){
         menuCacheAbout.classList.add('show');
     }
-    menuAbout.classList.toggle('active');
+    menuAbout.classList.toggle('actif');
 });
 
 
 menuGlobalOffice.addEventListener('click', (e) => {
     removeAll(menuGlobalOffice.classList[0], true);
-   if (!e.target.classList.contains('active')){
+   if (!e.target.classList.contains('actif')){
          menuCacheGlobalOffice.classList.add('show');
     }
-    menuGlobalOffice.classList.toggle('active');
+    menuGlobalOffice.classList.toggle('actif');
 });
 
 /**
@@ -41,7 +41,7 @@ menuGlobalOffice.addEventListener('click', (e) => {
  */
 const removeAll = (except, country) => {
     if (country) {
-        menuCountry.classList.remove('active');
+        menuCountry.classList.remove('actif');
     }
     menuCacheCountry.classList.remove('show');
     menuCacheAbout.classList.remove('show');
@@ -49,7 +49,7 @@ const removeAll = (except, country) => {
 
     arrayOfLeftMenu.forEach(e => {
         if (e.classList[0] !== except){
-            e.classList.remove('active');
+            e.classList.remove('actif');
         }
     });
 }

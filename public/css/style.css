@@ -126,7 +126,7 @@
 }
 #header #header_bot .header_bot_menuleft #header_bot_search {
   position: relative;
-  background: url(/images/loupe.png) no-repeat center/cover;
+  background: url(../images/loupe.png) no-repeat center/cover;
   width: 30px;
   height: 30px;
   margin-left: 10px;
@@ -207,7 +207,7 @@
   display: inline-block;
 }
 
-.active {
+.actif {
   padding-bottom: 11px;
   border-bottom: 3px solid #73b31a;
 }
@@ -363,7 +363,7 @@ input {
 .sousSlider .div_sv .svg1,
 .sousSlider .div_sv .svg2,
 .sousSlider .div_sv .svg3 {
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   fill: #8cdb1f;
 }
 .sousSlider .sousSlider_L {
@@ -371,7 +371,7 @@ input {
   flex: 1;
   text-align: center;
   padding-top: 40px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
   font-weight: 600;
 }
@@ -396,7 +396,7 @@ input {
   flex: 1;
   padding-top: 40px;
   text-align: center;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
   font-weight: 600;
 }
@@ -419,7 +419,7 @@ input {
   flex: 1;
   padding-top: 40px;
   text-align: center;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
   font-weight: 600;
 }
@@ -636,7 +636,7 @@ input {
   display: block;
   position: relative;
   height: 600px;
-  background: url(/images/bg-video.jpg);
+  background: url(../images/bg-video.jpg);
 }
 .video .containerVideo {
   position: relative;

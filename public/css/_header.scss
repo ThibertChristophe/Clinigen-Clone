@@ -122,7 +122,7 @@
 
       #header_bot_search {
         position: relative;
-        background: url(/images/loupe.png) no-repeat center/cover;
+        background: url(../images/loupe.png) no-repeat center/cover;
         width: 30px;
         height: 30px;
         margin-left: 10px;
@@ -202,7 +202,7 @@
     display: inline-block;
   }
 }
-.active {
+.actif {
   padding-bottom: 11px;
   border-bottom: 3px solid #73b31a;
 }
