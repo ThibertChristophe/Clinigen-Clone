@@ -19,9 +19,12 @@ const menuCacheInvestors = document.querySelector('.menuCache_investors');
 const menuSustain = document.querySelector('.menuSustain');
 const menuCacheSustain = document.querySelector('.menuCache_sustain');
 
+const menuHowCanWeHelp = document.querySelector('.menuHowCanWeHelp');
+const menuCacheHowHelp = document.querySelector('.menuCache_howCanWeHelp');
 
-
+const arrayOfMidMenu = document.querySelectorAll('#header_bot_menuMiddle > nav > ul > li > a');
 const arrayOfLeftMenu = document.querySelectorAll('.header_top_menuLeft > nav > ul > li > a');
+
 
 menuCountry.addEventListener('click', (e) => {
     removeAll(menuCountry.classList[0], false);
@@ -38,7 +41,6 @@ menuAbout.addEventListener('click', (e) => {
     }
     menuAbout.classList.toggle('actif');
 });
-
 
 menuGlobalOffice.addEventListener('click', (e) => {
     removeAll(menuGlobalOffice.classList[0], true);
@@ -80,7 +82,16 @@ menuSustain.addEventListener('click', (e) => {
     menuSustain.classList.toggle('actif');
 });
 
-/**
+menuHowCanWeHelp.addEventListener('click', (e) => {
+    removeAll(menuHowCanWeHelp.classList[0], true);
+    if (!e.target.classList.contains('actifSousMenu')){
+        menuCacheHowHelp.classList.add('show');
+    }
+    menuHowCanWeHelp.classList.toggle('actifSousMenu');
+});
+
+
+/** Retire les surlignés sur les menus sauf celui selectionné
  * 
  * @param {*} except class de l'element sur lequel on a click
  * @param {*} country si on a click sur country a gauche ou pas
@@ -89,6 +100,26 @@ const removeAll = (except, country) => {
     if (country) {
         menuCountry.classList.remove('actif');
     }
+
+    removeAllShow();
+
+    arrayOfLeftMenu.forEach(e => {
+        if (e.classList[0] !== except){
+            e.classList.remove('actif');
+        }
+    });
+
+    arrayOfMidMenu.forEach(e => {
+        if (e.classList[0] !== except){
+            e.classList.remove('actifSousMenu');
+        }
+    });
+}
+
+/**
+ * Hide tout les sous menu
+ */
+const removeAllShow = () => {
     menuCacheCountry.classList.remove('show');
     menuCacheAbout.classList.remove('show');
     menuCacheGlobalOffice.classList.remove('show');
@@ -96,11 +127,5 @@ const removeAll = (except, country) => {
     menuCacheNewsroom.classList.remove('show');
     menuCacheInvestors.classList.remove('show');
     menuCacheSustain.classList.remove('show');
-
-
-    arrayOfLeftMenu.forEach(e => {
-        if (e.classList[0] !== except){
-            e.classList.remove('actif');
-        }
-    });
+    menuCacheHowHelp.classList.remove('show');
 }
