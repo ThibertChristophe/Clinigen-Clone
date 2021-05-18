@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   background-color: $vertFonce;
   height: 450px;
   color: white;
@@ -83,6 +84,7 @@
   margin-right: auto;
   width: 68%;
   margin-top: 40px;
+  flex-wrap: nowrap;
   .by {
     font-weight: 600;
   }
@@ -90,12 +92,15 @@
   .line {
     border-top: 1px solid #0b7779;
     width: 55%;
+    max-width: 55%;
   }
-
+  .btnSocial {
+    display: inline-block;
+    margin-left: 5px;
+  }
   .twitter,
   .vimeo,
   .linkedin {
-    display: inline;
     border: 1px solid #0b7779;
     border-radius: 50px;
     padding: 13px;

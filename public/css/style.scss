@@ -255,6 +255,7 @@ input {
 .containt_investor {
   background-color: white;
   position: relative;
+  min-height: 800px;
   .containt_investor_titre {
     position: relative;
     text-align: center;
@@ -286,11 +287,11 @@ input {
     width: 55%;
     margin-left: auto;
     margin-right: auto;
-
+    min-height: 500px;
     .containt_investor_card {
       position: relative;
       width: 325px;
-      height: 480px;
+      min-height: 480px;
       padding: 25px;
       color: $vertFonce;
 
@@ -367,6 +368,7 @@ input {
   }
 
   .investor_btn {
+    position: relative;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -386,7 +388,6 @@ input {
 }
 /****************************************/
 .video {
-  display: block;
   position: relative;
   height: 600px;
   background: url(../images/bg-video.jpg);
@@ -394,7 +395,7 @@ input {
     position: relative;
     left: 24%;
     top: 25%;
-    width: 600px;
+    width: 60%;
     color: white;
     span {
       color: #6ba717;
@@ -432,7 +433,7 @@ input {
 /****************************************/
 .ourMission {
   position: relative;
-  height: 440px;
+  min-height: 440px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -441,6 +442,7 @@ input {
     width: 22%;
     color: $vertFonce;
     font-weight: 600;
+    margin-right: 50px;
     span {
       display: block;
       color: #4c5f6a;
@@ -479,18 +481,17 @@ input {
 /****************************************/
 .numberBot {
   background-color: $grisClair;
-  height: 320px;
   color: $vertFonce;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #e2e2e2;
   border-top: 1px solid #e2e2e2;
+  min-height: 320px;
   .numberBot_Card {
     position: relative;
     display: block;
-    width: 12%;
     margin: 0 20px 0 20px;
     top: 30%;
     p {

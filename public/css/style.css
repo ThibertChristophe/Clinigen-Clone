@@ -433,6 +433,7 @@
 }
 
 .footer {
+  position: relative;
   background-color: #005052;
   height: 450px;
   color: white;
@@ -514,6 +515,7 @@
   margin-right: auto;
   width: 68%;
   margin-top: 40px;
+  flex-wrap: nowrap;
 }
 .copyright_Logo .by {
   font-weight: 600;
@@ -521,11 +523,15 @@
 .copyright_Logo .line {
   border-top: 1px solid #0b7779;
   width: 55%;
+  max-width: 55%;
+}
+.copyright_Logo .btnSocial {
+  display: inline-block;
+  margin-left: 5px;
 }
 .copyright_Logo .twitter,
 .copyright_Logo .vimeo,
 .copyright_Logo .linkedin {
-  display: inline;
   border: 1px solid #0b7779;
   border-radius: 50px;
   padding: 13px;
@@ -786,6 +792,7 @@ input {
 .containt_investor {
   background-color: white;
   position: relative;
+  min-height: 800px;
 }
 .containt_investor .containt_investor_titre {
   position: relative;
@@ -817,11 +824,12 @@ input {
   width: 55%;
   margin-left: auto;
   margin-right: auto;
+  min-height: 500px;
 }
 .containt_investor .containt_investor_listCard .containt_investor_card {
   position: relative;
   width: 325px;
-  height: 480px;
+  min-height: 480px;
   padding: 25px;
   color: #005052;
 }
@@ -889,6 +897,7 @@ input {
   margin-left: 5px;
 }
 .containt_investor .investor_btn {
+  position: relative;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -908,7 +917,6 @@ input {
 
 /****************************************/
 .video {
-  display: block;
   position: relative;
   height: 600px;
   background: url(../images/bg-video.jpg);
@@ -917,7 +925,7 @@ input {
   position: relative;
   left: 24%;
   top: 25%;
-  width: 600px;
+  width: 60%;
   color: white;
 }
 .video .containerVideo span {
@@ -955,7 +963,7 @@ input {
 /****************************************/
 .ourMission {
   position: relative;
-  height: 440px;
+  min-height: 440px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -965,6 +973,7 @@ input {
   width: 22%;
   color: #005052;
   font-weight: 600;
+  margin-right: 50px;
 }
 .ourMission .ourMission_L span {
   display: block;
@@ -1003,19 +1012,18 @@ input {
 /****************************************/
 .numberBot {
   background-color: #f9fbf9;
-  height: 320px;
   color: #005052;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid #e2e2e2;
   border-top: 1px solid #e2e2e2;
+  min-height: 320px;
 }
 .numberBot .numberBot_Card {
   position: relative;
   display: block;
-  width: 12%;
   margin: 0 20px 0 20px;
   top: 30%;
 }
