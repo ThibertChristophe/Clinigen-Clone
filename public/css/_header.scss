@@ -344,6 +344,46 @@
     }
   }
 }
+
+.menuCache_ProductsServices {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  margin-top: 3px;
+  width: 100%;
+  height: 350px;
+  background-color: #fff;
+  top: 141px;
+  z-index: 4;
+  transition: all 0.5s ease;
+  display: flex;
+  .menuCache_ProductsServices_L {
+    position: grid;
+    display: flex;
+    border: 1px solid red;
+    width: 70%;
+  }
+  .menuCache_ProductsServices_R {
+    width: 30%;
+    //border-left: 1px solid #646668;
+    border: 1px solid blue;
+  }
+  ul {
+    display: flex;
+    text-align: center;
+    justify-content: first baseline;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      font-weight: 600;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .show {
   opacity: 100;
   visibility: visible;
