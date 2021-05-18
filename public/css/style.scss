@@ -304,6 +304,19 @@ input {
         font-weight: 600;
       }
 
+      .investor_card_containt_SharePrice {
+        p {
+          font-family: League;
+          font-weight: 400;
+          font-size: 60px;
+        }
+        span {
+          font-family: League;
+          font-weight: 400;
+          font-size: 40px;
+        }
+      }
+
       .investor_card_containt {
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -323,7 +336,10 @@ input {
           display: block;
           font-size: 35px;
           margin-bottom: 20px;
-          font-weight: 600;
+          font-family: League;
+          font-size: 60px;
+          line-height: 50px;
+          font-weight: 400;
         }
         .investor_card_containt_investText {
           color: #4c5f6a;
@@ -384,10 +400,14 @@ input {
       color: #6ba717;
     }
     h2 {
-      font-size: 50px;
       margin-bottom: 15px;
       margin-top: 5px;
-      letter-spacing: -2px;
+      font-weight: 400;
+      font-size: 80px;
+      font-family: League;
+      margin-bottom: 10px;
+      width: 500px;
+      line-height: 70px;
     }
     .containerVideo_Text {
       color: #bec5c9;
@@ -403,9 +423,6 @@ input {
       background-color: $vertClair;
       cursor: pointer;
       transition: all 1s ease;
-      &:before {
-        // todo : petite fleche "play"
-      }
       &:hover {
         background-color: #6ba717;
       }
@@ -430,8 +447,10 @@ input {
       margin-bottom: 5px;
     }
     p {
-      font-size: 40px;
-      letter-spacing: -3px;
+      font-family: League;
+      font-size: 60px;
+      line-height: 50px;
+      font-weight: 400;
     }
     input {
       margin-top: 20px;
