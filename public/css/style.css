@@ -103,7 +103,7 @@
 #header #header_bot .header_bot_menuleft #header_bot_findAMedicine span {
   position: absolute;
   left: 15%;
-  top: 50%;
+  top: 48%;
   display: inline-block;
   transform: translateY(-50%);
 }
@@ -153,7 +153,7 @@
   transition: opacity 0.5s ease;
 }
 .menuCacheCountry li {
-  display: none;
+  display: inline-block;
   margin: 20px 250px 20px 30px;
   font-weight: 600;
   color: #005052;
@@ -194,7 +194,7 @@
 }
 .menuCache_about li,
 .menuCache_globalOffice li {
-  display: none;
+  display: inline-block;
   margin: 20px 20px 20px 75px;
   font-weight: 600;
   color: #005052;
@@ -225,7 +225,7 @@
 }
 .menuCache_careers li,
 .menuCache_newsroom li {
-  display: none;
+  display: inline-block;
   margin: 0px 100px 0px 100px;
   font-weight: 600;
   color: #005052;
@@ -259,7 +259,7 @@
   margin-top: 25px;
 }
 .menuCache_investors li {
-  display: none;
+  display: inline-block;
   font-weight: 600;
   color: #005052;
   width: 250px;
@@ -300,7 +300,7 @@
   margin-top: 25px;
 }
 .menuCache_sustain li {
-  display: none;
+  display: inline-block;
   font-weight: 600;
   color: #005052;
   width: 250px;
@@ -359,25 +359,53 @@
   display: flex;
 }
 .menuCache_ProductsServices .menuCache_ProductsServices_L {
-  position: grid;
+  position: relative;
   display: flex;
-  border: 1px solid red;
-  width: 70%;
+  width: 68%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.menuCache_ProductsServices .menuCache_ProductsServices_L .menuCache_ProductsServices_Card {
+  display: flex;
+  width: 25%;
+}
+.menuCache_ProductsServices .menuCache_ProductsServices_L .menuCache_ProductsServices_Card .secondLi a {
+  color: #848688;
+  margin: 10px 0 3px 0;
 }
 .menuCache_ProductsServices .menuCache_ProductsServices_R {
-  width: 30%;
-  border: 1px solid blue;
+  position: relative;
+  width: 32%;
+}
+.menuCache_ProductsServices .menuCache_ProductsServices_R .menuCache_ProductsServices_Card_Medicine {
+  margin-left: 75px;
+}
+.menuCache_ProductsServices .menuCache_ProductsServices_R .menuCache_ProductsServices_Card_Medicine img {
+  position: absolute;
+  left: 20px;
+  top: 35px;
+}
+.menuCache_ProductsServices .menuCache_ProductsServices_R .menuCache_ProductsServices_Card_Medicine .menuCache_ProductsServices_Card_Title {
+  margin-top: 40px;
+  font-weight: 600;
+}
+.menuCache_ProductsServices .menuCache_ProductsServices_R p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #848688;
+  font-weight: 600;
+  width: 225px;
+}
+.menuCache_ProductsServices .menuCache_ProductsServices_R li {
+  width: 200px;
 }
 .menuCache_ProductsServices ul {
-  display: flex;
-  text-align: center;
-  justify-content: first baseline;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  text-align: left;
 }
 .menuCache_ProductsServices ul li {
   font-weight: 600;
+  margin-top: 15px;
 }
 .menuCache_ProductsServices ul li a:hover {
   text-decoration: underline;
@@ -386,9 +414,6 @@
 .show {
   opacity: 100;
   visibility: visible;
-}
-.show li {
-  display: inline-block;
 }
 
 .actif {
@@ -399,6 +424,12 @@
 /* Pour le menu du header a coté de clinigen */
 .actifSousMenu {
   box-shadow: 0px -3px 0px #8cdb1f inset;
+}
+
+.separatorMenuProduct {
+  height: 80%;
+  border-left: 1px solid #dadada;
+  margin-top: 2%;
 }
 
 .footer {
@@ -506,11 +537,27 @@
   background-color: #084344;
 }
 
+@font-face {
+  font-family: GothamMedium;
+  src: url(./fonts/GothamMedium.ttf);
+}
+@font-face {
+  font-family: GothamBook;
+  src: url(./fonts/GothamBook.ttf);
+}
+@font-face {
+  font-family: GothamBold;
+  src: url(./fonts/GothamBold.ttf);
+}
+@font-face {
+  font-family: League;
+  src: url(./fonts/LeagueGothic-Regular.woff);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: GothamBook;
   font-size: 14px;
 }
 
@@ -587,6 +634,11 @@ input {
   margin-right: auto;
   margin-bottom: 5px;
 }
+.sousSlider .sousSlider_L a {
+  display: inline-block;
+  width: 150px;
+  margin-top: -10px;
+}
 .sousSlider .sousSlider_L a::after {
   content: "→";
   color: #8cdb1f;
@@ -659,7 +711,9 @@ input {
 }
 .lastNews_Titre h3 {
   color: #005052;
-  font-size: 25px;
+  font-size: 35px;
+  font-family: League;
+  font-weight: 400;
 }
 .lastNews_Titre h3:after {
   content: "";
@@ -740,7 +794,9 @@ input {
 }
 .containt_investor .containt_investor_titre h3 {
   color: #005052;
-  font-size: 25px;
+  font-size: 35px;
+  font-family: League;
+  font-weight: 400;
 }
 .containt_investor .containt_investor_titre h3:after {
   content: "";
@@ -939,6 +995,7 @@ input {
 }
 .numberBot .numberBot_Card {
   position: relative;
+  display: block;
   width: 12%;
   margin: 0 20px 0 20px;
   top: 30%;
@@ -947,10 +1004,11 @@ input {
   width: 210px;
 }
 .numberBot .numberBot_Card span {
+  min-width: 200px;
   display: block;
-  font-size: 50px;
+  font-size: 60px;
+  font-family: League;
   margin-bottom: 10px;
-  font-weight: 600;
 }
 .numberBot .ppl:before {
   content: url("../images/human.JPG");

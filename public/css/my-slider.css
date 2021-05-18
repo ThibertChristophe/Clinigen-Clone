@@ -598,7 +598,7 @@ p.ism-badge a.ism-link:hover {
 #my-slider input {
   background-color: #8bda1f;
   position: absolute;
-  top: 65%;
+  top: 68%;
   left: 18%;
   border-radius: 20px;
   padding: 15px 25px 15px 25px;
@@ -610,20 +610,22 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-slider .ism-slide-0 .ism-caption-0 {
-  font-size: 4em;
   width: 600px;
   position: absolute;
-  top: 10%;
-  left: 14%;
+  top: 8%;
+  left: 12%;
   margin-left: 6px;
   border: none;
   color: #fff;
   background-color: transparent;
+  font-family: League;
+  font-size: 84px;
+  font-weight: 400;
 }
 
 #my-slider .textAcc0 {
-  font-size: 2em;
-  width: 600px;
+  font-size: 1.5em;
+  width: 500px;
   position: absolute;
   text-align: left;
   top: 28%;
@@ -631,23 +633,26 @@ p.ism-badge a.ism-link:hover {
   border: none;
   color: #fff;
   background-color: transparent;
+  line-height: 35px;
 }
 
 #my-slider .ism-slide-1 .ism-caption-0 {
-  font-size: 4em;
+  font-family: League;
+  font-size: 84px;
+  font-weight: 400;
   width: 700px;
   position: absolute;
   text-align: left;
-  top: 10%;
-  left: 16%;
+  top: 1%;
+  left: 300px;
   border: none;
   color: #fff;
   background-color: transparent;
 }
 
 #my-slider .textAcc1 {
-  font-size: 2em;
-  width: 600px;
+  font-size: 1.5em;
+  width: 500px;
   position: absolute;
   text-align: left;
   top: 35%;
@@ -655,14 +660,17 @@ p.ism-badge a.ism-link:hover {
   border: none;
   color: #fff;
   background-color: transparent;
+  line-height: 35px;
 }
 
 #my-slider .ism-slide-2 .ism-caption-0 {
-  font-size: 4em;
+  font-family: League;
+  font-size: 84px;
+  font-weight: 400;
   width: 600px;
   position: absolute;
-  top: 10%;
-  left: 11%;
+  top: 9%;
+  left: 9%;
   margin-left: 12px;
   border: none;
   color: #fff;
@@ -670,8 +678,8 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-slider .textAcc2 {
-  font-size: 2em;
-  width: 600px;
+  font-size: 1.5em;
+  width: 500px;
   position: absolute;
   text-align: left;
   top: 28%;
@@ -679,23 +687,26 @@ p.ism-badge a.ism-link:hover {
   border: none;
   color: #fff;
   background-color: transparent;
+  line-height: 35px;
 }
 
 #my-slider .ism-slide-3 .ism-caption-0 {
-  font-size: 4em;
+  font-family: League;
+  font-size: 84px;
+  font-weight: 400;
   width: 700px;
   text-align: left;
   position: absolute;
-  top: 10%;
-  left: 16%;
+  top: 0%;
+  left: 290px;
   margin-left: 5px;
   border: none;
   color: #fff;
   background-color: transparent;
 }
 #my-slider .textAcc3 {
-  font-size: 2em;
-  width: 600px;
+  font-size: 1.5em;
+  width: 500px;
   position: absolute;
   text-align: left;
   top: 35%;
@@ -703,4 +714,5 @@ p.ism-badge a.ism-link:hover {
   border: none;
   color: #fff;
   background-color: transparent;
+  line-height: 35px;
 }

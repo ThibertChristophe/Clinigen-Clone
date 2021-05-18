@@ -96,7 +96,7 @@
         span {
           position: absolute;
           left: 15%;
-          top: 50%;
+          top: 48%;
           display: inline-block;
           transform: translateY(-50%);
         }
@@ -153,7 +153,7 @@
   border-bottom: 1px solid #d8d9da;
   transition: opacity 0.5s ease;
   li {
-    display: none;
+    display: inline-block;
     margin: 20px 250px 20px 30px;
     font-weight: 600;
     color: $vertFonce;
@@ -191,7 +191,7 @@
     height: 100%;
   }
   li {
-    display: none;
+    display: inline-block;
     margin: 20px 20px 20px 75px;
     font-weight: 600;
     color: $vertFonce;
@@ -219,7 +219,7 @@
     margin-top: 25px;
   }
   li {
-    display: none;
+    display: inline-block;
     margin: 0px 100px 0px 100px;
     font-weight: 600;
     color: $vertFonce;
@@ -255,7 +255,7 @@
   }
 
   li {
-    display: none;
+    display: inline-block;
     font-weight: 600;
     color: $vertFonce;
     width: 250px;
@@ -299,7 +299,7 @@
   }
 
   li {
-    display: none;
+    display: inline-block;
     font-weight: 600;
     color: $vertFonce;
     width: 250px;
@@ -358,25 +358,52 @@
   transition: all 0.5s ease;
   display: flex;
   .menuCache_ProductsServices_L {
-    position: grid;
+    position: relative;
     display: flex;
-    border: 1px solid red;
-    width: 70%;
+    width: 68%;
+    justify-content: center;
+    margin-top: 20px;
+    .menuCache_ProductsServices_Card {
+      display: flex;
+      width: 25%;
+      .secondLi a {
+        color: #848688;
+        margin: 10px 0 3px 0;
+      }
+    }
   }
   .menuCache_ProductsServices_R {
-    width: 30%;
-    //border-left: 1px solid #646668;
-    border: 1px solid blue;
+    position: relative;
+    width: 32%;
+    .menuCache_ProductsServices_Card_Medicine {
+      margin-left: 75px;
+      img {
+        position: absolute;
+        left: 20px;
+        top: 35px;
+      }
+      .menuCache_ProductsServices_Card_Title {
+        margin-top: 40px;
+        font-weight: 600;
+      }
+    }
+    p {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      color: #848688;
+      font-weight: 600;
+      width: 225px;
+    }
+    li {
+      width: 200px;
+    }
   }
   ul {
-    display: flex;
-    text-align: center;
-    justify-content: first baseline;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    text-align: left;
     li {
       font-weight: 600;
+      margin-top: 15px;
       a:hover {
         text-decoration: underline;
       }
@@ -387,9 +414,6 @@
 .show {
   opacity: 100;
   visibility: visible;
-  li {
-    display: inline-block;
-  }
 }
 .actif {
   padding-bottom: 11px;
@@ -399,4 +423,10 @@
 /* Pour le menu du header a coté de clinigen */
 .actifSousMenu {
   box-shadow: 0px -3px 0px $vertClair inset;
+}
+
+.separatorMenuProduct {
+  height: 80%;
+  border-left: 1px solid #dadada;
+  margin-top: 2%;
 }

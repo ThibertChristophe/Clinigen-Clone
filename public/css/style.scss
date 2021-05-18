@@ -4,12 +4,32 @@
 @import "./header";
 @import "./footer";
 
+@font-face {
+  font-family: GothamMedium;
+  src: url(./fonts/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: GothamBook;
+  src: url(./fonts/GothamBook.ttf);
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url(./fonts/GothamBold.ttf);
+}
+
+@font-face {
+  font-family: League;
+  src: url(./fonts/LeagueGothic-Regular.woff);
+}
+
 //***///
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: GothamBook;
   font-size: 14px;
 }
 
@@ -82,6 +102,11 @@ input {
       margin-right: auto;
       margin-bottom: 5px;
     }
+    a {
+      display: inline-block;
+      width: 150px;
+      margin-top: -10px;
+    }
     a::after {
       content: "\002192";
       color: $vertClair;
@@ -152,9 +177,12 @@ input {
   position: relative;
   text-align: center;
   padding: 40px;
+
   h3 {
     color: #005052;
-    font-size: 25px;
+    font-size: 35px;
+    font-family: League;
+    font-weight: 400;
     &:after {
       content: "";
       background-color: $vertClair;
@@ -233,7 +261,9 @@ input {
     padding: 40px;
     h3 {
       color: $vertFonce;
-      font-size: 25px;
+      font-size: 35px;
+      font-family: League;
+      font-weight: 400;
       &:after {
         content: "";
         background-color: $vertClair;
@@ -440,6 +470,7 @@ input {
   border-top: 1px solid #e2e2e2;
   .numberBot_Card {
     position: relative;
+    display: block;
     width: 12%;
     margin: 0 20px 0 20px;
     top: 30%;
@@ -447,10 +478,11 @@ input {
       width: 210px;
     }
     span {
+      min-width: 200px;
       display: block;
-      font-size: 50px;
+      font-size: 60px;
+      font-family: League;
       margin-bottom: 10px;
-      font-weight: 600;
     }
   }
   .ppl:before {
