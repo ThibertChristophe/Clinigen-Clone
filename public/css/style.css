@@ -422,7 +422,8 @@
 }
 
 /* Pour le menu du header a coté de clinigen */
-.actifSousMenu {
+.actifSousMenu,
+.stayActif {
   box-shadow: 0px -3px 0px #8cdb1f inset;
 }
 
@@ -519,14 +520,17 @@
 }
 .copyright_Logo .by {
   font-weight: 600;
+  min-width: 350px;
 }
 .copyright_Logo .line {
+  display: inline-block;
   border-top: 1px solid #0b7779;
   width: 55%;
   max-width: 55%;
 }
 .copyright_Logo .btnSocial {
   display: inline-block;
+  min-width: 145px;
   margin-left: 5px;
 }
 .copyright_Logo .twitter,
@@ -541,6 +545,187 @@
 .copyright_Logo .vimeo:hover,
 .copyright_Logo .linkedin:hover {
   background-color: #084344;
+}
+
+.mainHeader {
+  padding-top: 150px;
+  background: url("../images/bg-video.jpg") no-repeat center/cover;
+  min-height: 680px;
+}
+.mainHeader .mainHeader_containt {
+  width: 525px;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 60px;
+}
+.mainHeader .mainHeader_containt span {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  color: #c9c9c9;
+  line-height: 20px;
+}
+.mainHeader .mainHeader_containt p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 80px;
+  font-family: League;
+  line-height: 70px;
+  color: white;
+}
+.mainHeader .mainHeader_containt input {
+  text-align: center;
+  border-radius: 30px;
+  background-color: #8cdb1f;
+  cursor: pointer;
+  transition: all 1s ease;
+  margin-top: 30px;
+  width: 330px;
+  height: 50px;
+}
+.mainHeader .mainHeader_containt input:hover {
+  background-color: #6ba717;
+}
+
+.menuFixed {
+  position: absolute;
+  width: 100%;
+  top: 62%;
+  padding: 30px;
+  text-align: center;
+}
+.menuFixed li {
+  display: inline-block;
+  margin: 0 23px;
+}
+.menuFixed li a {
+  color: #b9b9b9;
+  font-size: 14px;
+  font-weight: 600;
+}
+.menuFixed li a:hover {
+  color: #8cdb1f;
+}
+
+.mainText1 {
+  background-color: #fff;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 650px;
+  text-align: center;
+}
+.mainText1 p {
+  font-family: GothamBook;
+  font-size: 26px;
+  font-weight: 200;
+  letter-spacing: -0.26px;
+  line-height: 40px;
+  margin-top: 100px;
+}
+.mainText1 input {
+  margin-top: 100px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #8cdb1f;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.mainText1 input:hover {
+  background-color: #6ba717;
+}
+
+.rightMedicine {
+  margin-top: 20px;
+  background-color: #e4e4e4;
+  min-height: 780px;
+  padding-top: 100px;
+}
+.rightMedicine .rightMedicine_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_L {
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_R {
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.rightPatient {
+  min-height: 830px;
+  background-color: #f7f7f7;
+  padding-top: 100px;
+}
+.rightPatient .rightPatient_container {
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.rightPatient .rightPatient_container .rightPatient_L {
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+}
+.rightPatient .rightPatient_container .rightPatient_R {
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.rightTime {
+  background-color: #e4e4e4;
+  min-height: 850px;
+  padding-top: 100px;
+}
+.rightTime .rightTime_container {
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.rightTime .rightTime_container .rightTime_L {
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+}
+.rightTime .rightTime_container .rightTime_R {
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.relatedLinks {
+  min-height: 360px;
+  padding-top: 50px;
+}
+.relatedLinks .relatedLinks_container {
+  border: 1px solid red;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100px;
 }
 
 @font-face {
@@ -934,12 +1119,13 @@ input {
 .video .containerVideo h2 {
   margin-bottom: 15px;
   margin-top: 5px;
+  width: 500px;
+  margin-bottom: 10px;
   font-weight: 400;
   font-size: 80px;
   font-family: League;
-  margin-bottom: 10px;
-  width: 500px;
   line-height: 70px;
+  color: white;
 }
 .video .containerVideo .containerVideo_Text {
   color: #bec5c9;

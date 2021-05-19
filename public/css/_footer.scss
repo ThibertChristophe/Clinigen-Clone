@@ -83,19 +83,23 @@
   margin-left: auto;
   margin-right: auto;
   width: 68%;
+
   margin-top: 40px;
   flex-wrap: nowrap;
   .by {
     font-weight: 600;
+    min-width: 350px;
   }
 
   .line {
+    display: inline-block;
     border-top: 1px solid #0b7779;
     width: 55%;
     max-width: 55%;
   }
   .btnSocial {
     display: inline-block;
+    min-width: 145px;
     margin-left: 5px;
   }
   .twitter,

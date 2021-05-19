@@ -421,7 +421,8 @@
 }
 
 /* Pour le menu du header a coté de clinigen */
-.actifSousMenu {
+.actifSousMenu,
+.stayActif {
   box-shadow: 0px -3px 0px $vertClair inset;
 }
 

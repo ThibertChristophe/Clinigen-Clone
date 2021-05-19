@@ -1,3 +1,29 @@
 $vertClair: #8cdb1f;
 $vertFonce: #005052;
 $grisClair: #f9fbf9;
+
+@mixin titreH2_blanc {
+  font-weight: 400;
+  font-size: 80px;
+  font-family: League;
+  line-height: 70px;
+  color: white;
+}
+
+@mixin titreVERT {
+  font-family: League;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+@mixin btnVert {
+  text-align: center;
+  border-radius: 30px;
+  background-color: $vertClair;
+  cursor: pointer;
+  transition: all 1s ease;
+  &:hover {
+    background-color: #6ba717;
+  }
+}

@@ -1,0 +1,164 @@
+.mainHeader {
+  padding-top: 150px;
+  background: url("../images/bg-video.jpg") no-repeat center/cover;
+  min-height: 680px;
+  .mainHeader_containt {
+    width: 525px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 60px;
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 8px;
+      color: rgb(201, 201, 201);
+      line-height: 20px;
+    }
+    p {
+      margin-top: 15px;
+      @include titreH2_blanc;
+    }
+    input {
+      @include btnVert;
+      margin-top: 30px;
+      width: 330px;
+      height: 50px;
+    }
+  }
+}
+
+.menuFixed {
+  position: absolute;
+  width: 100%;
+  top: 62%;
+  //border: 1px solid red;
+  padding: 30px;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 23px;
+    a {
+      color: rgb(185, 185, 185);
+      font-size: 14px;
+      font-weight: 600;
+      &:hover {
+        color: #8cdb1f;
+      }
+    }
+  }
+}
+.mainText1 {
+  background-color: #fff;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 650px;
+  text-align: center;
+  p {
+    font-family: GothamBook;
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: -0.26px;
+    line-height: 40px;
+    margin-top: 100px;
+  }
+  input {
+    margin-top: 100px;
+    width: 200px;
+    height: 50px;
+    @include btnVert;
+  }
+}
+
+.rightMedicine {
+  margin-top: 20px;
+  background-color: rgb(228, 228, 228);
+  min-height: 780px;
+  padding-top: 100px;
+  .rightMedicine_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+
+    .rightMedicine_L {
+      width: 500px;
+      height: 100%;
+      background-color: #fff;
+    }
+    .rightMedicine_R {
+      width: 500px;
+      height: 100%;
+      background-color: #fff;
+    }
+  }
+}
+
+.rightPatient {
+  min-height: 830px;
+  background-color: rgb(247, 247, 247);
+  padding-top: 100px;
+  .rightPatient_container {
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    .rightPatient_L {
+      width: 500px;
+      height: 100%;
+      background-color: #fff;
+    }
+    .rightPatient_R {
+      width: 500px;
+      height: 100%;
+      background-color: #fff;
+    }
+  }
+}
+
+.rightTime {
+  background-color: rgb(228, 228, 228);
+  min-height: 850px;
+  padding-top: 100px;
+  .rightTime_container {
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    .rightTime_L {
+      width: 500px;
+      height: 100%;
+      background-color: #fff;
+    }
+    .rightTime_R {
+      width: 500px;
+      height: 100%;
+      background-color: #fff;
+    }
+  }
+}
+
+.relatedLinks {
+  min-height: 360px;
+  padding-top: 50px;
+  .relatedLinks_container {
+    border: 1px solid red;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+    height: 100px;
+  }
+}
