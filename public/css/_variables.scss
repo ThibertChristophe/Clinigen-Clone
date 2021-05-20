@@ -2,6 +2,14 @@ $vertClair: #8cdb1f;
 $vertFonce: #005052;
 $grisClair: #f9fbf9;
 
+// Colors
+
+$grey-hoki: #4c5f6a;
+$grey-light: #8b95a0;
+$green-darker: #7ac512;
+$green-medium: #005052;
+$green-dark: #00454a;
+
 @mixin titreH2_blanc {
   font-weight: 400;
   font-size: 80px;
@@ -17,6 +25,13 @@ $grisClair: #f9fbf9;
   font-weight: 400;
 }
 
+@mixin titreVERT_petit {
+  font-family: League;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
 @mixin btnVert {
   text-align: center;
   border-radius: 30px;
@@ -24,6 +39,6 @@ $grisClair: #f9fbf9;
   cursor: pointer;
   transition: all 1s ease;
   &:hover {
-    background-color: #6ba717;
+    background-color: $green-darker;
   }
 }

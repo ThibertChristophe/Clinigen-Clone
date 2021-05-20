@@ -559,6 +559,7 @@
   margin-right: auto;
   text-align: center;
   margin-top: 60px;
+  margin-bottom: 55px;
 }
 .mainHeader .mainHeader_containt span {
   font-size: 14px;
@@ -586,15 +587,16 @@
   height: 50px;
 }
 .mainHeader .mainHeader_containt input:hover {
-  background-color: #6ba717;
+  background-color: #7ac512;
 }
 
+/********************************* MENU FIXE **************************/
 .menuFixed {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 62%;
   padding: 30px;
   text-align: center;
+  z-index: 2;
 }
 .menuFixed li {
   display: inline-block;
@@ -609,6 +611,7 @@
   color: #8cdb1f;
 }
 
+/********************************* TEXT 1 **************************/
 .mainText1 {
   background-color: #fff;
   width: 50%;
@@ -616,6 +619,7 @@
   margin-right: auto;
   min-height: 650px;
   text-align: center;
+  color: #4c5f6a;
 }
 .mainText1 p {
   font-family: GothamBook;
@@ -627,147 +631,381 @@
 }
 .mainText1 input {
   margin-top: 100px;
-  width: 200px;
-  height: 50px;
+  width: 165px;
+  height: 45px;
   text-align: center;
   border-radius: 30px;
   background-color: #8cdb1f;
   cursor: pointer;
   transition: all 1s ease;
+  font-size: 14px;
 }
 .mainText1 input:hover {
-  background-color: #6ba717;
+  background-color: #7ac512;
 }
 
+/********************************* RIGHT MEDICINE **************************/
 .rightMedicine {
   margin-top: 20px;
-  background-color: #e4e4e4;
+  background-color: #fafafa;
   min-height: 780px;
-  padding-top: 100px;
+  padding-top: 5%;
+  padding-bottom: 20px;
 }
 .rightMedicine .rightMedicine_container {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  height: 300px;
+  width: 54%;
+  min-height: 530px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 .rightMedicine .rightMedicine_container .rightMedicine_L {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 500px;
   height: 100%;
-  background-color: #fff;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  margin-right: 10px;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_L .fullMember {
+  background: url(../images/fullMember.JPG) no-repeat center;
+  width: 100%;
+  height: 140px;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_L .asop {
+  background: url(../images/94.jpg) no-repeat center;
+  width: 100%;
+  height: 140px;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_L .european {
+  background: url(../images/95.png) no-repeat center;
+  width: 100%;
+  height: 140px;
 }
 .rightMedicine .rightMedicine_container .rightMedicine_R {
-  width: 500px;
-  height: 100%;
-  background-color: #fff;
+  width: 390px;
+  min-height: 100%;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_R h3 {
+  font-family: League;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #005052;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_R p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: GothamBook;
+  letter-spacing: -0.16px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4c5f6a;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_R a {
+  display: block;
+  margin-top: 10px;
+  font-family: GothamBold;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 19px;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_R a::after {
+  content: "→";
+  color: #8cdb1f;
+  margin-left: 3px;
+  display: inline-block;
+  width: 0;
+}
+.rightMedicine .rightMedicine_container .rightMedicine_R a:hover {
+  text-decoration: underline;
 }
 
+/********************************* RIGHT PATIENT **************************/
 .rightPatient {
   min-height: 830px;
-  background-color: #f7f7f7;
+  background-color: white;
   padding-top: 100px;
+  padding-bottom: 20px;
 }
 .rightPatient .rightPatient_container {
-  border: 1px solid red;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  height: 300px;
+  width: 54%;
+  min-height: 580px;
   display: flex;
   justify-content: space-between;
 }
 .rightPatient .rightPatient_container .rightPatient_L {
-  width: 500px;
+  width: 390px;
   height: 100%;
-  background-color: #fff;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.rightPatient .rightPatient_container .rightPatient_L h3 {
+  font-family: League;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #005052;
+}
+.rightPatient .rightPatient_container .rightPatient_L p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: GothamBook;
+  letter-spacing: -0.16px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4c5f6a;
+}
+.rightPatient .rightPatient_container .rightPatient_L a {
+  display: block;
+  margin-top: 10px;
+  font-family: GothamBold;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 19px;
+}
+.rightPatient .rightPatient_container .rightPatient_L a::after {
+  content: "→";
+  color: #8cdb1f;
+  margin-left: 3px;
+  display: inline-block;
+  width: 0;
+}
+.rightPatient .rightPatient_container .rightPatient_L a:hover {
+  text-decoration: underline;
 }
 .rightPatient .rightPatient_container .rightPatient_R {
   width: 500px;
-  height: 100%;
-  background-color: #fff;
+  min-height: 100%;
+  background-color: white;
+  padding: 20px 40px 40px 40px;
+  box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  margin-left: 10px;
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card {
+  width: 45%;
+  height: 150px;
+  margin: 10px;
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card span {
+  min-width: 200px;
+  display: block;
+  font-size: 60px;
+  font-family: League;
+  color: #005052;
+  z-index: 0;
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card p {
+  color: #8b95a0;
+  line-height: 20px;
+  font-size: 14px;
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card .pizza:before {
+  content: url("../images/pizza.JPG");
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card .ppl:before {
+  content: url("../images/human.JPG");
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card .cible:before {
+  content: url("../images/target.JPG");
+}
+.rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card .moitie:before {
+  content: url("../images/cibleMoitie.JPG");
+}
+.rightPatient .rightPatient_container .rightPatient_R img {
+  display: block;
+  width: 90px;
+  height: 75px;
+  position: relative;
+  top: -3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.rightPatient .rightPatient_container .rightPatient_R h4 {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 4px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #005052;
 }
 
+/********************************* RIGHT TIME **************************/
 .rightTime {
-  background-color: #e4e4e4;
+  background-color: #f7f7f7;
   min-height: 850px;
   padding-top: 100px;
+  padding-bottom: 20px;
 }
 .rightTime .rightTime_container {
-  border: 1px solid red;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
-  height: 300px;
+  width: 54%;
+  min-height: 580px;
   display: flex;
   justify-content: space-between;
 }
 .rightTime .rightTime_container .rightTime_L {
   width: 500px;
-  height: 100%;
-  background-color: #fff;
+  height: 580px;
+  background-color: white;
+  padding: 20px 40px 40px 40px;
+  box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+  margin-right: 10px;
+}
+.rightTime .rightTime_container .rightTime_L .listCards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.rightTime .rightTime_container .rightTime_L .listCards .keyFacts_Card {
+  width: 45%;
+  height: 150px;
+  margin: 10px;
+}
+.rightTime .rightTime_container .rightTime_L .listCards .keyFacts_Card span {
+  min-width: 200px;
+  display: block;
+  font-size: 60px;
+  font-family: League;
+  color: #005052;
+}
+.rightTime .rightTime_container .rightTime_L .listCards .keyFacts_Card p {
+  color: #8b95a0;
+  line-height: 20px;
+  font-size: 14px;
+}
+.rightTime .rightTime_container .rightTime_L .listCards .keyFacts_Card .cible:before {
+  content: url("../images/target.JPG");
+}
+.rightTime .rightTime_container .rightTime_L .listCards .keyFacts_Card .moitie:before {
+  content: url("../images/cibleMoitie.JPG");
+}
+.rightTime .rightTime_container .rightTime_L .listCards .keyFacts_Card .earth:before {
+  content: url("../images/earth.JPG");
+}
+.rightTime .rightTime_container .rightTime_L img {
+  display: block;
+  width: 90px;
+  height: 75px;
+  position: relative;
+  top: -3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rightTime .rightTime_container .rightTime_L h4 {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 4px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #005052;
 }
 .rightTime .rightTime_container .rightTime_R {
-  width: 500px;
+  width: 390px;
   height: 100%;
-  background-color: #fff;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.rightTime .rightTime_container .rightTime_R h3 {
+  font-family: League;
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #005052;
+}
+.rightTime .rightTime_container .rightTime_R p {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: GothamBook;
+  letter-spacing: -0.16px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4c5f6a;
+}
+.rightTime .rightTime_container .rightTime_R a {
+  display: block;
+  margin-top: 10px;
+  font-family: GothamBold;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 19px;
+}
+.rightTime .rightTime_container .rightTime_R a::after {
+  content: "→";
+  color: #8cdb1f;
+  margin-left: 3px;
+  display: inline-block;
+  width: 0;
+}
+.rightTime .rightTime_container .rightTime_R a:hover {
+  text-decoration: underline;
 }
 
+/********************************* RELATED LINKS **************************/
 .relatedLinks {
   min-height: 360px;
-  padding-top: 50px;
 }
 .relatedLinks .relatedLinks_container {
-  border: 1px solid red;
-  display: flex;
+  padding-top: 125px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-
-@font-face {
-  font-family: GothamMedium;
-  src: url(./fonts/GothamMedium.ttf);
-}
-@font-face {
-  font-family: GothamBook;
-  src: url(./fonts/GothamBook.ttf);
-}
-@font-face {
-  font-family: GothamBold;
-  src: url(./fonts/GothamBold.ttf);
-}
-@font-face {
+.relatedLinks .relatedLinks_container h3 {
   font-family: League;
-  src: url(./fonts/LeagueGothic-Regular.woff);
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: GothamBook;
-  font-size: 14px;
-}
-
-li {
-  text-decoration: none;
-  cursor: pointer;
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
   color: #005052;
 }
-
-input {
-  border: none;
-  color: white;
-  font-size: 17px;
-  font-weight: 600;
+.relatedLinks .relatedLinks_container a {
+  display: block;
+  margin-top: 10px;
+  font-family: GothamBold;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 19px;
+}
+.relatedLinks .relatedLinks_container a::after {
+  content: "→";
+  color: #8cdb1f;
+  margin-left: 3px;
+  display: inline-block;
+  width: 0;
+}
+.relatedLinks .relatedLinks_container a:hover {
+  text-decoration: underline;
 }
 
 /****************************************/
@@ -1097,7 +1335,7 @@ input {
   text-align: center;
 }
 .containt_investor .investor_btn input:hover {
-  background-color: #6ba717;
+  background-color: #7ac512;
 }
 
 /****************************************/
@@ -1143,7 +1381,7 @@ input {
   transition: all 1s ease;
 }
 .video .containerVideo input:hover {
-  background-color: #6ba717;
+  background-color: #7ac512;
 }
 
 /****************************************/
@@ -1174,16 +1412,16 @@ input {
 }
 .ourMission .ourMission_L input {
   margin-top: 20px;
-  border-radius: 30px;
   height: 55px;
   width: 180px;
   text-align: center;
+  border-radius: 30px;
   background-color: #8cdb1f;
   cursor: pointer;
   transition: all 1s ease;
 }
 .ourMission .ourMission_L input:hover {
-  background-color: #6ba717;
+  background-color: #7ac512;
 }
 .ourMission .ourMission_R {
   width: 30%;
@@ -1237,5 +1475,46 @@ input {
 }
 
 /****************************************/
+@font-face {
+  font-family: GothamMedium;
+  src: url(./fonts/GothamMedium.ttf);
+}
+@font-face {
+  font-family: GothamBook;
+  src: url(./fonts/GothamBook.ttf);
+}
+@font-face {
+  font-family: GothamBold;
+  src: url(./fonts/GothamBold.ttf);
+}
+@font-face {
+  font-family: League;
+  src: url(./fonts/LeagueGothic-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GothamBook;
+  font-size: 14px;
+}
+
+li {
+  text-decoration: none;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #005052;
+}
+
+input {
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=style.css.map */

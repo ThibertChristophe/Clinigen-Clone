@@ -9,6 +9,7 @@
     margin-right: auto;
     text-align: center;
     margin-top: 60px;
+    margin-bottom: 55px;
     span {
       font-size: 14px;
       font-weight: 600;
@@ -28,14 +29,14 @@
     }
   }
 }
-
+/********************************* MENU FIXE **************************/
 .menuFixed {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 62%;
   //border: 1px solid red;
   padding: 30px;
   text-align: center;
+  z-index: 2;
   li {
     display: inline-block;
     margin: 0 23px;
@@ -49,6 +50,7 @@
     }
   }
 }
+/********************************* TEXT 1 **************************/
 .mainText1 {
   background-color: #fff;
   width: 50%;
@@ -56,6 +58,7 @@
   margin-right: auto;
   min-height: 650px;
   text-align: center;
+  color: $grey-hoki;
   p {
     font-family: GothamBook;
     font-size: 26px;
@@ -66,99 +69,362 @@
   }
   input {
     margin-top: 100px;
-    width: 200px;
-    height: 50px;
+    width: 165px;
+    height: 45px;
     @include btnVert;
+    font-size: 14px;
   }
 }
-
+/********************************* RIGHT MEDICINE **************************/
 .rightMedicine {
   margin-top: 20px;
-  background-color: rgb(228, 228, 228);
+  background-color: #fafafa;
   min-height: 780px;
-  padding-top: 100px;
+  //padding-top: 100px;
+  padding-top: 5%;
+  padding-bottom: 20px;
   .rightMedicine_container {
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 300px;
+    width: 54%;
+    min-height: 530px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 
     .rightMedicine_L {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       width: 500px;
       height: 100%;
-      background-color: #fff;
+      background-color: white;
+      padding: 40px;
+      box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      margin-right: 10px;
+      .fullMember {
+        background: url(../images/fullMember.JPG) no-repeat center;
+        width: 100%;
+        height: 140px;
+      }
+      .asop {
+        background: url(../images/94.jpg) no-repeat center;
+        width: 100%;
+        height: 140px;
+      }
+      .european {
+        background: url(../images/95.png) no-repeat center;
+        width: 100%;
+        height: 140px;
+      }
     }
     .rightMedicine_R {
-      width: 500px;
-      height: 100%;
-      background-color: #fff;
+      width: 390px;
+      min-height: 100%;
+      margin-top: 5px;
+      margin-left: 10px;
+      h3 {
+        @include titreVERT;
+        color: $green-medium;
+      }
+      p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: GothamBook;
+        letter-spacing: -0.16px;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey-hoki;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        font-family: GothamBold;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        line-height: 19px;
+        &::after {
+          content: "\002192";
+          color: $vertClair;
+          margin-left: 3px;
+          display: inline-block;
+          width: 0;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
-
+/********************************* RIGHT PATIENT **************************/
 .rightPatient {
   min-height: 830px;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   padding-top: 100px;
+  padding-bottom: 20px;
   .rightPatient_container {
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 300px;
+    width: 54%;
+    min-height: 580px;
     display: flex;
     justify-content: space-between;
     .rightPatient_L {
-      width: 500px;
+      width: 390px;
       height: 100%;
-      background-color: #fff;
+      margin-top: 5px;
+      margin-right: 10px;
+      h3 {
+        @include titreVERT;
+        color: $green-medium;
+      }
+      p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: GothamBook;
+        letter-spacing: -0.16px;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey-hoki;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        font-family: GothamBold;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        line-height: 19px;
+        &::after {
+          content: "\002192";
+          color: $vertClair;
+          margin-left: 3px;
+          display: inline-block;
+          width: 0;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
     .rightPatient_R {
       width: 500px;
-      height: 100%;
-      background-color: #fff;
+      min-height: 100%;
+      background-color: white;
+      padding: 20px 40px 40px 40px;
+      box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      margin-left: 10px;
+      .listCards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        flex-wrap: wrap;
+
+        .keyFacts_Card {
+          width: 45%;
+          height: 150px;
+          margin: 10px;
+
+          span {
+            min-width: 200px;
+            display: block;
+            font-size: 60px;
+            font-family: League;
+            color: $vertFonce;
+            z-index: 0;
+          }
+          p {
+            color: $grey-light;
+            line-height: 20px;
+            font-size: 14px;
+          }
+          .pizza:before {
+            content: url("../images/pizza.JPG");
+          }
+          .ppl:before {
+            content: url("../images/human.JPG");
+          }
+          .cible:before {
+            content: url("../images/target.JPG");
+          }
+          .moitie:before {
+            content: url("../images/cibleMoitie.JPG");
+          }
+        }
+      }
+      img {
+        display: block;
+        width: 90px;
+        height: 75px;
+        position: relative;
+        top: -3%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+      }
+      h4 {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 4px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $green-medium;
+      }
     }
   }
 }
-
+/********************************* RIGHT TIME **************************/
 .rightTime {
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(247, 247, 247);
   min-height: 850px;
   padding-top: 100px;
+  padding-bottom: 20px;
   .rightTime_container {
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
-    height: 300px;
+    width: 54%;
+    min-height: 580px;
     display: flex;
     justify-content: space-between;
     .rightTime_L {
       width: 500px;
-      height: 100%;
-      background-color: #fff;
+      height: 580px;
+      background-color: white;
+      padding: 20px 40px 40px 40px;
+      box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
+      margin-right: 10px;
+      .listCards {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        .keyFacts_Card {
+          width: 45%;
+          height: 150px;
+          margin: 10px;
+          span {
+            min-width: 200px;
+            display: block;
+            font-size: 60px;
+            font-family: League;
+            color: $vertFonce;
+          }
+          p {
+            color: $grey-light;
+            line-height: 20px;
+            font-size: 14px;
+          }
+          .cible:before {
+            content: url("../images/target.JPG");
+          }
+          .moitie:before {
+            content: url("../images/cibleMoitie.JPG");
+          }
+          .earth:before {
+            content: url("../images/earth.JPG");
+          }
+        }
+      }
+      img {
+        display: block;
+        width: 90px;
+        height: 75px;
+        position: relative;
+        top: -3%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      h4 {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 4px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $green-medium;
+      }
     }
     .rightTime_R {
-      width: 500px;
+      width: 390px;
       height: 100%;
-      background-color: #fff;
+      margin-top: 5px;
+      margin-left: 10px;
+      h3 {
+        @include titreVERT;
+        color: $green-medium;
+      }
+      p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: GothamBook;
+        letter-spacing: -0.16px;
+        font-size: 16px;
+        line-height: 30px;
+        color: $grey-hoki;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        font-family: GothamBold;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        line-height: 19px;
+        &::after {
+          content: "\002192";
+          color: $vertClair;
+          margin-left: 3px;
+          display: inline-block;
+          width: 0;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
 
+/********************************* RELATED LINKS **************************/
 .relatedLinks {
   min-height: 360px;
-  padding-top: 50px;
   .relatedLinks_container {
-    border: 1px solid red;
-    display: flex;
+    padding-top: 125px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-    height: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    h3 {
+      @include titreVERT_petit;
+      color: $green-medium;
+    }
+    a {
+      display: block;
+      margin-top: 10px;
+      font-family: GothamBold;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      line-height: 19px;
+      &::after {
+        content: "\002192";
+        color: $vertClair;
+        margin-left: 3px;
+        display: inline-block;
+        width: 0;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
