@@ -45,7 +45,7 @@
       font-size: 14px;
       font-weight: 600;
       &:hover {
-        color: #8cdb1f;
+        color: #8cdb1f !important; // le hover ne changera pas malgré le changement de .color en JS
       }
     }
   }

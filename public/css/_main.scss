@@ -149,7 +149,6 @@
 .bgGris_listCards {
   display: flex;
   position: relative;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 15%;
   margin-right: 15%;
@@ -161,6 +160,7 @@
     -webkit-box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
     box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
     margin-bottom: 20px;
+    margin: 0px 10px 0px 10px;
     .titre {
       padding-top: 30px;
       padding-left: 30px;
@@ -232,7 +232,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 55%;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     min-height: 500px;
@@ -342,36 +342,43 @@
   background: url(../images/bg-video.jpg);
   .containerVideo {
     position: relative;
-    left: 24%;
-    top: 25%;
-    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1150px;
     color: white;
-    span {
-      color: #6ba717;
-    }
-    h2 {
-      margin-bottom: 15px;
-      margin-top: 5px;
-      width: 500px;
-      margin-bottom: 10px;
-      @include titreH2_blanc;
-    }
-    .containerVideo_Text {
-      color: #bec5c9;
-      width: 60%;
-      line-height: 25px;
-    }
-    input {
-      margin-top: 20px;
-      border-radius: 30px;
-      height: 55px;
-      width: 180px;
-      text-align: center;
-      background-color: $vertClair;
-      cursor: pointer;
-      transition: all 1s ease;
-      &:hover {
-        background-color: $green-darker;
+    .videoCard {
+      position: relative;
+      padding-top: 100px;
+      padding-left: 50px;
+      max-width: 600px;
+      span {
+        color: #6ba717;
+      }
+      h2 {
+        margin-bottom: 15px;
+        margin-top: 5px;
+        width: 500px;
+        margin-bottom: 10px;
+        @include titreH2_blanc;
+      }
+      .containerVideo_Text {
+        color: #bec5c9;
+        width: 60%;
+        line-height: 25px;
+      }
+      input {
+        margin-top: 20px;
+        border-radius: 30px;
+        height: 55px;
+        width: 180px;
+        text-align: center;
+        background-color: $vertClair;
+        cursor: pointer;
+        transition: all 1s ease;
+        &:hover {
+          background-color: $green-darker;
+        }
       }
     }
   }
@@ -385,7 +392,7 @@
   justify-content: center;
   align-items: center;
   .ourMission_L {
-    width: 22%;
+    max-width: 500px;
     color: $vertFonce;
     font-weight: 600;
     margin-right: 50px;
@@ -415,12 +422,15 @@
     }
   }
   .ourMission_R {
-    width: 30%;
+    max-width: 750px;
+    max-height: 100%;
     color: #4c5f6a;
+    padding-left: 50px;
     p {
       font-size: 16px;
       line-height: 30px;
       font-weight: 300;
+      max-height: 400px;
     }
   }
 }
@@ -438,7 +448,7 @@
   .numberBot_Card {
     position: relative;
     display: block;
-    margin: 0 20px 0 20px;
+    margin: 0 30px 0 30px;
     top: 30%;
     p {
       width: 210px;
