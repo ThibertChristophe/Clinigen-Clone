@@ -1024,8 +1024,8 @@
 .sousSlider {
   position: relative;
   display: flex;
-  align-items: center;
-  width: 68%;
+  vertical-align: middle;
+  max-width: 1250px;
   height: 150px;
   margin-left: auto;
   margin-right: auto;
@@ -1162,44 +1162,72 @@
 .bgGris_listCards {
   display: flex;
   position: relative;
-  flex-wrap: wrap;
-  margin-left: 15%;
-  margin-right: 15%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: nowrap;
   margin-top: 50px;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media all and (max-width: 990px) {
+  .bgGris_listCards {
+    flex-wrap: wrap;
+  }
 }
 .bgGris_listCards .card {
-  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   width: 300px;
   height: 540px;
   -webkit-box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
   box-shadow: 0px 0px 39px 0px rgba(110, 110, 110, 0.37);
-  margin-bottom: 20px;
-  margin: 0px 10px 0px 10px;
+  margin: 15px;
 }
-.bgGris_listCards .card .titre {
-  padding-top: 30px;
-  padding-left: 30px;
+@media all and (max-width: 990px) {
+  .bgGris_listCards .card {
+    width: 45%;
+  }
+}
+@media all and (max-width: 770px) {
+  .bgGris_listCards .card {
+    width: 100%;
+    min-height: 700px;
+  }
+}
+.bgGris_listCards .card .imgAndText {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 25px;
+  height: 100%;
+}
+.bgGris_listCards .card .imgAndText .titre {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 14px;
   font-weight: 600;
+  margin-bottom: 25px;
 }
-.bgGris_listCards .card img {
-  width: 240px;
-  height: 180px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+.bgGris_listCards .card .imgAndText img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  position: relative;
 }
-.bgGris_listCards .card .card_content {
-  margin-left: 30px;
-  margin-right: 30px;
+.bgGris_listCards .card .imgAndText .card_content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 80%;
 }
 .bgGris_listCards .card .card_bot {
-  position: absolute;
-  bottom: 30px;
+  display: inline-block;
+  position: relative;
   border-top: 1px solid #999c9e;
   padding-top: 30px;
-  width: inherit;
+  width: 100%;
+  padding-bottom: 25px;
 }
 .bgGris_listCards .card .card_bot a {
   display: block;
