@@ -253,6 +253,7 @@
   .containt_investor_listCard {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     max-width: 1000px;
     margin-left: auto;
@@ -264,7 +265,9 @@
       min-height: 480px;
       padding: 25px;
       color: $vertFonce;
-
+      @media all and (max-width: 770px) {
+        width: 100%;
+      }
       .investor_card_titre {
         position: relative;
         display: flex;

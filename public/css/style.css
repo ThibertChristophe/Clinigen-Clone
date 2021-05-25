@@ -439,7 +439,8 @@
 .footer {
   position: relative;
   background-color: #005052;
-  height: 450px;
+  min-height: 450px;
+  padding-bottom: 20px;
   color: white;
 }
 .footer a {
@@ -449,10 +450,12 @@
   display: flex;
   position: relative;
   justify-content: space-between;
+  flex-wrap: nowrap;
   top: 50px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
   height: 75%;
 }
 .footer .footerContaint .footerContaint_Card {
@@ -516,13 +519,26 @@
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  width: 68%;
-  margin-top: 40px;
+  max-width: 1200px;
+  margin-top: 100px;
   flex-wrap: nowrap;
+}
+@media all and (max-width: 770px) {
+  .copyright_Logo {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80px;
+    margin-top: 80px;
+  }
 }
 .copyright_Logo .by {
   font-weight: 600;
   min-width: 350px;
+}
+@media all and (max-width: 770px) {
+  .copyright_Logo .by {
+    order: 1;
+  }
 }
 .copyright_Logo .line {
   display: inline-block;
@@ -530,10 +546,20 @@
   width: 55%;
   max-width: 55%;
 }
+@media all and (max-width: 770px) {
+  .copyright_Logo .line {
+    order: -1;
+  }
+}
 .copyright_Logo .btnSocial {
   display: inline-block;
   min-width: 145px;
   margin-left: 5px;
+}
+@media all and (max-width: 770px) {
+  .copyright_Logo .btnSocial {
+    order: -2;
+  }
 }
 .copyright_Logo .twitter,
 .copyright_Logo .vimeo,
@@ -1273,6 +1299,7 @@
 .containt_investor .containt_investor_listCard {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 1000px;
   margin-left: auto;
@@ -1285,6 +1312,11 @@
   min-height: 480px;
   padding: 25px;
   color: #005052;
+}
+@media all and (max-width: 770px) {
+  .containt_investor .containt_investor_listCard .containt_investor_card {
+    width: 100%;
+  }
 }
 .containt_investor .containt_investor_listCard .containt_investor_card .investor_card_titre {
   position: relative;
