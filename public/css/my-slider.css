@@ -479,6 +479,7 @@ p.ism-badge a.ism-link:hover {
 
 #my-slider .ism-slide-0 .ism-img {
   width: 100%;
+  height: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -497,6 +498,7 @@ p.ism-badge a.ism-link:hover {
 #my-slider .ism-slide-1 .ism-img {
   width: 100%;
   top: 50%;
+  height: 100%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -514,6 +516,7 @@ p.ism-badge a.ism-link:hover {
 #my-slider .ism-slide-2 .ism-img {
   width: 100%;
   top: 50%;
+  height: 100%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -527,6 +530,7 @@ p.ism-badge a.ism-link:hover {
 #my-slider .ism-slide-3 .ism-img {
   width: 100%;
   top: 50%;
+  height: 100%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -534,66 +538,6 @@ p.ism-badge a.ism-link:hover {
 }
 
 /* CAPTIONS */
-
-#my-slider .ism-slide-0 .ism-caption-0.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-0 .ism-caption-1.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-0 .ism-caption-2.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-1 .ism-caption-0.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-1 .ism-caption-1.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-1 .ism-caption-2.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-2 .ism-caption-0.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-2 .ism-caption-1.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-2 .ism-caption-2.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-3 .ism-caption-0.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-3 .ism-caption-1.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-3 .ism-caption-2.ism-caption-anim {
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
-}
 
 #my-slider input {
   background-color: #8bda1f;
