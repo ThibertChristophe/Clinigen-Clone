@@ -1038,7 +1038,6 @@
 
 .mainHeaderPharma {
   height: 560px;
-  border: 1px solid red;
   background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
   background-size: 175%;
   background-position: right 35% bottom 82%;
@@ -1047,7 +1046,7 @@
 .mainHeaderPharma .mainHeaderPharma_contain {
   display: block;
   position: relative;
-  margin-top: 16%;
+  top: 50%;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
@@ -1116,6 +1115,7 @@
 }
 .mainContent .containL ul {
   margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 .mainContent .containL li {
   list-style-type: circle;

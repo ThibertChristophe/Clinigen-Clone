@@ -1,15 +1,13 @@
 .mainHeaderPharma {
   height: 560px;
-  border: 1px solid red;
   background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
   background-size: 175%;
   background-position: right 35% bottom 82%;
   filter: brightness(0.75);
-
   .mainHeaderPharma_contain {
     display: block;
     position: relative;
-    margin-top: 16%;
+    top: 50%;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
@@ -74,6 +72,7 @@
     }
     ul {
       margin-bottom: 25px;
+      margin-bottom: 50px;
     }
     li {
       list-style-type: circle;
@@ -126,6 +125,7 @@
       height: 50px;
       margin-bottom: 15px;
     }
+
     .btnSubmit {
       @include btnVert;
       margin-top: 25px;
