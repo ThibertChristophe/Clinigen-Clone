@@ -1,0 +1,138 @@
+.mainHeaderPharma {
+  height: 560px;
+  border: 1px solid red;
+  background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
+  background-size: 175%;
+  background-position: right 35% bottom 82%;
+  filter: brightness(0.75);
+
+  .mainHeaderPharma_contain {
+    display: block;
+    position: relative;
+    margin-top: 16%;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      line-height: 19.6px;
+      font-family: GothamBook;
+      margin: 0 0 12px 0;
+    }
+    h3 {
+      font-size: 80px;
+      line-height: 70px;
+      font-family: League;
+      font-weight: 400;
+    }
+  }
+}
+
+.mainContent {
+  display: flex;
+  max-width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  justify-content: space-between;
+  .containL {
+    margin-left: 20px;
+    width: 835px;
+    margin-right: 50px;
+    h2 {
+      font-family: GothamMedium;
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: -0.345px;
+      line-height: 36px;
+    }
+    p {
+      font-family: GothamBook;
+      font-size: 16px;
+      letter-spacing: -0.256px;
+      line-height: 30px;
+      color: $grey-hoki;
+    }
+    .finContent {
+      font-family: GothamBook;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: -0.256px;
+      line-height: 30px;
+      color: $grey-hoki;
+      margin-bottom: 25px;
+    }
+    .title {
+      @include titreVERT_petit;
+      font-size: 30px;
+      color: $vertFonce;
+    }
+    ul {
+      margin-bottom: 25px;
+    }
+    li {
+      list-style-type: circle;
+      margin: 10px 0 10px 20px;
+      a {
+        font-family: GothamBold;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
+        line-height: 19px;
+        &::after {
+          content: "\002192";
+          color: $vertClair;
+          margin-left: 3px;
+          display: inline-block;
+          width: 0;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .containR {
+    width: 420px;
+    background-color: #f5f5f5;
+    max-height: 875px;
+    margin-right: 20px;
+    h4 {
+      border-bottom: 1px solid #d6d6d6;
+      font-size: 20px;
+      margin: 30px 0 0 0;
+      padding-left: 60px;
+      padding-bottom: 35px;
+    }
+    span {
+      display: block;
+      margin-bottom: 25px;
+      font-size: 12px;
+      color: #8b8b8b;
+    }
+    form {
+      padding: 30px;
+    }
+    .formInput {
+      display: block;
+      width: 100%;
+      border: 1px solid #d6d6d6;
+      border-radius: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+    .btnSubmit {
+      @include btnVert;
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 50px;
+      width: 100%;
+    }
+  }
+}
