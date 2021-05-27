@@ -463,18 +463,25 @@
               placeholder="Contact no.*"
               class="formInput"
             />
-            <span class="lib">Reason for enquiry (select one)</span>
-            <select name="" id="" class="formInput">
-              <option value="">I am a healtcare professional...</option>
-            </select>
-            <select name="" id="" class="formInput">
-              <option value="">I am an industry professional...</option>
-            </select>
-            <select name="" id="" class="formInput">
-              <option value="">I have general questions about...</option>
-            </select>
-            <textarea name="Your message" id="" placeholder="Your message*">
-            </textarea>
+            <span class="sousTitre">Reason for enquiry (select one)</span>
+            <div class="formInput combo1">I am a healtcare professional...</div>
+            <div class="sousMenu1">
+              <ul>
+                <li class="option">I am a healtcare professional...</li>
+                <li class="option">Looking for a medicine</li>
+                <li class="option">
+                  Trying to resolve a medicine shortage (EU and US)
+                </li>
+                <li class="option">
+                  Trying to resolve a medicine shortage (Asia, Australia)
+                </li>
+                <li class="option">With a medical information enquiry</li>
+                <li class="option">Who would like to request a MSL visit</li>
+              </ul>
+            </div>
+            <div class="formInput">I am an industry professional...</div>
+            <div class="formInput">I have general questions about...</div>
+            <textarea name="Your message" id=""> </textarea>
             <input type="button" value="Submit query" class="btnSubmit" />
           </form>
         </div>
@@ -557,7 +564,7 @@
       </div>
     </footer>
     <script src="src/js/header.js"></script>
-    <script src="src/js/missionClick.js"></script>
+    <script src="src/js/pharma.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first 
 <script src="/__/firebase/8.6.1/firebase-app.js"></script>
 

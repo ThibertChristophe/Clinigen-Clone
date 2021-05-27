@@ -1,9 +1,10 @@
 .mainHeaderPharma {
   height: 560px;
   background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
-  background-size: 175%;
+  background-size: cover;
   background-position: right 35% bottom 82%;
   filter: brightness(0.75);
+  border: 1px solid red;
   .mainHeaderPharma_contain {
     display: block;
     position: relative;
@@ -100,6 +101,7 @@
     }
   }
   .containR {
+    position: relative;
     width: 420px;
     background-color: #f5f5f5;
     max-height: 875px;
@@ -129,6 +131,12 @@
       color: #8b8b8b;
       margin-bottom: 15px;
     }
+    .sousTitre {
+      display: block;
+      font-size: 15px;
+      color: #5f5f5f;
+      margin-bottom: 15px;
+    }
     form {
       padding: 30px;
     }
@@ -143,6 +151,16 @@
       padding: 15px 15px 15px 25px;
       font-size: 14px;
       font-weight: normal;
+      background-color: white;
+      outline: none;
+      &:after {
+        content: "^";
+        float: right;
+      }
+    }
+    .combo1 {
+      cursor: pointer;
+      user-select: none;
     }
 
     textarea {
@@ -153,6 +171,7 @@
       border: 1px solid #d6d6d6;
       border-radius: 20px;
       padding: 15px 15px 15px 25px;
+      outline: none;
     }
 
     .btnSubmit {
@@ -164,4 +183,46 @@
       width: 100%;
     }
   }
+}
+.sousMenu1 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 200px;
+  top: 495px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: visible;
+  .option {
+    width: 100%;
+    padding: 8px 5px 8px 5px;
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $vertClair;
+    border-radius: 10px;
+  }
+}
+
+.show {
+  visibility: visible;
 }
