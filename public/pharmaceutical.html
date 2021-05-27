@@ -428,14 +428,42 @@
           </ul>
         </div>
         <div class="containR">
-          <h4>Get in touch</h4>
+          <div class="titleGetInTouch">
+            <span class="letter"></span>
+            <h4>Get in touch</h4>
+          </div>
+
           <form action="">
-            <span>* Mandatory field</span>
-            <input type="text" name="Name Surname" id="" class="formInput"/>
-            <input type="text" name="your@email.com" id="" class="formInput" />
-            <input type="text" name="Organisation" id="" class="formInput" />
-            <input type="text" name="Contact no." id="" class="formInput" />
-            <span>Reason for enquiry (select one)</span>
+            <span class="lib">* Mandatory field</span>
+            <input
+              type="text"
+              name="Name Surname"
+              id=""
+              placeholder="Name Surname*"
+              class="formInput"
+            />
+            <input
+              type="text"
+              name="your@email.com"
+              id=""
+              placeholder="your@email.com*"
+              class="formInput"
+            />
+            <input
+              type="text"
+              name="Organisation"
+              id=""
+              placeholder="Organisation*"
+              class="formInput"
+            />
+            <input
+              type="text"
+              name="Contact no."
+              id=""
+              placeholder="Contact no.*"
+              class="formInput"
+            />
+            <span class="lib">Reason for enquiry (select one)</span>
             <select name="" id="" class="formInput">
               <option value="">I am a healtcare professional...</option>
             </select>
@@ -444,7 +472,9 @@
             </select>
             <select name="" id="" class="formInput">
               <option value="">I have general questions about...</option>
-              </select>
+            </select>
+            <textarea name="Your message" id="" placeholder="Your message*">
+            </textarea>
             <input type="button" value="Submit query" class="btnSubmit" />
           </form>
         </div>
