@@ -3,11 +3,14 @@
   width: 100%;
   border-bottom: 1px solid #d6d8d8;
   z-index: 3;
+  //visibility: hidden;
+  // display: none;
   #header_top {
     background-color: #064242;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .header_top_country {
       margin: 13px 0 0 20px;
       color: white;
@@ -433,4 +436,94 @@
   height: 80%;
   border-left: 1px solid #dadada;
   margin-top: 2%;
+}
+
+.headerHamburger {
+  visibility: hidden;
+  height: 100px;
+  border-bottom: 1px solid #d6d8d8;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  .logoClinigenHamburger {
+    background: url(/public/images/clinigen-logo.png) no-repeat center/cover;
+    width: 150px;
+    height: 45px;
+    margin-left: 15px;
+  }
+  .menuHamburger {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    font-family: GothamBold;
+    cursor: pointer;
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      margin-right: 6px;
+      span {
+        border-bottom: 2px solid $vertClair;
+        height: 2px;
+        width: 100%;
+        margin: 2px 0 2px 0;
+        &:nth-child(3) {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+
+.sousMenuHamburgerCache {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  z-index: 7;
+  right: -300px;
+  transition: all 0.2s ease;
+  visibility: hidden;
+  .fermer {
+    float: right;
+    margin: 25px 25px 0 0;
+    font-size: 20px;
+  }
+}
+
+.showMenuHamb {
+  right: 0px;
+  visibility: visible;
+}
+
+.darkerMain {
+  filter: brightness(75%);
+}
+
+@media all and (max-width: 1300px) {
+  #header_bot_menuMiddle a {
+    font-size: 12px;
+  }
+}
+
+// Apparition du menu hamburger et on remonte un peu le main
+@media all and (max-width: 1200px) {
+  .headerHamburger {
+    visibility: visible;
+  }
+  #header {
+    visibility: hidden;
+    display: none;
+  }
+  main {
+    position: relative;
+    top: -50px;
+  }
 }
