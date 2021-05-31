@@ -1041,8 +1041,6 @@
   background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
   background-size: cover;
   background-position: right 35% bottom 82%;
-  filter: brightness(0.75);
-  border: 1px solid red;
 }
 .mainHeaderPharma .mainHeaderPharma_contain {
   display: block;
@@ -1200,9 +1198,15 @@
   content: "^";
   float: right;
 }
-.mainContent .containR .combo1 {
+.mainContent .containR .combo1,
+.mainContent .containR .combo2,
+.mainContent .containR .combo3 {
   cursor: pointer;
   user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 25px;
 }
 .mainContent .containR textarea {
   max-width: 100%;
@@ -1244,16 +1248,16 @@
   font-weight: normal;
   background-color: white;
   overflow-y: scroll;
-  visibility: visible;
+  visibility: hidden;
   /* width */
   /* Track */
   /* Handle */
 }
-.sousMenu1 .option {
+.sousMenu1 .option1 {
   width: 100%;
   padding: 8px 5px 8px 5px;
 }
-.sousMenu1 .option:hover {
+.sousMenu1 .option1:hover {
   background-color: #e7e7e7;
 }
 .sousMenu1::-webkit-scrollbar {
@@ -1261,8 +1265,90 @@
 }
 .sousMenu1::-webkit-scrollbar-track {
   border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #d4d4d4;
 }
 .sousMenu1::-webkit-scrollbar-thumb {
+  background: #8cdb1f;
+  border-radius: 10px;
+}
+
+.sousMenu2 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 200px;
+  top: 560px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.sousMenu2 .option2 {
+  width: 100%;
+  padding: 8px 5px 8px 5px;
+}
+.sousMenu2 .option2:hover {
+  background-color: #e7e7e7;
+}
+.sousMenu2::-webkit-scrollbar {
+  width: 5px;
+}
+.sousMenu2::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #d4d4d4;
+}
+.sousMenu2::-webkit-scrollbar-thumb {
+  background: #8cdb1f;
+  border-radius: 10px;
+}
+
+.sousMenu3 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: fit-content;
+  top: 625px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.sousMenu3 .option3 {
+  width: 100%;
+  padding: 8px 5px 8px 5px;
+}
+.sousMenu3 .option3:hover {
+  background-color: #e7e7e7;
+}
+.sousMenu3::-webkit-scrollbar {
+  width: 5px;
+}
+.sousMenu3::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sousMenu3::-webkit-scrollbar-thumb {
   background: #8cdb1f;
   border-radius: 10px;
 }

@@ -3,8 +3,8 @@
   background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
   background-size: cover;
   background-position: right 35% bottom 82%;
-  filter: brightness(0.75);
-  border: 1px solid red;
+  //filter: brightness(0.75);
+
   .mainHeaderPharma_contain {
     display: block;
     position: relative;
@@ -158,9 +158,15 @@
         float: right;
       }
     }
-    .combo1 {
+    .combo1,
+    .combo2,
+    .combo3 {
       cursor: pointer;
       user-select: none;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding-right: 25px;
     }
 
     textarea {
@@ -198,8 +204,51 @@
   font-weight: normal;
   background-color: white;
   overflow-y: scroll;
-  visibility: visible;
-  .option {
+  visibility: hidden;
+  .option1 {
+    width: 100%;
+    padding: 8px 5px 8px 5px;
+
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #d4d4d4;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $vertClair;
+    border-radius: 10px;
+  }
+}
+
+.sousMenu2 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 200px;
+  top: 560px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  .option2 {
     width: 100%;
     padding: 8px 5px 8px 5px;
     &:hover {
@@ -214,6 +263,50 @@
   /* Track */
   &::-webkit-scrollbar-track {
     border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #d4d4d4;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $vertClair;
+    border-radius: 10px;
+  }
+}
+
+.sousMenu3 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: fit-content;
+  top: 625px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  .option3 {
+    width: 100%;
+    padding: 8px 5px 8px 5px;
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   /* Handle */
