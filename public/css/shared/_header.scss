@@ -363,6 +363,9 @@
   z-index: 4;
   transition: all 0.5s ease;
   display: flex;
+  box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
   .menuCache_ProductsServices_L {
     position: relative;
     display: flex;
@@ -491,20 +494,128 @@
   right: -300px;
   transition: all 0.2s ease;
   visibility: hidden;
+  padding: 0 20px 0 20px;
   .fermer {
     float: right;
-    margin: 25px 25px 0 0;
+    margin: 25px 10px 0 0;
     font-size: 20px;
+  }
+  .fa-angle-right {
+    color: $vertClair;
+  }
+}
+
+.darkerMain {
+  filter: brightness(75%);
+}
+
+.header_bot_findAMedicine_Cache {
+  position: relative;
+  background-color: #403b77;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  margin: 75px 0 25px 0;
+  span {
+    position: absolute;
+    left: 15%;
+    top: 48%;
+    display: inline-block;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    filter: brightness(180%);
+  }
+  .fa-angle-down {
+    margin-left: 30px;
+  }
+}
+
+.sousMenuHamburgerCache_menu1 {
+  margin-bottom: 40px;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px 15px 0;
+    border-top: 1px solid #e4e4e4;
+    font-weight: bold;
+    a {
+      margin-left: 10px;
+      line-height: 19.6px;
+      letter-spacing: -0.35px;
+    }
+    &:nth-last-child(1) {
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+}
+
+.sousMenuHamburgerCache_menu2 {
+  margin-bottom: 10px;
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px 15px 0;
+
+    a {
+      margin-left: 10px;
+      line-height: 19.6px;
+      letter-spacing: -0.35px;
+    }
+  }
+}
+
+.sousMenuHamburgerCache_search {
+  border-radius: 50px;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 40px;
+  input {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    color: rgb(110, 110, 110);
+    padding-left: 12px;
+    font-size: 14px;
+  }
+}
+
+.sousMenuHamburger_cache1 {
+  position: fixed;
+  width: 300px;
+  height: 80%;
+  top: 139px;
+  right: -300px;
+  visibility: hidden;
+  z-index: 5;
+  background-color: white;
+  transition: all 0.2s ease;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    width: 90%;
+    display: inline-block;
+  }
+  .fa-angle-left {
+    color: $vertClair;
+    margin-left: 10px;
   }
 }
 
 .showMenuHamb {
   right: 0px;
   visibility: visible;
-}
-
-.darkerMain {
-  filter: brightness(75%);
 }
 
 @media all and (max-width: 1300px) {

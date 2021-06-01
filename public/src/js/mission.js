@@ -57,7 +57,7 @@ document.addEventListener("scroll", () => {
   } else {
     lien.item(2).style.color = "rgb(185, 185, 185)";
   }
-  console.log(rightTime_coord.top);
+
   if (rightTime_coord.top <= -2648) {
     lien.item(3).style.color = "#8cdb1f";
     lien.item(1).style.color = "rgb(185, 185, 185)";

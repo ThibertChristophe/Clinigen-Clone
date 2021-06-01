@@ -56,3 +56,8 @@ input {
 html {
   scroll-behavior: smooth;
 }
+
+::selection {
+  color: white;
+  background: black;
+}

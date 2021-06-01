@@ -83,10 +83,12 @@
   //padding-top: 100px;
   padding-top: 5%;
   padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
   .rightMedicine_container {
     margin-left: auto;
     margin-right: auto;
-    width: 54%;
+    max-width: 1050px;
     min-height: 530px;
     display: flex;
     justify-content: space-between;
@@ -102,7 +104,7 @@
       box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
       -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
       -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
-      margin-right: 10px;
+      margin-right: 50px;
       .fullMember {
         background: url(../images/fullMember.JPG) no-repeat center;
         width: 100%;
@@ -123,7 +125,7 @@
       width: 390px;
       min-height: 100%;
       margin-top: 5px;
-      margin-left: 10px;
+      margin-left: 50px;
       h3 {
         @include titreVERT;
         color: $green-medium;
@@ -165,18 +167,20 @@
   background-color: rgb(255, 255, 255);
   padding-top: 100px;
   padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
   .rightPatient_container {
     margin-left: auto;
     margin-right: auto;
-    width: 54%;
-    min-height: 580px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
+    max-width: 1050px;
     .rightPatient_L {
       width: 390px;
       height: 100%;
       margin-top: 5px;
-      margin-right: 10px;
+      margin-right: 50px;
       h3 {
         @include titreVERT;
         color: $green-medium;
@@ -212,13 +216,13 @@
     }
     .rightPatient_R {
       width: 500px;
-      min-height: 100%;
+      height: 100%;
       background-color: white;
       padding: 20px 40px 40px 40px;
       box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
       -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
       -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
-      margin-left: 10px;
+      margin-left: 50px;
       .listCards {
         display: flex;
         justify-content: space-between;
@@ -284,10 +288,12 @@
   min-height: 850px;
   padding-top: 100px;
   padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
   .rightTime_container {
     margin-left: auto;
     margin-right: auto;
-    width: 54%;
+    max-width: 1050px;
     min-height: 580px;
     display: flex;
     justify-content: space-between;
@@ -299,7 +305,7 @@
       box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
       -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
       -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
-      margin-right: 10px;
+      margin-right: 50px;
       .listCards {
         display: flex;
         justify-content: space-between;
@@ -354,7 +360,7 @@
       width: 390px;
       height: 100%;
       margin-top: 5px;
-      margin-left: 10px;
+      margin-left: 50px;
       h3 {
         @include titreVERT;
         color: $green-medium;

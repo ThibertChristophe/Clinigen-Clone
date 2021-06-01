@@ -360,6 +360,9 @@
   z-index: 4;
   transition: all 0.5s ease;
   display: flex;
+  box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
 }
 .menuCache_ProductsServices .menuCache_ProductsServices_L {
   position: relative;
@@ -489,20 +492,127 @@
   right: -300px;
   transition: all 0.2s ease;
   visibility: hidden;
+  padding: 0 20px 0 20px;
 }
 .sousMenuHamburgerCache .fermer {
   float: right;
-  margin: 25px 25px 0 0;
+  margin: 25px 10px 0 0;
   font-size: 20px;
+}
+.sousMenuHamburgerCache .fa-angle-right {
+  color: #8cdb1f;
+}
+
+.darkerMain {
+  filter: brightness(75%);
+}
+
+.header_bot_findAMedicine_Cache {
+  position: relative;
+  background-color: #403b77;
+  color: white;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-weight: 600;
+  margin: 75px 0 25px 0;
+}
+.header_bot_findAMedicine_Cache span {
+  position: absolute;
+  left: 15%;
+  top: 48%;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+.header_bot_findAMedicine_Cache:hover {
+  filter: brightness(180%);
+}
+.header_bot_findAMedicine_Cache .fa-angle-down {
+  margin-left: 30px;
+}
+
+.sousMenuHamburgerCache_menu1 {
+  margin-bottom: 40px;
+}
+.sousMenuHamburgerCache_menu1 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 0;
+  border-top: 1px solid #e4e4e4;
+  font-weight: bold;
+}
+.sousMenuHamburgerCache_menu1 li a {
+  margin-left: 10px;
+  line-height: 19.6px;
+  letter-spacing: -0.35px;
+}
+.sousMenuHamburgerCache_menu1 li:nth-last-child(1) {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.sousMenuHamburgerCache_menu2 {
+  margin-bottom: 10px;
+}
+.sousMenuHamburgerCache_menu2 li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px 15px 0;
+}
+.sousMenuHamburgerCache_menu2 li a {
+  margin-left: 10px;
+  line-height: 19.6px;
+  letter-spacing: -0.35px;
+}
+
+.sousMenuHamburgerCache_search {
+  border-radius: 50px;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 40px;
+}
+.sousMenuHamburgerCache_search input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: #6e6e6e;
+  padding-left: 12px;
+  font-size: 14px;
+}
+
+.sousMenuHamburger_cache1 {
+  position: fixed;
+  width: 300px;
+  height: 80%;
+  top: 139px;
+  right: -300px;
+  visibility: hidden;
+  z-index: 5;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+.sousMenuHamburger_cache1 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sousMenuHamburger_cache1 li {
+  width: 90%;
+  display: inline-block;
+}
+.sousMenuHamburger_cache1 .fa-angle-left {
+  color: #8cdb1f;
+  margin-left: 10px;
 }
 
 .showMenuHamb {
   right: 0px;
   visibility: visible;
-}
-
-.darkerMain {
-  filter: brightness(75%);
 }
 
 @media all and (max-width: 1300px) {
@@ -768,11 +878,13 @@
   min-height: 780px;
   padding-top: 5%;
   padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .rightMedicine .rightMedicine_container {
   margin-left: auto;
   margin-right: auto;
-  width: 54%;
+  max-width: 1050px;
   min-height: 530px;
   display: flex;
   justify-content: space-between;
@@ -788,7 +900,7 @@
   box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
   -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
   -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
-  margin-right: 10px;
+  margin-right: 50px;
 }
 .rightMedicine .rightMedicine_container .rightMedicine_L .fullMember {
   background: url(../images/fullMember.JPG) no-repeat center;
@@ -809,7 +921,7 @@
   width: 390px;
   min-height: 100%;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .rightMedicine .rightMedicine_container .rightMedicine_R h3 {
   font-family: League;
@@ -853,20 +965,22 @@
   background-color: white;
   padding-top: 100px;
   padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .rightPatient .rightPatient_container {
   margin-left: auto;
   margin-right: auto;
-  width: 54%;
-  min-height: 580px;
+  height: 600px;
   display: flex;
   justify-content: space-between;
+  max-width: 1050px;
 }
 .rightPatient .rightPatient_container .rightPatient_L {
   width: 390px;
   height: 100%;
   margin-top: 5px;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 .rightPatient .rightPatient_container .rightPatient_L h3 {
   font-family: League;
@@ -905,13 +1019,13 @@
 }
 .rightPatient .rightPatient_container .rightPatient_R {
   width: 500px;
-  min-height: 100%;
+  height: 100%;
   background-color: white;
   padding: 20px 40px 40px 40px;
   box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
   -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
   -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .rightPatient .rightPatient_container .rightPatient_R .listCards {
   display: flex;
@@ -974,11 +1088,13 @@
   min-height: 850px;
   padding-top: 100px;
   padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .rightTime .rightTime_container {
   margin-left: auto;
   margin-right: auto;
-  width: 54%;
+  max-width: 1050px;
   min-height: 580px;
   display: flex;
   justify-content: space-between;
@@ -991,7 +1107,7 @@
   box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
   -webkit-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
   -moz-box-shadow: 0px -1px 30px -1px rgba(128, 128, 128, 0.349);
-  margin-right: 10px;
+  margin-right: 50px;
 }
 .rightTime .rightTime_container .rightTime_L .listCards {
   display: flex;
@@ -1046,7 +1162,7 @@
   width: 390px;
   height: 100%;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 50px;
 }
 .rightTime .rightTime_container .rightTime_R h3 {
   font-family: League;
@@ -2001,6 +2117,11 @@ input {
 
 html {
   scroll-behavior: smooth;
+}
+
+::selection {
+  color: white;
+  background: black;
 }
 
 /*# sourceMappingURL=style.css.map */
