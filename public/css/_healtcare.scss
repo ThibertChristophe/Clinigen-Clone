@@ -1,0 +1,183 @@
+.mainHeaderPharma_contain h3 {
+  width: 500px;
+  text-align: center;
+}
+
+.menuFixedHealt {
+  position: relative;
+  width: 100%;
+  //border: 1px solid red;
+  background-color: $vertFonce;
+  padding: 30px;
+  text-align: center;
+  z-index: 2;
+  li {
+    display: inline-block;
+    margin: 0 23px;
+    a {
+      color: rgb(185, 185, 185);
+      font-size: 14px;
+      font-weight: 600;
+      &:hover {
+        color: #8cdb1f !important; // le hover ne changera pas malgré le changement de .color en JS
+      }
+    }
+  }
+}
+
+.containerHealt {
+  margin-top: 25px;
+  padding: 0 10px 0 10px;
+  max-width: 1250px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  h3 {
+    font-size: 40px;
+    color: $vertFonce;
+    font-family: League;
+    line-height: 50px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: GothamMedium;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  ul {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  li {
+    font-size: 16px;
+    line-height: 30px;
+    list-style-type: circle;
+  }
+}
+
+.contain_L {
+  max-width: 810px;
+  margin-right: 50px;
+  .contain_L_1 {
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    .videoFrame {
+      width: 500px;
+      height: 310px;
+      border: 1px solid gray;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .contain_L_2 {
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    a {
+      color: #7e4293;
+      text-decoration: underline;
+      font-size: 15px;
+      &:hover {
+        color: #9b3f90;
+      }
+    }
+  }
+  .contain_L_3 {
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    .listeNumber {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+  .contain_L_4 {
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    h4 {
+      display: inline-block;
+    }
+    .tiroir1,
+    .tiroir2 {
+      border-top: 1px solid black;
+      padding-top: 25px;
+    }
+    .tiroir3 {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding-top: 25px;
+    }
+    .iconeTiroir1 {
+      position: relative;
+      float: right;
+      //border: 1px solid red;
+      border-top: 2px solid $vertClair;
+      width: 25px;
+      height: 2px;
+      top: 11px;
+    }
+    .iconeTiroir2 {
+      position: relative;
+      float: right;
+      right: -13px;
+      // border: 1px solid green;
+      border-right: 2px solid $vertClair;
+      width: 2px;
+      height: 25px;
+    }
+  }
+}
+
+.contain_R {
+  max-width: 450px;
+  .containPurple {
+    background-color: #7e4293;
+    color: white;
+    width: 400px;
+    padding: 30px;
+    clip-path: polygon(0 0, 85% 0%, 75% 100%, 0% 100%);
+    h5 {
+      margin-bottom: 30px;
+      font-weight: normal;
+      font-size: 16px;
+    }
+    a {
+      color: white;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    li {
+      list-style-type: none;
+      margin-bottom: 15px;
+      margin-left: -15px;
+    }
+  }
+  .containtPurpleBack {
+    background-color: #9b3f90;
+    margin-bottom: 25px;
+  }
+  .formulaire {
+    background-color: #f5f5f5;
+  }
+}
+
+.tiroirReduce {
+  height: 80px;
+}
+
+.hideText {
+  visibility: hidden;
+}

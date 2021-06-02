@@ -1,3 +1,6 @@
+/**
+ * Changement de couleur de fond de l'input de recherche lorsqu'on tappe du texte dedans (input en mode hamburger)
+ */
 const searchCache = document.querySelector(".searchCache");
 const sousMenuHamburgerCache_search = document.querySelector(
   ".sousMenuHamburgerCache_search"

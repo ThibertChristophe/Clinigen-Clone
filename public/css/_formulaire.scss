@@ -1,0 +1,217 @@
+.formulaire {
+  width: 100%;
+  background-color: #f5f5f5;
+  max-height: 875px;
+  margin-right: 20px;
+  .titleGetInTouch {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #d6d6d6;
+    margin: 25px 0 0 0;
+    padding-left: 25px;
+    padding-bottom: 25px;
+  }
+  .letter {
+    display: inline-block;
+    background: url(../images/letter.JPG) no-repeat center/cover;
+    height: 40px;
+    width: 40px;
+  }
+  h4 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .lib {
+    display: block;
+    font-size: 12px;
+    color: #8b8b8b;
+    margin-bottom: 15px;
+  }
+  .sousTitre {
+    display: block;
+    font-size: 15px;
+    color: #5f5f5f;
+    margin-bottom: 15px;
+  }
+  form {
+    padding: 30px;
+  }
+  .formInput {
+    display: block;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    border-radius: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    color: black;
+    padding: 15px 15px 15px 25px;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: white;
+    outline: none;
+    &:after {
+      content: "^";
+      float: right;
+    }
+  }
+  .combo1,
+  .combo2,
+  .combo3 {
+    cursor: pointer;
+    user-select: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 25px;
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 125px;
+    min-height: 125px;
+    border: 1px solid #d6d6d6;
+    border-radius: 20px;
+    padding: 15px 15px 15px 25px;
+    outline: none;
+  }
+
+  .btnSubmit {
+    @include btnVert;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 100%;
+  }
+}
+.sousMenu1 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 200px;
+  top: 495px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  .option1 {
+    width: 100%;
+    padding: 8px 5px 8px 5px;
+
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #d4d4d4;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $vertClair;
+    border-radius: 10px;
+  }
+}
+
+.sousMenu2 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 200px;
+  top: 560px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  .option2 {
+    width: 100%;
+    padding: 8px 5px 8px 5px;
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #d4d4d4;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $vertClair;
+    border-radius: 10px;
+  }
+}
+
+.sousMenu3 {
+  display: inline-block;
+  position: absolute;
+  width: 86%;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: fit-content;
+  top: 625px;
+  color: black;
+  padding: 15px 15px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  .option3 {
+    width: 100%;
+    padding: 8px 5px 8px 5px;
+    &:hover {
+      background-color: #e7e7e7;
+    }
+  }
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $vertClair;
+    border-radius: 10px;
+  }
+}
+
+.show {
+  visibility: visible;
+}

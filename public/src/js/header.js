@@ -1,3 +1,6 @@
+/**
+ * Gestion des menus du header
+ */
 const main = document.querySelector("main");
 
 const menuCountry = document.getElementById("country");

@@ -1,3 +1,6 @@
+/**
+ * Gere les sous menu des combo du formulaire
+ */
 const combo1 = document.querySelector(".combo1");
 const combo2 = document.querySelector(".combo2");
 const combo3 = document.querySelector(".combo3");

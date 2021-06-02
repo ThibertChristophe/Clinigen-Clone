@@ -1,3 +1,7 @@
+/**
+ * Changement de couleur de fond des 3 block en dessosu du slider de l'index
+ */
+
 const sousSlideL = document.getElementById("sousSlider_L");
 const scgL = document.querySelectorAll(".svg1");
 const sousSlideM = document.getElementById("sousSlider_M");

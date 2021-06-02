@@ -1,6 +1,6 @@
 /**
- * Accroche le menu bandeau en milieu de page lorsqu'on scoll et fait defiler le highlight en fonction d'où on se trouve avec le scroll
- */
+ * Pas encore utilisé
+ * */
 const mainHeader_containt = document.querySelector(".mainHeader_containt");
 const menuFixed = document.querySelector(".menuFixed");
 

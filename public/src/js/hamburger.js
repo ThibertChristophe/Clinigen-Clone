@@ -1,3 +1,7 @@
+/**
+ * Passage en mode hamburger gestion du menu header
+ */
+
 const menuHamburger = document.querySelector(".menuHamburger");
 const sousMenuHamburgerCache = document.querySelector(
   ".sousMenuHamburgerCache"

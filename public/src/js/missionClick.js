@@ -1,3 +1,6 @@
+/**
+ * Scroll lors des click sur les sous menu du bandeau au milieu de la page
+ */
 const mainText = document.querySelector(".mainText1");
 
 lien.item(0).addEventListener("click", () => {

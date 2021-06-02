@@ -971,7 +971,7 @@
 .rightPatient .rightPatient_container {
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  min-height: 600px;
   display: flex;
   justify-content: space-between;
   max-width: 1050px;
@@ -1018,7 +1018,7 @@
   text-decoration: underline;
 }
 .rightPatient .rightPatient_container .rightPatient_R {
-  width: 500px;
+  max-width: 500px;
   height: 100%;
   background-color: white;
   padding: 20px 40px 40px 40px;
@@ -1028,13 +1028,14 @@
   margin-left: 50px;
 }
 .rightPatient .rightPatient_container .rightPatient_R .listCards {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
   margin-top: 20px;
-  flex-wrap: wrap;
+  width: 100%;
 }
 .rightPatient .rightPatient_container .rightPatient_R .listCards .keyFacts_Card {
-  width: 45%;
+  width: 100%;
   height: 150px;
   margin: 10px;
 }
@@ -1560,6 +1561,187 @@
 
 .show {
   visibility: visible;
+}
+
+.mainHeaderPharma_contain h3 {
+  width: 500px;
+  text-align: center;
+}
+
+.menuFixedHealt {
+  position: relative;
+  width: 100%;
+  background-color: #005052;
+  padding: 30px;
+  text-align: center;
+  z-index: 2;
+}
+.menuFixedHealt li {
+  display: inline-block;
+  margin: 0 23px;
+}
+.menuFixedHealt li a {
+  color: #b9b9b9;
+  font-size: 14px;
+  font-weight: 600;
+}
+.menuFixedHealt li a:hover {
+  color: #8cdb1f !important;
+}
+
+.containerHealt {
+  margin-top: 25px;
+  padding: 0 10px 0 10px;
+  max-width: 1250px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.containerHealt h3 {
+  font-size: 40px;
+  color: #005052;
+  font-family: League;
+  line-height: 50px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.containerHealt h4 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: GothamMedium;
+  margin-bottom: 20px;
+}
+.containerHealt p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.containerHealt ul {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.containerHealt li {
+  font-size: 16px;
+  line-height: 30px;
+  list-style-type: circle;
+}
+
+.contain_L {
+  max-width: 810px;
+  margin-right: 50px;
+}
+.contain_L .contain_L_1 {
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.contain_L .contain_L_1 .videoFrame {
+  width: 500px;
+  height: 310px;
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contain_L .contain_L_2 {
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.contain_L .contain_L_2 a {
+  color: #7e4293;
+  text-decoration: underline;
+  font-size: 15px;
+}
+.contain_L .contain_L_2 a:hover {
+  color: #9b3f90;
+}
+.contain_L .contain_L_3 {
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.contain_L .contain_L_3 .listeNumber {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.contain_L .contain_L_4 {
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+.contain_L .contain_L_4 h4 {
+  display: inline-block;
+}
+.contain_L .contain_L_4 .tiroir1,
+.contain_L .contain_L_4 .tiroir2 {
+  border-top: 1px solid black;
+  padding-top: 25px;
+}
+.contain_L .contain_L_4 .tiroir3 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 25px;
+}
+.contain_L .contain_L_4 .iconeTiroir1 {
+  position: relative;
+  float: right;
+  border-top: 2px solid #8cdb1f;
+  width: 25px;
+  height: 2px;
+  top: 11px;
+}
+.contain_L .contain_L_4 .iconeTiroir2 {
+  position: relative;
+  float: right;
+  right: -13px;
+  border-right: 2px solid #8cdb1f;
+  width: 2px;
+  height: 25px;
+}
+
+.contain_R {
+  max-width: 450px;
+}
+.contain_R .containPurple {
+  background-color: #7e4293;
+  color: white;
+  width: 400px;
+  padding: 30px;
+  clip-path: polygon(0 0, 85% 0%, 75% 100%, 0% 100%);
+}
+.contain_R .containPurple h5 {
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 16px;
+}
+.contain_R .containPurple a {
+  color: white;
+  font-weight: bold;
+}
+.contain_R .containPurple a:hover {
+  text-decoration: underline;
+}
+.contain_R .containPurple li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  margin-left: -15px;
+}
+.contain_R .containtPurpleBack {
+  background-color: #9b3f90;
+  margin-bottom: 25px;
+}
+.contain_R .formulaire {
+  background-color: #f5f5f5;
+}
+
+.tiroirReduce {
+  height: 80px;
+}
+
+.hideText {
+  visibility: hidden;
 }
 
 /****************************************/
