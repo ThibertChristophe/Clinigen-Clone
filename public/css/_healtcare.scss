@@ -197,10 +197,12 @@
       height: 25px;
     }
   }
-  .relatedLinks {
+  .relatedLinksHealt {
     max-width: 650px;
     display: flex;
     justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 100px;
     h4 {
       display: inline;
       color: $vertFonce;

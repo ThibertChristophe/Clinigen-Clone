@@ -1768,37 +1768,39 @@
   width: 2px;
   height: 25px;
 }
-.contain_L .relatedLinks {
+.contain_L .relatedLinksHealt {
   max-width: 650px;
   display: flex;
   justify-content: space-between;
+  height: fit-content;
+  margin-bottom: 100px;
 }
-.contain_L .relatedLinks h4 {
+.contain_L .relatedLinksHealt h4 {
   display: inline;
   color: #005052;
   font-family: League;
   line-height: 30px;
   font-size: 30px;
 }
-.contain_L .relatedLinks ul {
+.contain_L .relatedLinksHealt ul {
   display: inline;
 }
-.contain_L .relatedLinks ul li {
+.contain_L .relatedLinksHealt ul li {
   list-style-type: none;
 }
-.contain_L .relatedLinks ul li a {
+.contain_L .relatedLinksHealt ul li a {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
-.contain_L .relatedLinks ul li a::after {
+.contain_L .relatedLinksHealt ul li a::after {
   content: "→";
   color: #8cdb1f;
   margin-left: 3px;
   display: inline-block;
   width: 0;
 }
-.contain_L .relatedLinks ul li a:hover {
+.contain_L .relatedLinksHealt ul li a:hover {
   text-decoration: underline;
 }
 
