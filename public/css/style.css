@@ -1563,9 +1563,55 @@
   visibility: visible;
 }
 
-.mainHeaderPharma_contain h3 {
-  width: 500px;
+.mainHeaderHealtcare {
+  height: 550px;
+  background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
+  background-size: 170%;
+  background-position: right 35% bottom 82%;
+}
+
+.mainHeaderHealtcare_contain {
+  display: block;
+  position: relative;
+  top: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   text-align: center;
+  color: white;
+}
+.mainHeaderHealtcare_contain span {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  line-height: 19.6px;
+  font-family: GothamBook;
+  margin: 0 0 12px 0;
+}
+
+.mainHeaderHealtcare_contain h3 {
+  font-size: 80px;
+  line-height: 70px;
+  font-family: League;
+  font-weight: 400;
+  width: 350px;
+  text-align: center;
+}
+
+.mainHeaderHealtcare_contain input {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #8cdb1f;
+  cursor: pointer;
+  transition: all 1s ease;
+  font-size: 16px;
+}
+.mainHeaderHealtcare_contain input:hover {
+  background-color: #7ac512;
 }
 
 .menuFixedHealt {
@@ -1666,6 +1712,22 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+.contain_L .contain_L_3 .listeNumber .listeNumber_card {
+  width: 25%;
+}
+.contain_L .contain_L_3 .listeNumber span {
+  min-width: 200px;
+  font-size: 60px;
+  font-family: League;
+  color: #005052;
+  z-index: 0;
+}
+.contain_L .contain_L_3 .listeNumber p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.04px;
+}
 .contain_L .contain_L_4 {
   border-bottom: 1px solid #c9c9c9;
   margin-bottom: 50px;
@@ -1673,16 +1735,22 @@
 }
 .contain_L .contain_L_4 h4 {
   display: inline-block;
+  margin-left: 25px;
+  font-size: 20px;
 }
 .contain_L .contain_L_4 .tiroir1,
 .contain_L .contain_L_4 .tiroir2 {
   border-top: 1px solid black;
   padding-top: 25px;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 .contain_L .contain_L_4 .tiroir3 {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding-top: 25px;
+  cursor: pointer;
+  transition: all 1s ease;
 }
 .contain_L .contain_L_4 .iconeTiroir1 {
   position: relative;
@@ -1699,6 +1767,39 @@
   border-right: 2px solid #8cdb1f;
   width: 2px;
   height: 25px;
+}
+.contain_L .relatedLinks {
+  max-width: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+.contain_L .relatedLinks h4 {
+  display: inline;
+  color: #005052;
+  font-family: League;
+  line-height: 30px;
+  font-size: 30px;
+}
+.contain_L .relatedLinks ul {
+  display: inline;
+}
+.contain_L .relatedLinks ul li {
+  list-style-type: none;
+}
+.contain_L .relatedLinks ul li a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.contain_L .relatedLinks ul li a::after {
+  content: "→";
+  color: #8cdb1f;
+  margin-left: 3px;
+  display: inline-block;
+  width: 0;
+}
+.contain_L .relatedLinks ul li a:hover {
+  text-decoration: underline;
 }
 
 .contain_R {
@@ -1734,14 +1835,236 @@
 }
 .contain_R .formulaire {
   background-color: #f5f5f5;
+  height: 875px;
+  padding-top: 25px;
+}
+.contain_R .formulaire form {
+  padding: 30px;
+}
+.contain_R .formulaire .formulaire_titre {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #d6d6d6;
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+.contain_R .formulaire .formulaire_t {
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.contain_R .formulaire .formulaire_imgLettre {
+  display: inline-block;
+  background: url(../images/letter.JPG) no-repeat center/cover;
+  height: 40px;
+  width: 40px;
+}
+.contain_R .formulaire .formulaire_libelle {
+  display: block;
+  font-size: 12px;
+  color: #8b8b8b;
+  margin-bottom: 15px;
+}
+.contain_R .formulaire .formulaire_sousTitre {
+  display: inline-block;
+  font-size: 18px;
+  color: #5f5f5f;
+  margin-bottom: 15px;
+}
+.contain_R .formulaire .formulaire_input {
+  display: block;
+  width: 100%;
+  border: 1px solid #d6d6d6;
+  border-radius: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  color: black;
+  padding: 15px 15px 15px 25px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  outline: none;
+}
+.contain_R .formulaire .formulaire_input:after {
+  content: "^";
+  float: right;
+}
+.contain_R .formulaire .formulaire_combo1,
+.contain_R .formulaire .formulaire_combo2,
+.contain_R .formulaire .formulaire_combo3 {
+  cursor: pointer;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 25px;
+}
+.contain_R .formulaire textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 125px;
+  min-height: 125px;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  padding: 15px 15px 15px 25px;
+  outline: none;
+}
+.contain_R .formulaire .formulaire_btn {
+  text-align: center;
+  border-radius: 30px;
+  background-color: #8cdb1f;
+  cursor: pointer;
+  transition: all 1s ease;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 100%;
+}
+.contain_R .formulaire .formulaire_btn:hover {
+  background-color: #7ac512;
+}
+
+.formulaire_sousMenu1 {
+  width: 345px;
+  position: absolute;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 280px;
+  top: 1450px;
+  color: black;
+  padding: 15px 0px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.formulaire_sousMenu1 li {
+  position: relative;
+  list-style-type: none;
+  left: -25px;
+}
+.formulaire_sousMenu1 .formulaire_option1 {
+  padding: 8px 5px 8px 5px;
+}
+.formulaire_sousMenu1 .formulaire_option1:hover {
+  background-color: #e7e7e7;
+}
+.formulaire_sousMenu1::-webkit-scrollbar {
+  width: 5px;
+}
+.formulaire_sousMenu1::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #d4d4d4;
+}
+.formulaire_sousMenu1::-webkit-scrollbar-thumb {
+  background: #8cdb1f;
+  border-radius: 10px;
+}
+
+.formulaire_sousMenu2 {
+  width: 345px;
+  position: absolute;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 280px;
+  top: 1515px;
+  color: black;
+  padding: 15px 0px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.formulaire_sousMenu2 li {
+  position: relative;
+  list-style-type: none;
+  left: -25px;
+}
+.formulaire_sousMenu2 .formulaire_option2 {
+  padding: 8px 5px 8px 5px;
+}
+.formulaire_sousMenu2 .formulaire_option2:hover {
+  background-color: #e7e7e7;
+}
+.formulaire_sousMenu2::-webkit-scrollbar {
+  width: 5px;
+}
+.formulaire_sousMenu2::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #d4d4d4;
+}
+.formulaire_sousMenu2::-webkit-scrollbar-thumb {
+  background: #8cdb1f;
+  border-radius: 10px;
+}
+
+.formulaire_sousMenu3 {
+  width: 345px;
+  position: absolute;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
+  height: 200px;
+  top: 1580px;
+  color: black;
+  padding: 15px 0px 15px 20px;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: white;
+  overflow-y: scroll;
+  visibility: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.formulaire_sousMenu3 li {
+  position: relative;
+  list-style-type: none;
+  left: -25px;
+}
+.formulaire_sousMenu3 .formulaire_option3 {
+  padding: 8px 5px 8px 5px;
+}
+.formulaire_sousMenu3 .formulaire_option3:hover {
+  background-color: #e7e7e7;
+}
+.formulaire_sousMenu3::-webkit-scrollbar {
+  width: 5px;
+}
+.formulaire_sousMenu3::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #d4d4d4;
+}
+.formulaire_sousMenu3::-webkit-scrollbar-thumb {
+  background: #8cdb1f;
+  border-radius: 10px;
 }
 
 .tiroirReduce {
-  height: 80px;
+  max-height: 80px;
 }
 
 .hideText {
   visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }
 
 /****************************************/
