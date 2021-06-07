@@ -1,0 +1,149 @@
+.mainHeaderPatient {
+  height: 550px;
+  background: url(../images/slides/woman-web_crop-min.jpg) no-repeat;
+  background-size: 170%;
+  background-position: right 35% bottom 82%;
+}
+
+.mainHeaderPatient_contain {
+  display: block;
+  position: relative;
+  top: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
+  color: white;
+  span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 19.6px;
+    font-family: GothamBook;
+    margin: 0 0 12px 0;
+  }
+}
+
+.mainHeaderPatient_contain h3 {
+  font-size: 80px;
+  line-height: 70px;
+  font-family: League;
+  font-weight: 400;
+  width: 500px;
+  text-align: center;
+}
+
+.menuFixedPatient {
+  position: relative;
+  width: 100%;
+  //border: 1px solid red;
+  background-color: $vertFonce;
+  padding: 30px;
+  text-align: center;
+  z-index: 2;
+  li {
+    display: inline-block;
+    margin: 0 23px;
+    a {
+      color: rgb(185, 185, 185);
+      font-size: 14px;
+      font-weight: 600;
+      &:hover {
+        color: #8cdb1f !important; // le hover ne changera pas malgré le changement de .color en JS
+      }
+    }
+  }
+}
+
+.containerPatient {
+  margin-top: 25px;
+  padding: 0 10px 0 10px;
+  max-width: 1250px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  h3 {
+    font-size: 40px;
+    color: $vertFonce;
+    font-family: League;
+    line-height: 50px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: GothamMedium;
+    margin-bottom: 20px;
+    line-height: 36px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  ul {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  li {
+    font-size: 16px;
+    line-height: 30px;
+    list-style-type: circle;
+  }
+}
+
+.contain {
+  max-width: 1100px;
+  margin-right: 50px;
+  .contain_1 {
+    border-bottom: 1px solid #c9c9c9;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+
+  .relatedLinksPatient {
+    max-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin-bottom: 100px;
+    h4 {
+      display: inline;
+      color: $vertFonce;
+      font-family: League;
+      line-height: 30px;
+      font-size: 30px;
+    }
+    ul {
+      display: inline;
+      li {
+        list-style-type: none;
+        a {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          &::after {
+            content: "\002192";
+            color: $vertClair;
+            margin-left: 3px;
+            display: inline-block;
+            width: 0;
+          }
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hideText {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
