@@ -1661,6 +1661,7 @@
 .containerHealt p {
   font-size: 16px;
   line-height: 30px;
+  color: #4c5f6a;
   margin-bottom: 30px;
 }
 .containerHealt ul {
@@ -1671,6 +1672,7 @@
   font-size: 16px;
   line-height: 30px;
   list-style-type: circle;
+  color: #4c5f6a;
 }
 
 .contain_L {
@@ -2154,6 +2156,7 @@
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 30px;
+  color: #4c5f6a;
 }
 .containerPatientGroup ul {
   margin-bottom: 30px;
@@ -2163,6 +2166,7 @@
   font-size: 16px;
   line-height: 30px;
   list-style-type: circle;
+  color: #4c5f6a;
 }
 
 .contain_L {
@@ -2546,6 +2550,7 @@
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 30px;
+  color: #4c5f6a;
 }
 .containerPatient ul {
   margin-bottom: 30px;
@@ -2555,6 +2560,7 @@
   font-size: 16px;
   line-height: 30px;
   list-style-type: circle;
+  color: #4c5f6a;
 }
 
 .contain {
@@ -2672,6 +2678,7 @@
   font-size: 16px;
   line-height: 30px;
   margin-bottom: 30px;
+  color: #4c5f6a;
 }
 .containerProducts ul {
   margin-bottom: 30px;
@@ -3534,6 +3541,20 @@ html {
 ::selection {
   color: white;
   background: black;
+}
+
+.btnVert {
+  text-align: center;
+  border-radius: 30px;
+  background-color: #8cdb1f;
+  cursor: pointer;
+  transition: all 1s ease;
+  height: 50px;
+  width: 200px;
+  margin-top: 15px;
+}
+.btnVert:hover {
+  background-color: #7ac512;
 }
 
 /*# sourceMappingURL=style.css.map */

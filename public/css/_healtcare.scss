@@ -71,6 +71,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+
   h3 {
     font-size: 40px;
     color: $vertFonce;
@@ -88,6 +89,7 @@
   p {
     font-size: 16px;
     line-height: 30px;
+    color: $grey-hoki;
     margin-bottom: 30px;
   }
   ul {
@@ -98,6 +100,7 @@
     font-size: 16px;
     line-height: 30px;
     list-style-type: circle;
+    color: $grey-hoki;
   }
 }
 
