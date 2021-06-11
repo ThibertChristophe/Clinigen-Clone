@@ -17,6 +17,7 @@ formulaire_sousMenu3.style.top =
   formulaire_combo3.getBoundingClientRect().top + 52 + window.scrollY + "px";
 
 formulaire_combo1.addEventListener("click", () => {
+  console.log(formulaire_sousMenu1);
   formulaire_sousMenu1.classList.toggle("show");
   formulaire_sousMenu2.classList.remove("show");
   formulaire_sousMenu3.classList.remove("show");
