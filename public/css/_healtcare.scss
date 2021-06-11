@@ -167,38 +167,6 @@
       margin-left: 25px;
       font-size: 20px;
     }
-    .tiroir1,
-    .tiroir2 {
-      border-top: 1px solid black;
-      padding-top: 25px;
-      cursor: pointer;
-      transition: all 1s ease;
-    }
-    .tiroir3 {
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      padding-top: 25px;
-      cursor: pointer;
-      transition: all 1s ease;
-    }
-    .iconeTiroir1 {
-      position: relative;
-      float: right;
-      //border: 1px solid red;
-      border-top: 2px solid $vertClair;
-      width: 25px;
-      height: 2px;
-      top: 11px;
-    }
-    .iconeTiroir2 {
-      position: relative;
-      float: right;
-      right: -13px;
-      // border: 1px solid green;
-      border-right: 2px solid $vertClair;
-      width: 2px;
-      height: 25px;
-    }
   }
   .relatedLinksHealt {
     max-width: 650px;
@@ -485,10 +453,6 @@
     background: $vertClair;
     border-radius: 10px;
   }
-}
-
-.tiroirReduce {
-  max-height: 80px;
 }
 
 .hideText {

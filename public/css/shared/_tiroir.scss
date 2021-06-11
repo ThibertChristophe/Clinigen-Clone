@@ -1,0 +1,33 @@
+.tiroir1,
+.tiroir2,
+.tiroir3,
+.tiroir4,
+.tiroir5 {
+  border-top: 1px solid black;
+  padding-top: 25px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.iconeTiroir1 {
+  position: relative;
+  float: right;
+  //border: 1px solid red;
+  border-top: 2px solid $vertClair;
+  width: 25px;
+  height: 2px;
+  top: 11px;
+}
+.iconeTiroir2 {
+  position: relative;
+  float: right;
+  right: -13px;
+  // border: 1px solid green;
+  border-right: 2px solid $vertClair;
+  width: 2px;
+  height: 25px;
+}
+
+.tiroirReduce {
+  max-height: 80px;
+}

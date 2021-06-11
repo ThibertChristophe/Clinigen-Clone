@@ -1,0 +1,23 @@
+.socialMedia_title {
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  margin-bottom: 20px;
+  h5 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+.socialMedia_links {
+  display: flex;
+  padding-left: 65px;
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}
