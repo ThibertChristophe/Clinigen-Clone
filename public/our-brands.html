@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Our project just needs Font Awesome solid + brand -->
+    <script defer src="fontawesome-free/js/brands.js"></script>
+    <script defer src="fontawesome-free/js/solid.js"></script>
+    <script defer src="fontawesome-free/js/fontawesome.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="src/js/ism-2.2.min.js"></script>
+    <title>Clinigen clone</title>
+  </head>
+
+  <body>
+    <!-------------------------- HEADER ---------------------------->
+    <header>
+      <div id="header">
+        <div id="header_top">
+          <div class="header_top_country">
+            <i class="fas fa-globe"></i
+            ><span
+              ><a href="javascript:" id="country"
+                >Select country<i class="fas fa-angle-down"></i></a
+            ></span>
+            <img src="" alt="" srcset="" />
+            <!-------------------------- SOUS MENU COUNTRY ---------------------------->
+            <div class="menuCacheCountry" id="menuCacheCountry">
+              <ul>
+                <li>
+                  <a href="http://"
+                    ><img
+                      class="flag"
+                      src="/public/images/flagUK.jpg"
+                    />Clinigen Autralia</a
+                  >
+                </li>
+                <li>
+                  <a href="http://"
+                    ><img
+                      class="flag"
+                      src="/public/images/flagFR.png"
+                    />Clinigen France</a
+                  >
+                </li>
+                <li>
+                  <a href="http://"
+                    ><img
+                      class="flag"
+                      src="/public/images/flagDE.png"
+                    />Clinigen Germany</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!------------------------------------------------------>
+          </div>
+          <div class="header_top_menuLeft">
+            <nav>
+              <ul>
+                <li>
+                  <a href="javascript:" class="menuAbout"
+                    >About Clinigen<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:" class="menuGlobaOffice"
+                    >Global offices<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:" class="menuCareers"
+                    >Careers<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:" class="menuInvestors"
+                    >Investors<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:" class="menuSustain"
+                    >Sustainability<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:" class="menuNewsroom"
+                    >Newsroom<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-------------------------- SOUS MENU ABOUT ---------------------------->
+          <div class="menuCache_about">
+            <ul>
+              <li><a href="http://">About us</a></li>
+              <li><a href="http://">History</a></li>
+              <li><a href="http://">Board of Directors</a></li>
+              <li><a href="http://">Responsible business</a></li>
+              <li><a href="http://">Optional excellence</a></li>
+              <li><a href="http://">Our brands</a></li>
+            </ul>
+          </div>
+          <!-------------------------- SOUS MENU GLOBAL OFFICES ---------------------------->
+          <div class="menuCache_globalOffice">
+            <ul>
+              <li><a href="http://">Australia & New Zealand</a></li>
+              <li><a href="http://">Mainland Europe</a></li>
+              <li><a href="http://">Japan</a></li>
+              <li><a href="http://">Asia</a></li>
+              <li><a href="http://">South Africa</a></li>
+              <li><a href="http://">United Kingdom</a></li>
+              <li><a href="http://">United States</a></li>
+            </ul>
+          </div>
+          <!-------------------------- SOUS MENU CAREERS ---------------------------->
+          <div class="menuCache_careers">
+            <ul>
+              <li><a href="http://">Careers overview</a></li>
+              <li><a href="http://">Apply Online</a></li>
+              <li><a href="http://">Frequently Asked Questions</a></li>
+              <li><a href="http://">Private Notice - Applicants</a></li>
+            </ul>
+          </div>
+          <!-------------------------- SOUS MENU INVESTORS ---------------------------->
+          <div class="menuCache_investors">
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">At a Glance</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Financial Highlights</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Investment Case</a></li>
+                <li class="secondLi"><a href="">Business Model</a></li>
+                <li class="secondLi"><a href="">Our Track Record</a></li>
+                <li class="secondLi"><a href="">Our Divisions</a></li>
+                <li class="secondLi"><a href="">Strategy</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Share Tools</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi">
+                  <a href="">Results, Reports and Presentations</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Quantum Archive</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Financial Calendar</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Press Releases</a></li>
+                <li class="secondLi"><a href="">Press Releases</a></li>
+                <li class="secondLi"><a href="">Regulatory News</a></li>
+                <li class="secondLi"><a href="">Email Alerts</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Shareholder Services</a></li>
+                <li class="secondLi"><a href="">AGM</a></li>
+                <li class="secondLi"><a href="">Registar Services</a></li>
+                <li class="secondLi"><a href="">Major Shareholders</a></li>
+                <li class="secondLi"><a href="">Advisor Contacts</a></li>
+                <li class="secondLi"><a href="">Analyst Coverage</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Corporate Governance</a></li>
+                <li class="secondLi">
+                  <a href="">Corporate Governance Statement</a>
+                </li>
+                <li class="secondLi"><a href="">Board of Directors</a></li>
+                <li class="secondLi"><a href="">Tax Strategy</a></li>
+                <li class="secondLi"><a href="">AIM Rules 26</a></li>
+              </ul>
+            </div>
+            <div class="menuInvestor_Card">
+              <ul>
+                <li class="mainLi"><a href="">Investor Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-------------------------- SOUS MENU SUSTAINABILITY ---------------------------->
+          <div class="menuCache_sustain">
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi"><a href="">Overview</a></li>
+              </ul>
+            </div>
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi">
+                  <a href="">Our Sustainibility Framework</a>
+                </li>
+                <li class="secondLi"><a href="">Environmental Impact</a></li>
+                <li class="secondLi"><a href="">Responsible Business</a></li>
+                <li class="secondLi"><a href="">Our People</a></li>
+                <li class="secondLi"><a href="">Products & Services</a></li>
+              </ul>
+            </div>
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi"><a href="">Sustainable Governance</a></li>
+              </ul>
+            </div>
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi"><a href="">Our Stakeholders</a></li>
+              </ul>
+            </div>
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi">
+                  <a href="">UN Sustainable Development Goals</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi"><a href="">Materiality Assesment</a></li>
+              </ul>
+            </div>
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi">
+                  <a href="">Our Sustainability Journey</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menuSustain_Card">
+              <ul>
+                <li class="mainLi">
+                  <a href="">Reports, Policies and Data</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-------------------------- SOUS MENU NEWSROOM ---------------------------->
+          <div class="menuCache_newsroom">
+            <ul>
+              <li><a href="http://">Video Library</a></li>
+              <li><a href="http://">Press Releases</a></li>
+              <li><a href="http://">Stay in Touch</a></li>
+            </ul>
+          </div>
+          <!------------------------------------------------------>
+        </div>
+
+        <div id="header_bot">
+          <a href="index.html">
+            <img
+              src="/public/images/clinigen-logo.png"
+              alt="logo"
+              class="header_bot_logoClinigen"
+            />
+          </a>
+          <div id="header_bot_menuMiddle">
+            <nav>
+              <ul>
+                <li>
+                  <a href="mission.html">Mission</a>
+                </li>
+                <li>
+                  <a href="javascript:" class="menuHowCanWeHelp"
+                    >How we can help<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:" class="menuProductsServices"
+                    >Product & Services<i class="fas fa-angle-down"></i
+                  ></a>
+                </li>
+                <li><a href="javascript:">Insights</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header_bot_menuleft">
+            <div id="header_bot_findAMedicine">
+              <span>Find a medicine<i class="fas fa-angle-down"></i></span>
+            </div>
+            <input
+              type="button"
+              value="Get in touch"
+              id="header_bot_getInTouch"
+            />
+            <span class="separateur"></span
+            ><input type="button" value="" id="header_bot_search" />
+          </div>
+        </div>
+      </div>
+      <!-------------------------- SOUS MENU HOW WE CAN HELP ---------------------------->
+      <div class="menuCache_howCanWeHelp">
+        <ul>
+          <li>
+            <a href="../how-we-can-help/pharmaceutical.html"
+              >Pharmaceutical & Biotech Companies</a
+            >
+          </li>
+          <li>
+            <a href="../how-we-can-help/healtcare.html"
+              >Healthcare Professionals</a
+            >
+          </li>
+          <li>
+            <a href="../how-we-can-help/patient_group.html">Patient Groups</a>
+          </li>
+          <li><a href="../how-we-can-help/patient.html">Patients</a></li>
+        </ul>
+      </div>
+      <!-------------------------- SOUS MENU PRODUCTS & SERVICES ---------------------------->
+      <div class="menuCache_ProductsServices">
+        <div class="menuCache_ProductsServices_L">
+          <div class="menuCache_ProductsServices_Card">
+            <ul>
+              <li class="mainLi">
+                <a href="products.html">Products</a>
+              </li>
+              <li class="secondLi">
+                <a href="partnering.html">Partnering</a>
+              </li>
+              <li class="secondLi">
+                <a href="divestment.html">Divestment</a>
+              </li>
+              <li class="secondLi">
+                <a href="markets.html">Unlicensed Markets</a>
+              </li>
+              <li class="secondLi"><a href="http://">Our Products</a></li>
+            </ul>
+          </div>
+          <div class="menuCache_ProductsServices_Card">
+            <ul>
+              <li class="mainLi"><a href="services.html">Services</a></li>
+              <li class="secondLi">
+                <a href="managed-access-programs.html"
+                  >Managed Access Programs</a
+                >
+              </li>
+              <li class="secondLi">
+                <a href="clinical.html">Clinical Supplies Management</a>
+              </li>
+              <li class="secondLi">
+                <a href="real-world.html">Real World Data</a>
+              </li>
+              <li class="secondLi">
+                <a href="medical-science.html"
+                  >Medical Science Liaison (MSLs)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <span class="separatorMenuProduct"></span>
+        <div class="menuCache_ProductsServices_R">
+          <div class="menuCache_ProductsServices_Card_Medicine">
+            <img src="/public/images/findBlanc.JPG" alt="" />
+            <div class="menuCache_ProductsServices_Card_Title">
+              <span> FIND A MEDICINE</span>
+            </div>
+            <p>Online services for healthcare professionals</p>
+            <ul>
+              <li><a href="">Hard to find medicines (Clinigen Direct)</a></li>
+              <li><a href="">Managed Access Programs (Cliniport)</a></li>
+              <li><a href="">Clinigen Products</a></li>
+              <li><a href="">Special Obtains</a></li>
+              <li><a href="">Aseptics UK</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-------------------------- HAMBURGER ---------------------------->
+      <div class="headerHamburger">
+        <a href="index.html"> <div class="logoClinigenHamburger"></div></a>
+        <div class="menuHamburger">
+          <div class="hamburger"><span></span><span></span><span></span></div>
+          Menu
+        </div>
+      </div>
+      <div class="sousMenuHamburgerCache">
+        <a href="javascript:" class="fermer">X</a>
+        <div class="header_bot_findAMedicine_Cache">
+          <span>Find a medicine<i class="fas fa-angle-down"></i></span>
+        </div>
+        <div class="sousMenuHamburgerCache_menu1">
+          <ul>
+            <li><a href="../mission.html">Mission</a></li>
+            <li>
+              <a href="javascript:" class="toggleNav1">How we can help </a
+              ><i class="fas fa-angle-right"></i>
+              <!-------------------------- SOUS MENU CACHE 1 ---------------------------->
+              <div class="sousMenuHamburger_cache1">
+                <ul>
+                  <li>
+                    <i class="fas fa-angle-left"></i
+                    ><a href="javascript:" class="menuBack">How we can help</a>
+                  </li>
+                  <li>
+                    <a href="../how-we-can-help/pharmaceutical.html"
+                      >Pharmaceutical & Biotech Companies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../how-we-can-help/healtcare.html"
+                      >Healtcare Professionals</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../how-we-can-help/patient_group.html"
+                      >Patient Groups</a
+                    >
+                  </li>
+                  <li>
+                    <a href="../how-we-can-help/patient.html">Patients</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">Products & Services</a
+              ><i class="fas fa-angle-right"></i>
+            </li>
+            <li><a href="#">Insights</a></li>
+          </ul>
+        </div>
+        <div class="sousMenuHamburgerCache_menu2">
+          <ul>
+            <li>
+              <a href="#">About Clinigen</a><i class="fas fa-angle-right"></i>
+            </li>
+            <li>
+              <a href="#">Global offices</a><i class="fas fa-angle-right"></i>
+            </li>
+            <li><a href="#">Careers</a><i class="fas fa-angle-right"></i></li>
+            <li><a href="#">Investors</a><i class="fas fa-angle-right"></i></li>
+            <li>
+              <a href="#">Sustainability</a><i class="fas fa-angle-right"></i>
+            </li>
+            <li><a href="#">Newsroom</a><i class="fas fa-angle-right"></i></li>
+          </ul>
+        </div>
+        <div class="sousMenuHamburgerCache_search">
+          <input type="text" class="searchCache" />
+        </div>
+      </div>
+    </header>
+    <!-------------------------- CONTENU ---------------------------->
+    <main>
+      <div class="mainHeaderrOurBrands">
+        <div class="mainHeaderOurBrands_contain">
+          <span>ABOUT CLINIGEN</span>
+          <h3>OUR BRANDS</h3>
+        </div>
+      </div>
+      <!------------------------------------------------------------------ CONTENU ------------------------------------------------------------------>
+      <div class="containerOurBrands">
+        <div class="containerOurBrands_title">
+          <p>
+            Clinigen Group is a global pharmaceutical and services company with
+            a unique combination of businesses focused on providing access to
+            medicines to meet unmet patient need all over the world. Learn more
+            about<a href="mission.html"> Our Mission.</a>
+          </p>
+        </div>
+        <div class="listBrands">
+          <div class="cardBrands">
+            <img src="../public/images/clinigen_logo_rgb.png" alt="" />
+            <div class="cardBrands_details">
+              <p>
+                Clinigen’s mission is to deliver the right medicine to the right
+                patient at the right time, operating in three areas of global
+                medicine supply: clinical trials, unlicensed and licensed
+                medicines. In 2015 Clinigen acquired Idis, the global leader in
+                the specialist management of ethical, regulatory compliant and
+                efficient solutions to help pharmaceutical/biotech companies and
+                healthcare professionals provide global access to medicines for
+                patients with unmet medical need
+              </p>
+              <a href="www.clinigengroup.com">www.clinigengroup.com</a>
+            </div>
+          </div>
+          <div class="cardBrands">
+            <img src="../public/images/clinigen_logo_rgb.png" alt="" />
+            <div class="cardBrands_details">
+              <p>
+                Clinigen’s mission is to deliver the right medicine to the right
+                patient at the right time, operating in three areas of global
+                medicine supply: clinical trials, unlicensed and licensed
+                medicines. In 2015 Clinigen acquired Idis, the global leader in
+                the specialist management of ethical, regulatory compliant and
+                efficient solutions to help pharmaceutical/biotech companies and
+                healthcare professionals provide global access to medicines for
+                patients with unmet medical need
+              </p>
+              <a href="www.clinigengroup.com">www.clinigengroup.com</a>
+            </div>
+          </div>
+          <div class="cardBrands">
+            <img src="../public/images/clinigen_logo_rgb.png" alt="" />
+            <div class="cardBrands_details">
+              <p>
+                Clinigen’s mission is to deliver the right medicine to the right
+                patient at the right time, operating in three areas of global
+                medicine supply: clinical trials, unlicensed and licensed
+                medicines. In 2015 Clinigen acquired Idis, the global leader in
+                the specialist management of ethical, regulatory compliant and
+                efficient solutions to help pharmaceutical/biotech companies and
+                healthcare professionals provide global access to medicines for
+                patients with unmet medical need
+              </p>
+              <a href="www.clinigengroup.com">www.clinigengroup.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-------------------------- FOOTER ---------------------------->
+      <div class="footer">
+        <div class="footerContaint">
+          <div class="footerContaint_Card">
+            <div class="footerContaint_Card_Title">
+              <img src="/public/images/point.JPG" alt="" /><span>
+                OUR GLOBAL OFFICES</span
+              >
+            </div>
+            <ul class="footerContaint_Card_link">
+              <li><a href="">Australia & New Zealand</a></li>
+              <li><a href="">Mainland Europe</a></li>
+              <li><a href="">Japan</a></li>
+              <li><a href="">Singapore</a></li>
+              <li><a href="">South Africa</a></li>
+              <li><a href="">United Kingdom</a></li>
+              <li><a href="">United States</a></li>
+            </ul>
+          </div>
+          <div class="footerContaint_Card">
+            <div class="footerContaint_Card_Title">
+              <img src="/public/images/site.JPG" alt="" /><span>
+                SITE<br />TOOLS</span
+              >
+            </div>
+            <ul class="footerContaint_Card_link">
+              <li><a href="">Stay In Touch</a></li>
+              <li><a href="">AE Reporting</a></li>
+              <li><a href="">Medical enquiries</a></li>
+              <li><a href="">Terms of use</a></li>
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">UK Gender Pay Gap Report</a></li>
+              <li><a href="">Modern Slavery Statement</a></li>
+              <li><a href="">Acces Online</a></li>
+              <li><a href="">Sitemap</a></li>
+              <li><a href="">Consumer Information Obligations</a></li>
+            </ul>
+          </div>
+          <div class="footerContaint_Card_Medicine">
+            <div class="footerContaint_Card_Title">
+              <img src="/public/images/find.JPG" alt="" />
+              <span> FIND A MEDICINE</span>
+            </div>
+            <p>Online services for healthcare professionals</p>
+            <ul>
+              <li><a href="">Hard to find medicines (Clinigen Direct)</a></li>
+              <li><a href="">Managed Access Programs (Cliniport)</a></li>
+              <li><a href="">Clinigen Products</a></li>
+              <li><a href="">Special Obtains</a></li>
+              <li><a href="">Aseptics UK</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright_Logo">
+          <div class="copyrightBy">
+            <span class="copyright">© Copyright 2021 Clinigen Group plz.</span
+            ><span class="by"> By Emperor</span>
+          </div>
+
+          <span class="line"></span>
+          <div class="btnSocial">
+            <a href="javacscript:" class="twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="javacscript:" class="vimeo"
+              ><i class="fab fa-vimeo-v"></i
+            ></a>
+            <a href="javacscript:" class="linkedin"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/public/src/js/header.js"></script>
+    <script src="/public/src/js/hamburger.js"></script>
+    <script src="/public/src/js/input.js"></script>
+    <script src="/public/src/js/tiroir.js"></script>
+    <script src="/public/src/js/tiroir_about.js"></script>
+    <script src="/public/src/js/aboutUs_menuFixe.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first 
+<script src="/__/firebase/8.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase 
+<script src="/__/firebase/init.js"></script>-->
+  </body>
+</html>
