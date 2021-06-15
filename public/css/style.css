@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 #header #header_top .header_top_country {
-  margin: 13px 0 0 20px;
+  margin: 10px 0 0 20px;
   color: white;
   background-color: #064242;
   height: 30px;
@@ -3073,15 +3073,25 @@
   text-align: center;
   font-size: 25px;
   margin: 25px 0;
+  line-height: 40px;
+  color: #001b2b;
+}
+.containerOurBrands_title p a {
+  text-decoration: underline;
+  font-size: 25px;
 }
 
 .listBrands {
   display: block;
 }
+.listBrands a {
+  text-decoration: underline;
+  font-size: 16px;
+}
 .listBrands .cardBrands {
   display: flex;
-  margin: 25px 0;
-  padding: 25px 0;
+  margin: 15px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #dadada;
 }
 .listBrands .cardBrands img {
@@ -3090,8 +3100,13 @@
 }
 .listBrands .cardBrands p {
   margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4c5f6a;
+}
+.listBrands .cardBrands .cardBrands_details {
+  width: 800px;
   margin-left: 50px;
-  font-size: 18px;
 }
 
 /****************************************/
