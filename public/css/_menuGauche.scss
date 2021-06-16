@@ -1,0 +1,29 @@
+.menuSustain_containt {
+  background-color: #fafafa;
+  width: 300px;
+  height: 630;
+  li {
+    border-bottom: 1px solid #c9c9c9;
+    padding: 20px 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  a:hover {
+    color: $vertClair;
+  }
+}
+
+.menuSustain_sousMenu1 {
+  padding: 0 10px;
+  border-left: 3px solid $vertClair;
+}
+
+.menuSustain_actif {
+  color: $vertClair;
+  padding: 0 10px;
+}
+.li_actif {
+  border-bottom: 1px solid #fafafa !important;
+  border-left: 3px solid $vertClair;
+}

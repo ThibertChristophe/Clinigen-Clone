@@ -1,0 +1,26 @@
+.containerSustain {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 25px 0;
+  .containSus_L {
+    margin-right: 150px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    letter-spacing: -0.016em;
+    color: #4c5f6a;
+  }
+  img {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.tiroir4 {
+  margin-bottom: 50px;
+  border-bottom: #0f0f0f !important;
+}

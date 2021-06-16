@@ -85,7 +85,7 @@
       height: 100%;
       display: flex;
       align-items: center;
-      #header_bot_findAMedicine {
+      .header_bot_findAMedicine {
         position: relative;
         background-color: #403b77;
         color: white;
@@ -107,6 +107,9 @@
           filter: brightness(180%);
         }
         .fa-angle-down {
+          margin-left: 30px;
+        }
+        .fa-angle-up {
           margin-left: 30px;
         }
       }
@@ -324,7 +327,6 @@
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  margin-top: 3px;
   width: 100%;
   height: 100px;
   background-color: #fff;
@@ -355,7 +357,6 @@
   opacity: 0;
   visibility: hidden;
   position: fixed;
-  margin-top: 3px;
   width: 100%;
   height: 350px;
   background-color: #fff;
@@ -413,6 +414,38 @@
     li {
       font-weight: 600;
       margin-top: 15px;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.menuCache_findAMedicine {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  top: 141px;
+  z-index: 4;
+  transition: all 0.5s ease;
+  display: flex;
+  box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 12px 24px -5px rgba(0, 0, 0, 0.15);
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: 50px 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      margin: 40px 50px 40px 50px;
+      font-weight: 600;
       a:hover {
         text-decoration: underline;
       }

@@ -32,6 +32,27 @@ const menuCacheProductsServices = document.querySelector(
   ".menuCache_ProductsServices"
 );
 
+const menufindAMedicine = document.querySelector(".header_bot_findAMedicine");
+const menuCachefindAMedicine = document.querySelector(
+  ".menuCache_findAMedicine"
+);
+
+// Bouton Find a medicine
+menufindAMedicine.addEventListener("click", (e) => {
+  let wasShow;
+  if (menuCachefindAMedicine.classList.value.includes("show")) {
+    wasShow = true;
+  } else {
+    wasShow = false;
+  }
+  removeAllWithoutException();
+  if (wasShow) {
+    menuCachefindAMedicine.classList.remove("show");
+  } else {
+    menuCachefindAMedicine.classList.add("show");
+  }
+});
+
 const arrayOfMidMenu = document.querySelectorAll(
   "#header_bot_menuMiddle > nav > ul > li > a"
 );
@@ -140,6 +161,7 @@ const removeAll = (except, country) => {
   });
 };
 
+//Retire les surlignés sur les menus
 const removeAllWithoutException = () => {
   menuCountry.classList.remove("actif");
 
@@ -155,7 +177,7 @@ const removeAllWithoutException = () => {
 };
 
 /**
- * Hide tout les sous menu
+ * Cache tout les sous menu
  */
 const removeAllShow = () => {
   menuCacheCountry.classList.remove("show");
@@ -167,4 +189,5 @@ const removeAllShow = () => {
   menuCacheSustain.classList.remove("show");
   menuCacheHowHelp.classList.remove("show");
   menuCacheProductsServices.classList.remove("show");
+  menuCachefindAMedicine.classList.remove("show");
 };
