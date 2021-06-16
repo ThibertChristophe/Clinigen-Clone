@@ -6,6 +6,8 @@
 @import "./shared/footer";
 @import "./shared/tiroir";
 @import "./shared/menuFixe";
+@import "./locations";
+@import "./formulaire";
 @import "./mission";
 @import "./pharmaceutical";
 @import "./healtcare";
@@ -83,4 +85,11 @@ html {
   &:hover {
     background-color: $green-darker;
   }
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
