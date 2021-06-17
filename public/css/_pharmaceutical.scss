@@ -190,6 +190,18 @@
     }
   }
 }
+@media all and (max-width: 990px) {
+  .containL {
+    width: 100%;
+  }
+  .containR {
+    min-width: 95%;
+    margin: 0 auto;
+  }
+  .mainContent {
+    flex-wrap: wrap;
+  }
+}
 .sousMenu1 {
   display: inline-block;
   position: absolute;
